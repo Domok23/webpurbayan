@@ -81,5 +81,5 @@ $nav_kampung                = $this->nav_model->nav_kampung();
 <!-- .container -->
 </div>
 <!-- .bg-main-menu -->
-</header>
+
 
