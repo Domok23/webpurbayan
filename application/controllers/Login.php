@@ -28,7 +28,7 @@ class Login extends CI_Controller {
 		}
 		// End validasi
 
-		$data = array(	'title'		=> 'Halaman Login');
+		$data = array(	'title'		=> 'Login Admin');
 		$this->load->view('login/list', $data, FALSE);
 	}
 
