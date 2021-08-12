@@ -2581,14 +2581,13 @@ section {
   position: relative;
   font-size: 14px;
   font-weight: 600;
-  color: #000000;
   text-transform: uppercase;
   padding: 0 20px;
   background: transparent;
   margin-bottom: 6px;
 }
 .recent-project .button:hover {
-  color: #cc8800;
+  color: #ebac00;
 }
 .recent-project .button:after {
   position: absolute;
@@ -2604,6 +2603,7 @@ section {
 }
 .recent-project .is-checked {
   color: #cc8800 !important;
+  transform: scale(1.05, 1.05);
 }
 
 div#filters {

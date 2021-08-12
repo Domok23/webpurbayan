@@ -12,7 +12,7 @@
                                     <div class="portfolio-img">
                                         <div class="overlay-project"></div>
                                         <!-- .overlay-project -->
-                                        <img style="width:278.5px;height:208px;" src="<?php echo base_url('assets/upload/image/thumbs/'.$galeri->gambar) ?>" alt="recent-project-img-1">
+                                        <img style="width:278.5px;height:208px;" src="<?php echo base_url('assets/upload/image/thumbs/'.$galeri->gambar) ?>" alt="recent-project-img-1" class="img-responsive img-rounded">
                                         <div class="project-plus">
                                             <a href="<?php echo base_url('assets/upload/image/'.$galeri->gambar) ?>" data-rel="lightcase:myCollection"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                         </div>
@@ -28,7 +28,7 @@
                             <?php } ?>
                             <!-- .items -->
                         </div>
-                        <div id="filters" class="button-group ">
+                        <div id="filters" class="button-group">
                             <button class="button is-checked" data-filter="*">show all</button>
                             <?php if(count($kategori)>1) { foreach($kategori as $kategori) { ?>
                             <button class="button" data-filter=".<?php echo $kategori->slug_kategori_galeri ?>"><?php echo $kategori->nama_kategori_galeri ?></button>
