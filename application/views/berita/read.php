@@ -11,7 +11,7 @@
                                 </div>
                             <?php } ?>
                             <!-- .blog-img -->
-                            <div class="blog-content-box">
+                            <div class="blog-content-box buttom-rounded">
                                 <div class="meta-box">
                                     <div class="event-author-option">
                                         <div class="event-author-name">
@@ -39,7 +39,7 @@
                     </div>
                     <!-- .col-md-8 -->
                     <div class="col-md-4">
-                        <div class="sidebar">
+                        <div class="sidebar img-rounded">
                             <div class="widget">
                                 <h4 class="sidebar-widget-title">Berita Lainnya</h4>
                                 <div class="widget-content">

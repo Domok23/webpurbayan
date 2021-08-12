@@ -2143,9 +2143,11 @@ section {
 }
 .blog-items:hover {
   box-shadow: 1px 0px 14px 1px #ebebeb;
+  border-radius: 12px;
 }
 .blog-items:hover .blog-content h4 a {
   color: #cc8800;
+  transform: scale(1.05, 1.05);
 }
 .blog-items:hover .blog-img img {
   -webkit-transform: scale(1.1, 1.1);
@@ -4273,7 +4275,7 @@ div#filters {
   padding-top: 32px;
 }
 .popular-news-option li {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #e6e6e6;
   padding: 20px 0;
   overflow: hidden;
 }
@@ -4302,6 +4304,7 @@ div#filters {
 }
 .popular-news-option li:hover .popular-news-contant h5 a {
   color: #cc8800;
+  transform: scale(1.05, 1.05);
 }
 .gallery-instagram {
   overflow: hidden;
@@ -4347,7 +4350,7 @@ div#filters {
   transform: translateY(8px);
 }
 .bg-blog-style-2 {
-  padding: 120px 0 92px 0;
+  padding: 40px 0 40px 0;
 }
 .blog-style-2 .blog-items {
   margin-bottom: 40px;

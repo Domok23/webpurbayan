@@ -10,7 +10,7 @@
                                         <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt="blog-img-10" class="img-responsive img-rounded" /></a>
                                     </div>
                                     <!-- .blog-img -->
-                                    <div class="blog-content-box">
+                                    <div class="blog-content-box buttom-rounded">
                                         <div class="blog-content">
                                             <h4><a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><?php echo $berita->judul_berita; ?></a></h4>
                                             <ul class="meta-post">
@@ -18,7 +18,7 @@
                                                 <li><i class="fa fa-user"></i> <?php echo $berita->nama; ?></li>
                                                 <!-- <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $berita->hits; ?> Viewer</a></li> -->
                                             </ul>
-                                            <p class="text-justify"><?php echo character_limiter(strip_tags($berita->isi), 200); ?></p>
+                                            <p class="text-justify"><?php echo character_limiter(strip_tags($berita->isi), 500); ?></p>
                                             <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
                                         </div>
                                         <!-- .blog-content -->
@@ -52,7 +52,7 @@
                             </div>
                             <!-- .col-md-8 -->
                             <div class="col-md-4">
-                                <div class="sidebar">
+                                <div class="sidebar img-rounded">
                                     <div class="widget">
                                         <h4 class="sidebar-widget-title">Berita Terpopuler</h4>
                                         <div class="widget-content">

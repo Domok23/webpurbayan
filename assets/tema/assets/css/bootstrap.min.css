@@ -1122,6 +1122,10 @@ img {
 .img-rounded {
   border-radius: 12px;
 }
+.buttom-rounded {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
 .shadow {
   box-shadow: 0 0 10px gray;
 }
