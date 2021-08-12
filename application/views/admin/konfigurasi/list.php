@@ -18,17 +18,20 @@ if($this->session->flashdata('sukses')) {
     <textarea name="tentang" class="form-control" placeholder="Summary of the company" id="isi"><?php echo $site->tentang ?></textarea>
     </div>
 
-    <div class="form-group">
-    <label>Alamat</label>
-    <textarea name="alamat" rows="3" class="form-control textarea" placeholder="Alamat perusahaan/organisasi"><?php echo $site->alamat ?></textarea>
-    </div>
+    
 </div>
 
 <div class="col-md-6">
 	<h3>Informasi dasar:</h3><hr>
+
     <div class="form-group">
     <label>Nama Instansi</label>
-    <input type="text" name="namaweb" placeholder="Nama organisasi/perusahaan" value="<?php echo $site->namaweb ?>" required class="form-control">
+    <input type="text" name="namaweb" placeholder="Nama Instansi" value="<?php echo $site->namaweb ?>" required class="form-control">
+    </div>
+    
+    <div class="form-group">
+    <label>Alamat</label>
+    <input type="text" name="alamat" placeholder="Alamat Lengkap" value="<?php echo $site->alamat ?>" required class="form-control">
     </div>
 
     <div class="form-group">

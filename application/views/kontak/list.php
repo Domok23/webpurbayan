@@ -11,20 +11,20 @@
                             <li>
                                 <i class="flaticon-placeholder"></i>
                                 <div class="contact-content">
-                                    <p><?php echo $site->alamat; ?></p>
+                                    <?php echo $site->alamat; ?>
                                 </div>
                             </li>
                             <li>
                                 <i class="flaticon-vibrating-phone"></i>
                                 <div class="contact-content">
-                                    <p><?php echo $site->telepon; ?></p>
-                                    <p><?php echo $site->hp; ?></p>
+                                    <?php echo $site->telepon; ?>
+                                    <?php echo $site->hp; ?>
                                 </div>
                             </li>
                             <li>
                                 <i class="flaticon-message"></i>
                                 <div class="contact-content">
-                                    <p><?php echo $site->email; ?></p>
+                                    <?php echo $site->email; ?>
                                 </div>
                             </li>
                         </ul>

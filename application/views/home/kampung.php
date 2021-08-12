@@ -3,7 +3,7 @@
     <div class="row">
         <div class="our-services-option">
             <div class="section-header">
-                <h2>Desa Wisata <br>di <?php echo $site->namaweb ?></h2>
+                <h2>Kampung Wisata <br>di <?php echo $site->namaweb ?></h2>
             </div>
             <!-- .section-header -->
             <div class="row">

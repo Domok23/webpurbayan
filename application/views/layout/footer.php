@@ -70,7 +70,7 @@ $nav_profil     = $this->nav_model->nav_profil();
                         <ul class="address">
                             <li>
                                 <i class="fa fa-home" aria-hidden="true"></i>
-                                <span><?php echo nl2br($site->alamat) ?></span>
+                                <span><?php echo($site->alamat) ?></span>
                             </li>
                             <li>
                                 <i class="fa fa-phone" aria-hidden="true"></i>
