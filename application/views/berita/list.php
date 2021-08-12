@@ -7,7 +7,7 @@
                                 <?php foreach($berita as $berita) { ?>
                                 <div class="blog-items">
                                     <div class="blog-img" style="width:770px;height:370px;">
-                                        <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt="blog-img-10" class="img-responsive" /></a>
+                                        <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt="blog-img-10" class="img-responsive img-rounded" /></a>
                                     </div>
                                     <!-- .blog-img -->
                                     <div class="blog-content-box">
