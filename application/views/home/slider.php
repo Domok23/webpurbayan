@@ -16,6 +16,7 @@
         <div class="slider-content-area">
             <div class="container">
                 <div class="slider-content">
+                    <h3>Selamat Datang di</h3>
                     <h2><?php echo $slider->judul_galeri ?></h2>
                     <p><?php echo strip_tags($slider->isi) ?></p>
                 </div>

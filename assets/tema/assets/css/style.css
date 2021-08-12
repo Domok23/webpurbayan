@@ -3152,15 +3152,18 @@ div#filters {
   text-align: center;
 }
 .slider-three .slider-content h3 {
-  font-size: 30px;
+  font-size: 37px;
+  line-height: 1px;
 }
 .slider-three .slider-content h2 {
   font-size: 90px;
-  line-height: 146px;
+  line-height: 128px;
+  color: #f0a50f;
+  text-shadow: #000;
 }
 
 .slider-three .slider-content p {
-  font-size: 56px;
+  font-size: 60px;
   line-height: 90px;
 }
 
@@ -4039,7 +4042,7 @@ div#filters {
 /*=========================================================Start Single Event Css ===========================*/
 
 .bg-single-events {
-  padding: 120px 0 145px 0;
+  padding: 12px 0 90px 0;
 }
 .single-event-img {
   position: relative;
