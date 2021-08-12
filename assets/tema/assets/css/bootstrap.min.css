@@ -195,6 +195,7 @@ th {
     background: 0 0 !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+    box-sizing: border-box;
   }
   a,
   a:visited {
@@ -1118,6 +1119,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
 }
 .img-rounded {
   border-radius: 12px;

@@ -4,9 +4,10 @@
             <div class="single-blog">
                 <div class="row">
                     <div class="col-md-8">
+                        
                         <div class="blog-items">
                             <?php if($berita->gambar !="") { ?>
-                                <div class="blog-img" style="width:770px;height:370px;">
+                                <div class="blog-img">
                                     <a href="#"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt="blog-img-10" class="img-responsive img-rounded" /></a>
                                 </div>
                             <?php } ?>

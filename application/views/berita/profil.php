@@ -1,5 +1,5 @@
 <section class="bg-single-events">
-  <div class="container">
+  <div class="container shadow img-rounded">
     <div class="row">
       <div class="single-events">
         <div class="row">
@@ -7,11 +7,11 @@
             <div class="single-event-item">
               <?php if($berita->gambar != "" || $berita->gambar != NULL) { ?>
                 <div class="single-event-img">
-                  <img style="width: 100%;height: 450px;" src="<?php echo base_url('assets/upload/image/' . $berita->gambar); ?>" alt="single-event-img-1" class="img-responsive" />
+                  <img src="<?php echo base_url('assets/upload/image/' . $berita->gambar); ?>" alt="single-event-img-1" class="img-responsive img-fluid"/>
                 </div>
               <?php } ?>
               <!-- .single-event-img -->
-              <div class="single-event-content">
+              <div class="single-event-content buttom-rounded">
                 <h3><?php echo $berita->judul_berita; ?></h3><hr>
                 <?php echo $berita->isi; ?>
               </div>
