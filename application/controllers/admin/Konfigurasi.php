@@ -20,7 +20,6 @@ class Konfigurasi extends CI_Controller {
 		// Validasi 
 		$this->form_validation->set_rules('namaweb','Website name website','required');
 		$this->form_validation->set_rules('email','Email','valid_email');
-		$this->form_validation->set_rules('hp','hp','required');
 		
 		if($this->form_validation->run() === FALSE) {
 			
