@@ -1,35 +1,31 @@
 <section class="bg-slider-option">
-<div class="slider-option slider-two">
+<div class="slider-option slider-three">
 <div id="slider" class="carousel slide wow fadeInDown" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
 <li data-target="#slider" data-slide-to="0" class="active"></li>
 <li data-target="#slider" data-slide-to="1"></li>
 <li data-target="#slider" data-slide-to="2"></li>
+</ol>
 <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
 <?php $i=1; foreach($slider as $slider): ?>
 <div class="item <?php if($i==1) { echo 'active'; } ?>">
     <div class="slider-item">
-        <img src="<?php echo base_url('assets/upload/image/'.$slider->gambar); ?>" alt="bg-slider-2">
+        <img src="<?php echo base_url('assets/upload/image/'.$slider->gambar); ?>" alt="bg-slider">
         <div class="slider-content-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <!-- .col-md-6 -->
-                    <div class="col-md-6">
-                        <div class="slider-content">
-                            <h2><?php echo $slider->judul_galeri ?></h2>
-                            <p><?php echo strip_tags($slider->isi) ?></p>
-                            <!-- .slider-btn -->
-                        </div>
-                        <!-- .carousel-caption -->
-                    </div>
-                    <!-- .col-md-6 -->
+                <div class="slider-content">
+                    <h2><?php echo $slider->judul_galeri ?></h2>
+                    <p><?php echo strip_tags($slider->isi) ?></p>
                 </div>
-                <!-- .row -->
+                <!-- .carousel-caption -->  
             </div>
             <!-- .container -->
         </div>
+        <!-- slidebar-content-area -->
     </div>
+    <!-- slidebar-item -->
 </div>
 <!-- .items -->
 <?php $i++; endforeach; ?>

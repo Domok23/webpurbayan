@@ -12,8 +12,6 @@ $site = $this->konfigurasi_model->listing();
 </div>
 </div>
 </div>
-
-
 <!-- End Pre-Loader -->
 
 <header class="header-style-2">
