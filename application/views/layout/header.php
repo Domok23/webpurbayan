@@ -20,7 +20,7 @@ $site = $this->konfigurasi_model->listing();
 <div class="row">
 <div class="header-top">
     <div class="donate-option">
-            <a href="https://wa.me/<?php echo str_replace('+','',$site->hp) ?>?text=Apakah%20bisa%20dibantu?"><i class="fa fa-whatsapp" aria-hidden="true"></i><?php echo $site->hp ?></a>
+            <a href="https://wa.me/<?php echo str_replace('+','',$site->hp)?>?text=Apakah%20bisa%20dibantu?"><i class="fa fa-whatsapp" aria-hidden="true"></i><?php echo $site->hp ?></a>
             <a href="tel:<?php echo $site->telepon ?>"><i class="fa fa-phone" aria-hidden="true"></i> <?php echo $site->telepon ?></a>
             <a href="<?php echo base_url('kontak') ?>"><i class="fa fa-envelope" aria-hidden="true"></i> Kontak</a>
     </div>

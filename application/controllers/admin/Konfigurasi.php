@@ -17,10 +17,10 @@ class Konfigurasi extends CI_Controller {
 	// General Configuration
 	public function index() {
 		$site = $this->konfigurasi_model->listing();
-		
 		// Validasi 
 		$this->form_validation->set_rules('namaweb','Website name website','required');
 		$this->form_validation->set_rules('email','Email','valid_email');
+		$this->form_validation->set_rules('hp','hp','required');
 		
 		if($this->form_validation->run() === FALSE) {
 			
@@ -50,6 +50,8 @@ class Konfigurasi extends CI_Controller {
 			redirect(base_url('admin/konfigurasi'));
 		}
 	}
+
+
 
 	// Email Setting Configuration
 	public function email_setting() {

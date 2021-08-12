@@ -77,6 +77,7 @@ class Berita extends CI_Controller {
 
    			$this->session->set_flashdata('sukses', 'Data telah dihapus');
    			redirect(base_url('admin/berita'),'refresh');
+			   
    		// PROSES SETTING DRAFT
    		}elseif(isset($_POST['draft'])) {
    			$inp 				= $this->input;

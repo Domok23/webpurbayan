@@ -15,9 +15,7 @@ class Home extends CI_Controller {
 	{
 		$site 			= $this->konfigurasi_model->listing();
 		$slider 		= $this->galeri_model->slider();
-		$popup 			= $this->galeri_model->popup_aktif();
 		$headline		= $this->berita_model->listing_headline();
-		$galeri 		= $this->galeri_model->galeri_home();
 		$kategori_galeri= $this->galeri_model->kategori();
 		$kampung		= $this->nav_model->nav_kampung();
 		$profil 		= $this->nav_model->nav_profil();
@@ -64,8 +62,6 @@ class Home extends CI_Controller {
 						'headline'			=> $headline,
 						'pagin' 			=> $this->pagination->create_links(),
 						'berita'			=> $berita,
-						'popup'				=> $popup,
-						'galeri'			=> $galeri,
 						'kategori_galeri'	=> $kategori_galeri,
 						'kampung'			=> $kampung,
 						'profil'			=> $profil,

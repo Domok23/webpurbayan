@@ -5,9 +5,7 @@ if($this->session->flashdata('sukses')) {
 	echo '<div class="alert alert-success  alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
 	echo $this->session->flashdata('sukses');
 	echo '</div>';
-} 
-// Error
-echo validation_errors('<div class="alert alert-success  alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><div class="alert alert-success">','</div></div>'); 
+}
 ?>
 
 <?php echo form_open(base_url('admin/konfigurasi')) ?>
@@ -57,12 +55,12 @@ echo validation_errors('<div class="alert alert-success  alert-dismissible"><a h
     
      <div class="form-group">
     <label>Nomor Telepon</label>
-    <input type="text" name="telepon" placeholder="021-000000" value="<?php echo $site->telepon ?>" class="form-control">
+    <input type="text" name="telepon" placeholder="Nomor Telepon yang bisa dihubungi" value="<?php echo $site->telepon ?>" class="form-control">
     </div>
 
      <div class="form-group">
     <label>Whatsapp</label>
-    <input type="text" name="hp" placeholder="021-000000" value="<?php echo $site->hp ?>" class="form-control">
+    <input type="text" name="hp" placeholder="Sertakan kode negara, ex: +62856xxxxxxxx" value="<?php echo $site->hp ?>" class="form-control" required>
     </div>
     
     
@@ -75,23 +73,23 @@ echo validation_errors('<div class="alert alert-success  alert-dismissible"><a h
     
     <div class="form-group">
     <label>Facebook <i class="fa fa-facebook"></i></label>
-    <input type="url" name="facebook" placeholder="http://facebook.com/namakamu" value="<?php echo $site->facebook ?>" class="form-control">
+    <input type="url" name="facebook" placeholder="http://facebook.com/" value="<?php echo $site->facebook ?>" class="form-control" required>
     </div>
     
     <div class="form-group">
     <label>Twitter <i class="fa fa-twitter"></i></label>
-   <input type="url" name="twitter" placeholder="http://twitter.com/namakamu" value="<?php echo $site->twitter ?>" class="form-control">
+   <input type="url" name="twitter" placeholder="http://twitter.com/" value="<?php echo $site->twitter ?>" class="form-control" required>
     </div>
     
      <div class="form-group">
     <label>Instagram <i class="fa fa-instagram"></i></label>
-   <input type="url" name="instagram" placeholder="http://instagram.com/namakamu" value="<?php echo $site->instagram ?>" class="form-control">
+   <input type="url" name="instagram" placeholder="http://instagram.com/" value="<?php echo $site->instagram ?>" class="form-control"required>
     </div>
 
     <hr>
     <div class="form-group">
     <label>Google Map</label>
-    <textarea name="google_map" rows="5" class="form-control" placeholder="Kode dari Google Map"><?php echo $site->google_map ?></textarea>
+    <textarea name="google_map" rows="5" class="form-control required" placeholder="Kode dari Google Map"><?php echo $site->google_map ?></textarea>
     </div>
     
     <div class="form-group map">

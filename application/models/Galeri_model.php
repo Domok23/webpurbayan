@@ -17,7 +17,6 @@ class Galeri_model extends CI_Model {
 		$this->db->join('kategori_galeri','kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri','LEFT');
 		$this->db->join('users','users.id_user = galeri.id_user','LEFT');
 		// End join
-		$this->db->where('jenis_galeri <>','Pop up');
 		$this->db->order_by('id_galeri','DESC');
 		$query = $this->db->get();
 		return $query->result();
@@ -36,51 +35,6 @@ class Galeri_model extends CI_Model {
 		$this->db->limit(5);
 		$query = $this->db->get();
 		return $query->result();
-	}
-
-	// Listing data slider
-	public function galeri_home() {
-		$this->db->select('galeri.*, kategori_galeri.nama_kategori_galeri, kategori_galeri.slug_kategori_galeri, , users.nama');
-		$this->db->from('galeri');
-		// Join dg 2 tabel
-		$this->db->join('kategori_galeri','kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri','LEFT');
-		$this->db->join('users','users.id_user = galeri.id_user','LEFT');
-		// End join
-		$this->db->where('jenis_galeri','Galeri');
-		// $this->db->group_by('galeri.id_kategori_galeri');
-		$this->db->order_by('id_galeri','DESC');
-		$this->db->limit(6);
-		$query = $this->db->get();
-		return $query->result();
-	}
-
-	// Listing data popup
-	public function popup() {
-		$this->db->select('galeri.*, kategori_galeri.nama_kategori_galeri, users.nama');
-		$this->db->from('galeri');
-		// Join dg 2 tabel
-		$this->db->join('kategori_galeri','kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri','LEFT');
-		$this->db->join('users','users.id_user = galeri.id_user','LEFT');
-		// End join
-		$this->db->where('jenis_galeri','Pop up');
-		$this->db->order_by('popup_status','ASC');
-		$query = $this->db->get();
-		return $query->result();
-	}
-
-	// Listing data popup
-	public function popup_aktif() {
-		$this->db->select('galeri.*, kategori_galeri.nama_kategori_galeri, users.nama');
-		$this->db->from('galeri');
-		// Join dg 2 tabel
-		$this->db->join('kategori_galeri','kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri','LEFT');
-		$this->db->join('users','users.id_user = galeri.id_user','LEFT');
-		// End join
-		$this->db->where(array(	'jenis_galeri' 	=> 'Pop up',
-								'popup_status'	=> 'Publish'));
-		$this->db->order_by('id_galeri','DESC');
-		$query = $this->db->get();
-		return $query->row();
 	}
 
 	// Listing data slider
@@ -179,12 +133,6 @@ class Galeri_model extends CI_Model {
 	public function edit($data) {
 		$this->db->where('id_galeri',$data['id_galeri']);
 		$this->db->update('galeri',$data);
-	}
-
-	// Edit
-	public function edit2($data2) {
-		$this->db->where('jenis_galeri','Pop up');
-		$this->db->update('galeri',$data2);
 	}
 
 	// Edit hit
