@@ -5,12 +5,6 @@
                 </div>
                 <div class="row">
                     <div class="recent-project photo-gallery">
-                        <div id="filters" class="button-group ">
-                            <button class="button is-checked" data-filter="*">show all</button>
-                            <?php if(count($kategori)>1) { foreach($kategori as $kategori) { ?>
-                            <button class="button" data-filter=".<?php echo $kategori->slug_kategori_galeri ?>"><?php echo $kategori->nama_kategori_galeri ?></button>
-                            <?php }} ?>
-                        </div>
                         <div class="portfolio-items portfolio-items-home3">
                             <?php foreach($galeri as $galeri) { ?>
                             <div class="item <?php echo $galeri->slug_kategori_galeri ?>" data-category="<?php echo $galeri->nama_kategori_galeri ?>">
@@ -34,11 +28,13 @@
                             <?php } ?>
                             <!-- .items -->
                         </div>
-                        <!-- .isotope-items -->
-                        <div class="load-more-option">
-                            <?php if(isset($pagin)) { echo $pagin; }  ?>
+                        <div id="filters" class="button-group ">
+                            <button class="button is-checked" data-filter="*">show all</button>
+                            <?php if(count($kategori)>1) { foreach($kategori as $kategori) { ?>
+                            <button class="button" data-filter=".<?php echo $kategori->slug_kategori_galeri ?>"><?php echo $kategori->nama_kategori_galeri ?></button>
+                            <?php }} ?>
                         </div>
-                        <!-- .load-more-option -->
+                        <!-- .isotope-items -->
                     </div>
                     <!-- .recent-project -->
                 </div>

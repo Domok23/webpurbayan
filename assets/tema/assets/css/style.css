@@ -2611,6 +2611,7 @@ div#filters {
 }
 .portfolio-items {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .portfolio-items .item {
   width: 33.33%;
