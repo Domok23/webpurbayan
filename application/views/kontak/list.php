@@ -4,34 +4,8 @@
         <div class="row">
             <div class="contact-us">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h3 class="contact-title">HUBUNGI KAMI</h3>
-                        <form action="#" method="POST" class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="nameId" name="name" placeholder="Nama Lengkap">
-                                    </div>
-                                    <!-- .form-group -->
-                                </div>
-                                <!-- .col-md-6 -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="emailId" name="email" placeholder="Alamat Email">
-                                    </div>
-                                </div>
-                                <!-- .col-md-6 -->
-                            </div>
-                            <!-- .row -->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subjectId" name="subject" placeholder="Subjek">
-                            </div>
-                            <textarea class="form-control text-area" rows="3" name="message" placeholder="Pesan"></textarea>
-                            <button type="submit" class="btn btn-default">Kirim Email</button>
-                        </form>
-                    </div>
                     <!-- .col-md-8 -->
-                    <div class="col-md-4">
+                    <div class="col-md-8" >
                         <h3 class="contact-title">KONTAK KAMI</h3>
                         <ul class="contact-address">
                             <li>

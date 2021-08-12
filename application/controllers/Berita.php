@@ -169,8 +169,8 @@ class Berita extends CI_Controller {
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}
 
-	// Profil berita detail
-	public function profil($slug_berita)	{
+	// profile berita kelurahan detail
+	public function profil($slug_berita){
 		$site 		= $this->konfigurasi_model->listing();
 		$berita 	= $this->berita_model->read($slug_berita);
 		$profil 	= $this->nav_model->nav_profil();
@@ -200,7 +200,7 @@ class Berita extends CI_Controller {
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}
 
-	// Profil berita detail
+	// Profil berita kampung detail
 	public function kampung($slug_berita)	{
 		$site 		= $this->konfigurasi_model->listing();
 		$berita 	= $this->berita_model->read($slug_berita);
