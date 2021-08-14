@@ -29,7 +29,15 @@ class Galeri extends CI_Controller {
 	// Proses
 	public function proses()
 	{
-		$site = $this->konfigurasi_model->listing();
+		$site 			= $this->konfigurasi_model->listing();
+		$id_galerinya 	= $this->input->post('id_gelari');
+
+		// Check id_galeri kosong atau tidak
+		if($id_galerinya == "") {
+			$this->session->set_flashdata('warning', 'Anda belum memilih data');
+			redirect(base_url('admin/galeri'),'refresh');
+		}
+
 		// PROSES HAPUS MULTIPLE
 		if(isset($_POST['hapus'])) {
 			$inp 				= $this->input;

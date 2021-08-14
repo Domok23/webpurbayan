@@ -59,7 +59,15 @@ class Berita extends CI_Controller {
 	// Proses
 	public function proses()
 	{
-		$site = $this->konfigurasi_model->listing();
+		$site 			= $this->konfigurasi_model->listing();
+		$id_beritanya 	= $this->input->post('id_berita');
+
+		// Check id_berita kosong atau tidak
+		if($id_beritanya == "") {
+			$this->session->set_flashdata('warning', 'Anda belum memilih data');
+			redirect(base_url('admin/berita'),'refresh');
+		}
+
 		// PROSES HAPUS MULTIPLE
 		if(isset($_POST['hapus'])) {
 			$inp 				= $this->input;
