@@ -104,7 +104,7 @@ $nav_profil     = $this->nav_model->nav_profil();
 <div class="row">
     <div class="footer-bottom">
         <div class="copyright-txt">
-            <p>&copy; <?php echo date('Y') ?>. Designer By <a title="Team Work Development">Team Work Development</a></p>
+            <p>Copyright &copy; <a title="Team Work Development">Team Work Development</a> <?php echo date('Y') ?>. All rights reserved</p>
         </div>
         <!-- .copyright-txt -->
         <div class="social-box">
