@@ -32,7 +32,7 @@ $site_info = $this->konfigurasi_model->listing();
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/select2/select2.min.css">
   <style type="text/css" media="screen">
   	p {
-  		margin-bottom: 15px;
+  		margin-bottom: 10px;
   	}
   </style>
 </head>

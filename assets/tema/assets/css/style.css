@@ -4382,10 +4382,10 @@ div#filters {
 
 .bg-single-blog,
 .bg-single-campaign {
-  padding: 120px 0 135px 0;
+  padding: 25px 0 25px 0;
 }
 .single-blog .blog-content {
-  padding: 31px 30px 25px 30px;
+  padding: 25px;
 }
 .single-blog .blog-items:hover {
   box-shadow: none;
