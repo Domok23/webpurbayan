@@ -39,7 +39,7 @@
         <h2 style="font-weight: bold; font-size: 18px; margin-top: 20px;"><?php echo $this->website->namaweb() ?></h2>
       </div>
 
-      <p class="login-box-msg">Masukkan Username dan Password</p>
+      <p class="login-box-msg">Masukkan Email dan Password</p>
 
       <?php 
       // Notifikasi error
@@ -50,7 +50,7 @@
        ?>
 
         <div class="form-group">
-          <input type="text" name="username" class="form-control form-control-lg" placeholder="Username" value="<?= set_value ('username')?>">
+          <input type="text" name="email" class="form-control form-control-lg" placeholder="Email" value="<?= set_value ('email')?>">
         </div>
         <div class="form-group">
           <input type="password" name="password" class="form-control form-control-lg" placeholder="Password">

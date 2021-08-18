@@ -13,11 +13,7 @@ class User extends CI_Controller {
 		// Ambil check login dari simple_login
 		$this->simple_login->check_login($pengalihan);
 		$this->load->model('user_model');
-		// Tambahkan proteksi halaman
-		$url_pengalihan = str_replace('index.php/', '', current_url());
-		$pengalihan 	= $this->session->set_userdata('pengalihan',$url_pengalihan);
-		// Ambil check login dari simple_login
-		$this->simple_login->check_login($pengalihan);
+		// check_admin();
 	}
 
 	// Halaman utama
@@ -51,7 +47,7 @@ class User extends CI_Controller {
 		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
 			array(	'required'	=> '%s harus diisi',
 					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
-					'is_unique'		=> '%s sudah ada. Buat email baru'));
+					'is_unique'		=> 'email sudah ada. Buat email baru'));
 
 		$validasi->set_rules('password','Password','required|trim|min_length[6]|max_length[32]',
 			array(	'required'		=> '%s harus diisi',
@@ -98,10 +94,14 @@ class User extends CI_Controller {
 		$validasi->set_rules('nama','Nama User','required',
 			array(	'required'		=> '%s harus diisi'));
 
-		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
+		$validasi->set_rules('email','Email Pengguna','required|valid_email',
 			array(	'required'	=> '%s harus diisi',
-					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
-					'is_unique'		=> '%s sudah ada. Buat email baru'));
+					'valid_email'	=> 'Email tidak valid. Masukkan email yang benar.'));
+
+		$validasi->set_rules('password','Password','required|trim|min_length[6]|max_length[32]',
+			array(	'required'		=> '%s harus diisi',
+					'min_length'	=> '%s minimal 6 karakter',
+					'max_length'	=> '%s maksimal 32 karakter'));
 
 		if($validasi->run()===FALSE) {
 		// End validasi

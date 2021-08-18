@@ -32,17 +32,16 @@ class User_model extends CI_Model {
 	}
 
 	// Login
-	public function login($username,$password)
+	public function login()
 	{
+		$email = $this->input->post('email');
+        $password = $this->input->post('password');
 		$this->db->select('users.*');
 		$this->db->from('users');
-		// join
-		// End join
 		// where
-		$this->db->where(array(	'username'	=> $username,
+		$this->db->where(array(	'email'	=> $email,
 								'password'	=> sha1($password)
-							));
-		$this->db->order_by('users.id_user', 'desc');
+								));
 		$query = $this->db->get();
 		return $query->row();
 	}
@@ -52,11 +51,8 @@ class User_model extends CI_Model {
 	{
 		$this->db->select('users.*');
 		$this->db->from('users');
-		// join
-		// End join
 		// where
 		$this->db->where('users.id_user', $id_user);
-		$this->db->order_by('users.id_user', 'desc');
 		$query = $this->db->get();
 		return $query->row();
 	}

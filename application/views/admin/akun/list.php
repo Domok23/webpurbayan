@@ -1,3 +1,7 @@
+<?php
+// Notifikasi error
+echo validation_errors('<p class="alert alert-warning">','</p>');
+?>
 <div class="row">
 	<div class="col-md-7">
 		<h4 class="alert alert-info">Update Profil Anda</h4>
@@ -28,7 +32,7 @@
 				<input type="text" name="username" class="form-control" placeholder="Username" value="<?php echo $user->username ?>">
 			</div>
 		</div>
-		
+
 		<div class="form-group row">
 			<label class="col-sm-3 control-label text-right">Level Hak Akses <span class="text-danger">*</span></label>
 			<div class="col-sm-9">

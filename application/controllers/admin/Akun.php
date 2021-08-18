@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Akun extends CI_Controller {
 
-
 	// load data
 	public function __construct()
 	{
@@ -29,10 +28,9 @@ class Akun extends CI_Controller {
 		$valid->set_rules('nama','Nama Pengguna','required',
 			array(	'required'	=> '%s harus diisi'));
 
-		$valid->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
+		$valid->set_rules('email','Email Pengguna','required|valid_email',
 			array(	'required'	=> '%s harus diisi',
-					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
-					'is_unique'		=> '%s sudah ada. Buat email baru'));
+					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.'));
 
 		if($valid->run()) {
 			if(!empty($_FILES['gambar']['name'])) {

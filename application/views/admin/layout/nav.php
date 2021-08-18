@@ -30,7 +30,6 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
           <!-- DASBOR -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/dasbor') ?>" class="nav-link">
@@ -40,7 +39,6 @@
               </p>
             </a>
           </li>
-
           
           <!-- BERITA DAN INFORMASI -->
           <li class="nav-item has-treeview">
@@ -73,8 +71,8 @@
               
             </ul>
           </li>
-  
-          <?php if($this->session->userdata('akses_level')=="SuperAdmin") { ?>
+          
+          <?php if( $this->session->userdata('akses_level') == 1 ) { ?>
           <!-- MENU USER -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/user') ?>" class="nav-link">

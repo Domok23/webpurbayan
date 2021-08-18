@@ -1,11 +1,10 @@
-
 <?php
 // Session 
 if($this->session->flashdata('sukses')) { 
 	echo '<div class="alert alert-success  alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
 	echo $this->session->flashdata('sukses');
 	echo '</div>';
-} 
+}
 // Error
 echo validation_errors('<div class="alert alert-success  alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><div class="alert alert-success">','</div></div>'); 
 ?>

@@ -8,23 +8,26 @@ class Login extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('user_model');
+		
+		
 	}
 
 	// Login page
 	public function index()
 	{
+		check_already_login();
 		// Validasi input
-		$this->form_validation->set_rules('username','Username','required',
+		$this->form_validation->set_rules('email','Email','required',
 			array(	'required'	=> '%s harus diisi'));
 
 		$this->form_validation->set_rules('password','Password','required',
 			array(	'required'	=> '%s harus diisi'));
 
 		if($this->form_validation->run()) {
-			$username 	= strip_tags($this->input->post('username'));
+			$email 	= strip_tags($this->input->post('email'));
 			$password 	= strip_tags($this->input->post('password'));
 			// Proses ke simple login
-			$this->simple_login->login($username,$password);
+			$this->simple_login->login($email,$password);
 		}
 		// End validasi
 
