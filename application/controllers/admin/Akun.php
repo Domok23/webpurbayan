@@ -26,12 +26,13 @@ class Akun extends CI_Controller {
 		// Validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('nama','Nama','required|trim',
-				array(	'required' => '%s harus diisi'));
+		$valid->set_rules('nama','Nama Pengguna','required',
+			array(	'required'	=> '%s harus diisi'));
 
-		$valid->set_rules('email','Email Pengguna','required|valid_email|trim|is_unique[users.email]',
-				array(	'required'		=> '%s harus diisi',
-						'valid_email'	=> '%s tidak valid. Masukkan email yang benar.'));
+		$valid->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
+			array(	'required'	=> '%s harus diisi',
+					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
+					'is_unique'		=> '%s sudah ada. Buat email baru'));
 
 		if($valid->run()) {
 			if(!empty($_FILES['gambar']['name'])) {

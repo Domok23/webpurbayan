@@ -15,15 +15,31 @@ echo form_open(base_url('admin/user/edit/'.$user->id_user));
 	<div class="col-md-3">
 		<div class="form-group">
 			<label>Username</label>
-			<input type="text" name="username" class="form-control form-control-lg" value="<?php echo $user->username ?>" placeholder="username" readonly>
+			<input type="text" name="username" class="form-control form-control-lg" value="<?php echo $user->username ?>" placeholder="username" required>
 		</div>
 	</div>
 	
+	<div class="col-md-3">
+		<div class="form-group">
+			<label>Password <span class="text-danger">*</span></label>
+			<input type="password" name="password" class="form-control form-control-lg" value="" placeholder="Hanya pemilik akun" readonly>
+		</div>
+	</div>
+	
+	<div class="col-md-3">
+		<div class="form-group">
+			<label>Level Hak Akses <span class="text-danger">*</span></label>
+			<select name="akses_level" class="form-control">
+				<option value="SuperAdmin" <?php if($user->akses_level=="SuperAdmin") { echo "selected"; } ?>>SuperAdmin</option>
+				<option value="Admin" <?php if($user->akses_level=="Admin") { echo "selected"; } ?>>Admin</option>
+			</select>
+		</div>
+	</div>
 	
 	<div class="col-md-6">
 		<div class="form-group">
 			<label>Email</label>
-			<input type="email" name="email" class="form-control" value="<?php echo $user->email ?>" placeholder="Email" readonly>
+			<input type="email" name="email" class="form-control" value="<?php echo $user->email ?>" placeholder="Email" required>
 		</div>
 	</div>
 

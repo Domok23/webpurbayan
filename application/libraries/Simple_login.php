@@ -22,10 +22,12 @@ class Simple_login
 			$id_user 		= $user_login->id_user;
 			$username 		= $username;
 			$nama 			= $user_login->nama;
+			$akses_level 	= $user_login->akses_level;
 			// Create session utk login
 			$this->CI->session->set_userdata('id_user',$id_user);
 			$this->CI->session->set_userdata('username',$username);
 			$this->CI->session->set_userdata('nama',$nama);
+			$this->CI->session->set_userdata('akses_level',$akses_level);
 			// Lalu redirect masuk ke halaman dashboard
 			$this->CI->session->set_flashdata('sukses', 'Anda berhasil login');
 			// Periksa user mengakses halaman mana sebelumnya
@@ -51,6 +53,7 @@ class Simple_login
 		$this->CI->session->unset_userdata('id_user');
 		$this->CI->session->unset_userdata('username');
 		$this->CI->session->unset_userdata('nama');
+		$this->CI->session->unset_userdata('akses_level');
 		$this->CI->session->unset_userdata('pengalihan');
 		session_destroy();
 		// Redirect ke halaman login
@@ -62,7 +65,8 @@ class Simple_login
 	public function check_login($pengalihan)
 	{
 		// Check status login (kita ambil status username)
-		if($this->CI->session->userdata('username') == "")
+		if($this->CI->session->userdata('username') == "" &&
+			$this->CI->session->userdata('akses_level') == "")
 		{
 			$this->CI->session->set_flashdata('warning', 'Anda belum login');
 			redirect(base_url('login'),'refresh');
@@ -73,7 +77,8 @@ class Simple_login
 	public function cek_login($pengalihan)
 	{
 		// Check status login (kita ambil status username)
-		if($this->CI->session->userdata('username') == "")
+		if($this->CI->session->userdata('username') == "" &&
+			$this->CI->session->userdata('akses_level') == "")
 		{
 			$this->CI->session->set_flashdata('warning', 'Anda belum login');
 			redirect(base_url('login'),'refresh');

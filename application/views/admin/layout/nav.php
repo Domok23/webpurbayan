@@ -74,7 +74,7 @@
             </ul>
           </li>
   
-
+          <?php if($this->session->userdata('akses_level')=="SuperAdmin") { ?>
           <!-- MENU USER -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/user') ?>" class="nav-link">
@@ -103,7 +103,7 @@
               </li>
             </ul>
           </li>
-      
+          <?php } ?>
           <!-- Logout -->
           <li class="nav-item">
             <a href="<?php echo base_url('login/logout') ?>" class="nav-link">

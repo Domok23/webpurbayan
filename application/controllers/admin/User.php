@@ -27,7 +27,7 @@ class User extends CI_Controller {
 		$user 	= $this->user_model->listing();
 		$total 	= $this->user_model->total();
 
-		$data = array(	'title'		=> 'Admin('.$total->total.' data)',
+		$data = array(	'title'		=> 'Admin & Wilayah ('.$total->total.' data)',
 						'user'		=> $user,
 						'isi'		=> 'admin/user/list'
 					);
@@ -37,24 +37,32 @@ class User extends CI_Controller {
 	// Tambah
 	public function tambah()
 	{
+		$user 	= $this->user_model->listing();
 		// Validasi
 		$validasi 	= $this->form_validation;
 
-		$validasi->set_rules('nama','Nama','required|trim',
+		$validasi->set_rules('nama','Nama User','required',
 			array(	'required'		=> '%s harus diisi'));
 
-		$validasi->set_rules('username','Username','required|trim|is_unique[users.username]',
+		$validasi->set_rules('username','Username','required|is_unique[users.username]',
 			array(	'required'		=> '%s harus diisi',
-					'is_unique'		=> '%s sudah ada. Buat kode baru'));
+					'is_unique'		=> '%s sudah ada. Buat username baru'));
 
-		$validasi->set_rules('password','Password','required|trim|min_length[6]',
+		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
+			array(	'required'	=> '%s harus diisi',
+					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
+					'is_unique'		=> '%s sudah ada. Buat email baru'));
+
+		$validasi->set_rules('password','Password','required|trim|min_length[6]|max_length[32]',
 			array(	'required'		=> '%s harus diisi',
-					'min_length'	=> '%s harus mininal 6 karakter'));
+					'min_length'	=> '%s minimal 6 karakter',
+					'max_length'	=> '%s maksimal 32 karakter'));
 
 		if($validasi->run()===FALSE) {
 		// End validasi
 
 		$data = array(	'title'		=> 'Tambah User Baru',
+						'user'		=> $user,
 						'isi'		=> 'admin/user/tambah'
 					);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
@@ -62,10 +70,12 @@ class User extends CI_Controller {
 		}else{
 			$inp = $this->input;
 
-			$data = array(	'nama'		=> $inp->post('nama'),
+			$data = array(	'id_user'		=> $inp->post('id_user'),
+							'nama'			=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
 							'username'		=> $inp->post('username'),
 							'password'		=> sha1($inp->post('password')),
+							'akses_level'	=> $inp->post('akses_level'),
 							'keterangan'	=> $inp->post('keterangan'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
 						);
@@ -88,6 +98,11 @@ class User extends CI_Controller {
 		$validasi->set_rules('nama','Nama User','required',
 			array(	'required'		=> '%s harus diisi'));
 
+		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
+			array(	'required'	=> '%s harus diisi',
+					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
+					'is_unique'		=> '%s sudah ada. Buat email baru'));
+
 		if($validasi->run()===FALSE) {
 		// End validasi
 
@@ -101,10 +116,11 @@ class User extends CI_Controller {
 			$inp = $this->input;
 
 			$data = array(	'id_user'		=> $id_user,
-							'nama'			=> $inp->post('nama'),
+							'nama'		=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
 							'username'		=> $inp->post('username'),
 							'password'		=> sha1($inp->post('password')),
+							'akses_level'	=> $inp->post('akses_level'),
 							'keterangan'	=> $inp->post('keterangan'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
 						);

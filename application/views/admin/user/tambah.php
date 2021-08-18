@@ -34,6 +34,17 @@ echo form_open(base_url('admin/user/tambah'));
 		</div>
 	</div>
 
+	<div class="col-md-3">
+		<div class="form-group">
+			<label>Level Hak Akses <span class="text-danger">*</span></label>
+			<select name="akses_level" class="form-control">
+				<option value="SuperAdmin">Super Admin</option>
+				<option value="Admin">Admin</option>
+			</select>
+		</div>
+	</div>
+
+
 	<div class="col-md-12">
 		<div class="form-group"> 
 				<button class="btn btn-success btn" name="submit" type="submit">

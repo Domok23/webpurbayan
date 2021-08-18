@@ -25,6 +25,7 @@ echo form_open(base_url('admin/user/proses'));
     </th>
     <th>NAMA</th>
     <th>USERNAME</th>
+    <th>AKSES LEVEL</th>
     <th>EMAIL</th>
     <th>ACTION</th>
   </tr>
@@ -43,6 +44,7 @@ echo form_open(base_url('admin/user/proses'));
     </td>
     <td><?php echo $user->nama ?></td>
     <td><?php echo $user->username ?></td>
+    <td><?php echo $user->akses_level ?></td>
     <td><?php echo $user->email ?></td>
     <td>
       <div class="md-col-12">
