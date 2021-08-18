@@ -30,7 +30,7 @@ echo form_open(base_url('admin/user/edit/'.$user->id_user));
 		<div class="form-group">
 			<label>Level Hak Akses <span class="text-danger">*</span></label>
 			<select name="akses_level" class="form-control">
-				<option value=1 <?php if($user->akses_level==1) { echo "selected"; } ?>>SuperAdmin</option>
+				<option value=1 <?php if($user->akses_level==1) { echo "selected"; } ?>>Super Admin</option>
 				<option value=2 <?php if($user->akses_level==2) { echo "selected"; } ?>>Admin</option>
 			</select>
 		</div>
