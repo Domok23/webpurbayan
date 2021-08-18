@@ -14,7 +14,7 @@ echo form_open(base_url('admin/berita/proses'));
       <i class="fa fa-check"></i> Publikasikan
   </button>
 
-  <button class="btn btn-danger" type="submit" name="hapus" onClick="check();" >
+  <button class="btn btn-danger" type="submit" name="hapus" onclick="return confirm('Apakah anda yakin akan menghapus data?');" >
       <i class="fa fa-trash-o"></i> Hapus
     </button> 
 <?php 
@@ -95,7 +95,7 @@ if($this->uri->segment(3) != "") {
         <a href="<?php echo base_url('admin/berita/edit/'.$berita->id_berita) ?>" 
         class="btn btn-warning btn-xs"><i class="fa fa-edit"></i>edit</a>
 
-        <a href="<?php echo base_url('admin/berita/delete/'.$berita->id_berita) ?>" class="btn btn-danger btn-xs" onclick="confirmation(event)"><i class="fa fa-trash-o">hapus</i></a>
+        <a href="<?php echo base_url('admin/berita/delete/'.$berita->id_berita) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o">hapus</i></a>
       </div>
     </td>
 </tr>

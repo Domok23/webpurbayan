@@ -11,7 +11,7 @@ echo form_open(base_url('admin/galeri/proses'));
   <a href="<?php echo base_url('admin/galeri/tambah') ?>" class="btn btn-success">
   <i class="fa fa-plus"></i> Tambah Galeri</a>
 
-  <button class="btn btn-danger" type="submit" name="hapus" onClick="check();" >
+  <button class="btn btn-danger tombol-hapus" type="submit" name="hapus" onclick="return confirm('Apakah anda yakin akan menghapus data?');">
       <i class="fa fa-trash-o"></i> Hapus
     </button> 
 
@@ -69,7 +69,7 @@ echo form_open(base_url('admin/galeri/proses'));
       class="btn btn-warning btn-xs"><i class="fa fa-edit"></i>edit</a>
 
        <a href="<?php echo base_url('admin/galeri/delete/'.$galeri->id_galeri) ?>" 
-      class="btn btn-danger btn-xs " onclick="confirmation(event)"><i class="fa fa-trash-o"></i>hapus</a>
+      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o"></i>hapus</a>
     </div>
     </td>
 </tr>

@@ -111,6 +111,11 @@ $( ".tanggal" ).datepicker({
 <script src="<?php echo base_url() ?>assets/admin/plugins/ckeditor/ckeditor.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="<?php echo base_url() ?>assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Sweetalert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- skrip buatan -->
+<script src="<?php echo base_url() ?>assets/sweetalert/js/myscript.js"></script>
+
 <!-- page script -->
 <script>
   $(function () {
