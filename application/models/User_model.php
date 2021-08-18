@@ -15,8 +15,6 @@ class User_model extends CI_Model {
 	{
 		$this->db->select('users.*');
 		$this->db->from('users');
-		// join
-		// End join
 		$this->db->order_by('users.id_user', 'desc');
 		$query = $this->db->get();
 		return $query->result();
@@ -36,12 +34,13 @@ class User_model extends CI_Model {
 	{
 		$email = $this->input->post('email');
         $password = $this->input->post('password');
-		$this->db->select('users.*');
+		$this->db->select('*');
 		$this->db->from('users');
 		// where
 		$this->db->where(array(	'email'	=> $email,
 								'password'	=> sha1($password)
 								));
+		$this->db->order_by('users.id_user', 'desc');
 		$query = $this->db->get();
 		return $query->row();
 	}
@@ -49,7 +48,18 @@ class User_model extends CI_Model {
 	// Detail
 	public function detail($id_user)
 	{
-		$this->db->select('users.*');
+		$this->db->select('*');
+		$this->db->from('users');
+		// where
+		$this->db->where('users.id_user', $id_user);
+		$this->db->order_by('users.id_user', 'desc');
+		$query = $this->db->get();
+		return $query->row();
+	}
+
+	// Detail
+	public function get($id_user = null)
+	{
 		$this->db->from('users');
 		// where
 		$this->db->where('users.id_user', $id_user);

@@ -12,6 +12,7 @@ class Konfigurasi extends CI_Controller {
 		$pengalihan 	= $this->session->set_userdata('pengalihan',$url_pengalihan);
 		// Ambil check login dari simple_login
 		$this->simple_login->check_login($pengalihan);
+		check_admin();
 	}
 
 	// General Configuration

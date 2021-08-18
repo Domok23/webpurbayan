@@ -39,7 +39,13 @@ class Simple_login
 			$this->CI->session->set_flashdata('warning', 'Email/password salah');
 			redirect(base_url('login'),'refresh');
 		}
-		return $user_login;
+	}
+
+	function user_login(){
+		$this->CI->load->model('user_model');
+		$id_user = $this->CI->session->userdata('id_user');
+		$user_data = $this->CI->user_model->get($id_user);
+		return $user_data;
 	}
 
 	// Fungsi logout

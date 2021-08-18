@@ -19,7 +19,7 @@ function check_not_login(){
 function check_admin() {
     $CI =& get_instance();
     $CI->load->library('simple_login');
-    if($CI->simple_login->login()->akses_level != 1 ){
-        redirect('admin/dasbor');
+    if($CI->simple_login->user_login()->akses_level != 1 ){
+        redirect(base_url('admin/dasbor'));
     }
 }

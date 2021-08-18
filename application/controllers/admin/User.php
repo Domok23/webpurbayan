@@ -13,7 +13,7 @@ class User extends CI_Controller {
 		// Ambil check login dari simple_login
 		$this->simple_login->check_login($pengalihan);
 		$this->load->model('user_model');
-		// check_admin();
+		check_admin();
 	}
 
 	// Halaman utama
