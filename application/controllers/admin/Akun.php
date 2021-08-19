@@ -32,48 +32,50 @@ class Akun extends CI_Controller {
 			if(!empty($_FILES['gambar']['name'])) {
 			$config['upload_path'] 		= './assets/upload/user/';
 			$config['allowed_types'] 	= 'gif|jpg|png|jpeg';
-			$config['max_size']  		= '2400'; // KB
-			$config['max_width']  		= '3000'; // Pixel
+			$config['max_size']  		= '2400'; //KB
+			$config['max_width']  		= '3000'; //Pixel
 			$config['max_height']  		= '3000'; //Pixel
 			$this->load->library('upload', $config);
 			if ( ! $this->upload->do_upload('gambar')){
-		// End validasi
-
-		$data = array(	'title'		=> 'Profil Akun Anda: '.$this->session->userdata('nama'),
+			// End validasi
+			$data = array('title'	=> 'Profil Akun Anda: '.$this->session->userdata('nama'),
 						'user'		=> $user,
 						'error'		=> $this->upload->display_errors(),
 						'isi'		=> 'admin/akun/list'
 					);
-		$this->load->view('admin/layout/wrapper', $data, FALSE);
+			$this->load->view('admin/layout/wrapper', $data, FALSE);
+			// Masuk database
+			}else{
+				$upload_data        		= array('uploads' =>$this->upload->data());
+				// Image Editor
+				$config['image_library']  	= 'gd2';
+				$config['source_image']   	= './assets/upload/user/'.$upload_data['uploads']['file_name']; 
+				$config['new_image']     	= './assets/upload/user/thumbs/';
+				$config['create_thumb']   	= TRUE;
+				$config['quality']       	= "100%";
+				$config['maintain_ratio']   = TRUE;
+				$config['width']       		= 360; // Pixel
+				$config['height']       	= 360; // Pixel
+				$config['x_axis']       	= 0;
+				$config['y_axis']       	= 0;
+				$config['thumb_marker']   	= '';
+				$this->load->library('image_lib', $config);
+				$this->image_lib->resize();
 
-		// Masuk database
-		}else{
-			$upload_data        		= array('uploads' =>$this->upload->data());
-	        // Image Editor
-	        $config['image_library']  	= 'gd2';
-	        $config['source_image']   	= './assets/upload/user/'.$upload_data['uploads']['file_name']; 
-	        $config['new_image']     	= './assets/upload/user/thumbs/';
-	        $config['create_thumb']   	= TRUE;
-	        $config['quality']       	= "100%";
-	        $config['maintain_ratio']   = TRUE;
-	        $config['width']       		= 360; // Pixel
-	        $config['height']       	= 360; // Pixel
-	        $config['x_axis']       	= 0;
-	        $config['y_axis']       	= 0;
-	        $config['thumb_marker']   	= '';
-	        $this->load->library('image_lib', $config);
-	        $this->image_lib->resize();
-
-			$i = $this->input;
-			$this->session->set_userdata('nama',$i->post('nama'));
-			$data = array(	'id_user'			=> $id_user,
-							'nama'				=> $i->post('nama'),
-							'email'				=> $i->post('email'),
-							'gambar'			=> $upload_data['uploads']['file_name'],
-						);
-			$this->user_model->edit($data);
-			$this->session->set_flashdata('sukses', 'Data '.$user->nama.' telah diupdate');
-			redirect(base_url('admin/akun'),'refresh');
+				$i = $this->input;
+				$this->session->set_userdata('nama',$i->post('nama'));
+				$data = array(	'id_user'			=> $id_user,
+								'nama'				=> $i->post('nama'),
+								'email'				=> $i->post('email'),
+								'gambar'			=> $upload_data['uploads']['file_name'],
+							);
+				$old_image  = $upload_data['uploads']['file_name'];
+                    if ($old_image != 'default.jpg') {
+                        unlink(FCPATH . 'assets/upload/user/' . $old_image);
+                    }
+				$this->user_model->edit($data);
+				$this->session->set_flashdata('sukses', 'Data '.$user->nama.' telah diupdate');
+				redirect(base_url('admin/akun'),'refresh');
 		}}else{
 			$i = $this->input;
 			$this->session->set_userdata('nama',$i->post('nama'));
@@ -93,7 +95,7 @@ class Akun extends CI_Controller {
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 	}
 
-	// Main page akun
+	// Ubah Password
 	public function password()
 	{
 		$id_user 	= $this->session->userdata('id_user');

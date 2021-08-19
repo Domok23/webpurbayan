@@ -18,7 +18,7 @@
           $user_aktif = $this->user_model->detail($this->session->userdata('id_user'));
 
           if($user_aktif->gambar =="") {
-          echo $this->website->icon(); }else{ echo base_url('assets/upload/user/thumbs/'.$user_aktif->gambar); } ?>" class="img-circle elevation-2" alt="<?php echo $this->session->userdata('nama'); ?>">
+            echo base_url('assets/upload/user/default.png');}else{ echo base_url('assets/upload/user/thumbs/'.$user_aktif->gambar); } ?>" class="img-circle elevation-2" alt="<?php echo $this->session->userdata('nama'); ?>">
         </div>
         <div class="info">
           <a href="<?php echo base_url('admin/akun') ?>" class="d-block"><?php echo $this->session->userdata('nama'); ?>

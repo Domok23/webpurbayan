@@ -67,7 +67,6 @@ class User extends CI_Controller {
 							'email'			=> $inp->post('email'),
 							'password'		=> sha1($inp->post('password')),
 							'akses_level'	=> $inp->post('akses_level'),
-							'keterangan'	=> $inp->post('keterangan'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
 						);
 			$this->user_model->tambah($data);
@@ -108,7 +107,6 @@ class User extends CI_Controller {
 							'nama'			=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
 							'akses_level'	=> $inp->post('akses_level'),
-							'keterangan'	=> $inp->post('keterangan'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
 						);
 			$this->user_model->edit($data);
