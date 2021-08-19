@@ -13,30 +13,23 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 		<?php echo form_open_multipart(base_url('admin/akun'),'id="tambah"') ?>
 
 		<div class="form-group row">
-			<label class="col-sm-3 control-label text-right">Nama <span class="text-danger">*</span></label>
+			<label class="col-sm-3 control-label text-right">Nama</label>
 			<div class="col-sm-9">
 				<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Pengguna" value="<?php echo $user->nama ?>">
 			</div>
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-3 control-label text-right">Email <span class="text-danger">*</span></label>
+			<label class="col-sm-3 control-label text-right">Email</label>
 			<div class="col-sm-9">
-				<input type="email" name="email" class="form-control" placeholder="Email" value="<?php echo $user->email ?>">
+				<input type="email" name="email" class="form-control" placeholder="Email" value="<?php echo $user->email ?>" readonly>
 			</div>
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-3 control-label text-right">Username <span class="text-danger">*</span></label>
+			<label class="col-sm-3 control-label text-right">Level Hak Akses</label>
 			<div class="col-sm-9">
-				<input type="text" name="username" class="form-control" placeholder="Username" value="<?php echo $user->username ?>">
-			</div>
-		</div>
-
-		<div class="form-group row">
-			<label class="col-sm-3 control-label text-right">Level Hak Akses <span class="text-danger">*</span></label>
-			<div class="col-sm-9">
-				<input type="text" name="akses_level" class="form-control" placeholder="Akses level" value="<?php echo $user->akses_level ?>" readonly disabled>
+				<input type="text" name="akses_level" class="form-control" placeholder="Akses level" value="<?php echo $user->akses_level == 1 ? "SuperAdmin" : "Admin"?>" readonly>
 			</div>
 		</div>
 
@@ -49,12 +42,11 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-3 control-label text-right"></label>
+			<label class="col-sm-3 control-label"></label>
 			<div class="col-sm-9">
-				<div class="form-group text-right">
-					<button type="submit" name="submit" class="btn btn-success"><i class="fa fa-save"></i> Simpan data</button>
-					<button type="reset" name="reset" class="btn btn-warning ml-1"><i class="fa fa-cut"></i> Atur ulang</button>
-					<a href="<?php echo base_url('admin/dasbor') ?>" class="btn btn-info ml-1" data-dismiss="modal"><i class="fa fa-backward"></i> Kembali</a>
+				<div class="form-group">
+					<button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-check"></i> Simpan</button>
+					<button type="reset" name="reset" class="btn btn-warning"><i class="fa fa-rotate-left"></i> Atur ulang</button>
 				</div>
 			</div>
 		</div>
@@ -62,10 +54,9 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 		<?php echo form_close(); ?>
 	</div>
 
+
 	<div class="col-md-5">
 		<h4 class="alert alert-info">Ganti Password</h4>
-
-
 
 		<?php echo form_open_multipart(base_url('admin/akun/password'),'id="tambah"') ?>
 
@@ -84,11 +75,11 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 		</div>
 
 		<div class="form-group row">
-			<label class="col-sm-4 control-label text-right"></label>
+			<label class="col-sm-4 control-label"></label>
 			<div class="col-sm-8">
-				<div class="form-group text-right">
-					<button type="submit" name="submit" class="btn btn-success"><i class="fa fa-save"></i> Ganti Password</button>
-					<button type="reset" name="reset" class="btn btn-warning ml-1"><i class="fa fa-cut"></i> Reset</button>
+				<div class="form-group">
+					<button type="submit" name="submit" class="btn btn-success"><i class="fa fa-lock"></i> Ganti Password</button>
+					<button type="reset" name="reset" class="btn btn-warning"><i class="fa fa-rotate-left"></i> Atur ulang</button>
 				</div>
 			</div>
 		</div>

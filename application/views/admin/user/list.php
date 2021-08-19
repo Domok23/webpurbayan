@@ -24,7 +24,6 @@ echo form_open(base_url('admin/user/proses'));
         </button>
     </th>
     <th>NAMA</th>
-    <th>USERNAME</th>
     <th>AKSES LEVEL</th>
     <th>EMAIL</th>
     <th>ACTION</th>
@@ -43,8 +42,7 @@ echo form_open(base_url('admin/user/proses'));
       <input type="checkbox" name="id_user[]" value="<?php echo $user->id_user ?>">
     </td>
     <td><?php echo $user->nama ?></td>
-    <td><?php echo $user->username ?></td>
-    <td><?php echo $user->akses_level == 1 ? "Super Admin" : "Admin"?></td>
+    <td><?php echo $user->akses_level == 1 ? "SuperAdmin" : "Admin"?></td>
     <td><?php echo $user->email ?></td>
     <td>
       <div class="md-col-12">

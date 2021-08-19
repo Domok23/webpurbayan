@@ -40,10 +40,6 @@ class User extends CI_Controller {
 		$validasi->set_rules('nama','Nama User','required',
 			array(	'required'		=> '%s harus diisi'));
 
-		$validasi->set_rules('username','Username','required|is_unique[users.username]',
-			array(	'required'		=> '%s harus diisi',
-					'is_unique'		=> '%s sudah ada. Buat username baru'));
-
 		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
 			array(	'required'	=> '%s harus diisi',
 					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
@@ -69,7 +65,6 @@ class User extends CI_Controller {
 			$data = array(	'id_user'		=> $inp->post('id_user'),
 							'nama'			=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
-							'username'		=> $inp->post('username'),
 							'password'		=> sha1($inp->post('password')),
 							'akses_level'	=> $inp->post('akses_level'),
 							'keterangan'	=> $inp->post('keterangan'),
@@ -91,17 +86,11 @@ class User extends CI_Controller {
 		// Validasi
 		$validasi = $this->form_validation;
 
-		$validasi->set_rules('nama','Nama User','required',
-			array(	'required'		=> '%s harus diisi'));
+		$validasi->set_rules('nama','Nama Lengkap','required',
+			array(	'required' => '%s harus diisi'));
 
-		$validasi->set_rules('email','Email Pengguna','required|valid_email',
-			array(	'required'	=> '%s harus diisi',
-					'valid_email'	=> 'Email tidak valid. Masukkan email yang benar.'));
-
-		$validasi->set_rules('password','Password','required|trim|min_length[6]|max_length[32]',
-			array(	'required'		=> '%s harus diisi',
-					'min_length'	=> '%s minimal 6 karakter',
-					'max_length'	=> '%s maksimal 32 karakter'));
+		$validasi->set_rules('akses_level','Akses Level','required',
+			array(	'required'	=> '%s harus diisi'));
 
 		if($validasi->run()===FALSE) {
 		// End validasi
@@ -116,10 +105,8 @@ class User extends CI_Controller {
 			$inp = $this->input;
 
 			$data = array(	'id_user'		=> $id_user,
-							'nama'		=> $inp->post('nama'),
+							'nama'			=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
-							'username'		=> $inp->post('username'),
-							'password'		=> sha1($inp->post('password')),
 							'akses_level'	=> $inp->post('akses_level'),
 							'keterangan'	=> $inp->post('keterangan'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
@@ -161,7 +148,7 @@ class User extends CI_Controller {
 	// Delete
 	public function delete($id_user)
 	{
-		$data = array(	'id_user'		=> $id_user);
+		$data = array('id_user' => $id_user);
 		$this->user_model->delete($data);
 		$this->session->set_flashdata('sukses', 'Data telah dihapus');
 		redirect(base_url('admin/user'),'refresh');

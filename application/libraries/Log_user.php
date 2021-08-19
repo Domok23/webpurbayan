@@ -21,14 +21,14 @@ class Log_user
 			if($this->CI->session->userdata('id_user') != "") {
 				$id_log			= $this->CI->session->userdata('id_user');
 				$user_log 		= $this->CI->user_model->detail($id_log);
-				$username_log 	= $user_log->username;
+				$email_log 		= $user_log->email;
 			}else{
 				$id_log			= 0;
-				$username_log 	= '-';
+				$email_log 		= '-';
 			}
 			$data_log = array(	'ip_address'	=> $this->CI->input->ip_address(),
 								'id_user'		=> $id_log,
-								'username'		=> $username_log,
+								'email'			=> $email_log,
 								'url'			=> $url_log
 							);
 			$this->CI->kunjungan_model->data_log($data_log);
@@ -39,14 +39,14 @@ class Log_user
 			if($this->CI->session->userdata('id_user') != "") {
 				$id_log			= $this->CI->session->userdata('id_user');
 				$user_log 		= $this->CI->user_model->detail($id_log);
-				$username_log 	= $user_log->username;
+				$email_log 		= $user_log->email;
 			}else{
 				$id_log			= 0;
-				$username_log 	= '-';
+				$email_log 		= '-';
 			}
 			$data_log = array(	'ip_address'	=> $this->CI->input->ip_address(),
 								'id_user'		=> $id_log,
-								'username'		=> $username_log,
+								'email'			=> $email_log,
 								'url'			=> $url_log
 							);
 			$this->CI->kunjungan_model->data_log($data_log);

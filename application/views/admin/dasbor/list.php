@@ -51,17 +51,16 @@
     <!-- /.col -->
   
 
-  <div class="col-md-12">
+<div class="col-md-12">
 <hr>
-<h2>Statistik kunjungan terakhir</h2>
+<h2>Statistik Kunjungan Terakhir</h2>
 <hr>
 <!-- Styles -->
 <style>
 #chartdiv {
   width: 100%;
   height: 500px;
-}
-
+  }
 </style>
 
 <!-- Resources -->

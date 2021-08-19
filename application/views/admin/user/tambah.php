@@ -8,8 +8,8 @@ echo form_open(base_url('admin/user/tambah'));
 <div class="row">
 	<div class="col-md-6">
 		<div class="form-group">
-			<label>Nama Admin <span class="text-danger">*</span></label>
-			<input type="text" name="nama" class="form-control form-control-lg" value="<?php echo set_value('nama') ?>" placeholder="Nama User" required>
+			<label>Nama Lengkap <span class="text-danger">*</span></label>
+			<input type="text" name="nama" class="form-control form-control-lg" value="<?php echo set_value('nama') ?>" placeholder="Nama Lengkap" required>
 		</div>
 	</div>
 	
@@ -19,11 +19,14 @@ echo form_open(base_url('admin/user/tambah'));
 			<input type="email" name="email" class="form-control form-control-lg" value="<?php echo set_value('email') ?>" placeholder="Email" required>
 		</div>
 	</div>
-
+	
 	<div class="col-md-6">
 		<div class="form-group">
-			<label>Username <span class="text-danger">*</span></label>
-			<input type="text" name="username" class="form-control form-control-lg" value="<?php echo set_value('username') ?>" placeholder="username" required>
+			<label>Level Hak Akses <span class="text-danger">*</span></label>
+			<select name="akses_level" class="form-control form-control-lg">
+				<option value=1>SuperAdmin</option>
+				<option value=2>Admin</option>
+			</select>
 		</div>
 	</div>
 
@@ -34,28 +37,15 @@ echo form_open(base_url('admin/user/tambah'));
 		</div>
 	</div>
 
-	<div class="col-md-3">
-		<div class="form-group">
-			<label>Level Hak Akses <span class="text-danger">*</span></label>
-			<select name="akses_level" class="form-control">
-				<option value=1>Super Admin</option>
-				<option value=1>Admin</option>
-			</select>
-		</div>
-	</div>
-
-
 	<div class="col-md-12">
 		<div class="form-group"> 
-				<button class="btn btn-success btn" name="submit" type="submit">
-					<i class="fa fa-save"></i> Simpan
+				<button class="btn btn-default" name="reset" type="reset">
+					<i class="fa fa-rotate-left"></i> Reset
 				</button>
-				<button class="btn btn-warning btn" name="reset" type="reset">
-					<i class="fa fa-times"></i> Reset
+				<button class="btn btn-primary" name="submit" type="submit">
+					<i class="fa fa-check"></i> Simpan
 				</button>
-				<a href="<?php echo base_url('admin/user') ?>" class="btn btn-info">
-					<i class="fa fa-backward"></i> Kembali
-				</a>
+				
 		</div>
 	</div>
 </div>

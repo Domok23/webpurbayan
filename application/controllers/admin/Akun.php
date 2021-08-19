@@ -28,10 +28,6 @@ class Akun extends CI_Controller {
 		$valid->set_rules('nama','Nama Pengguna','required',
 			array(	'required'	=> '%s harus diisi'));
 
-		$valid->set_rules('email','Email Pengguna','required|valid_email',
-			array(	'required'	=> '%s harus diisi',
-					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.'));
-
 		if($valid->run()) {
 			if(!empty($_FILES['gambar']['name'])) {
 			$config['upload_path'] 		= './assets/upload/user/';
@@ -137,7 +133,6 @@ class Akun extends CI_Controller {
 			redirect(base_url('admin/akun'),'refresh');
 		}
 	}
-
 }
 
 /* End of file Akun.php */
