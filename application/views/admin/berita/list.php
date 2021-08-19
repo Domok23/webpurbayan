@@ -69,11 +69,7 @@ if($this->uri->segment(3) != "") {
       <small>
         <br>Posted: <?php echo date('d M Y H:i: s',strtotime($berita->tanggal_post)) ?>
         <br>Published: <?php echo date('d M Y H:i: s',strtotime($berita->tanggal_publish)) ?>
-        <?php if($berita->jenis_berita=="Promo") { ?>
-          <br>Promo: <span class="text-danger"><strong><?php echo date('d M Y',strtotime($berita->tanggal_mulai)) ?> s/d <?php echo date('d M Y ',strtotime($berita->tanggal_selesai)) ?></strong></span>
-        <?php } ?>
         <br>Urutan: <?php echo $berita->urutan ?>
-        <br>Icon: <i class="<?php echo $berita->icon ?>"></i> <?php echo $berita->icon ?>
         <br>Tgl posting: <?php echo date('d-m-Y',strtotime($berita->tanggal_publish)) ?>
       </small>
     </td>

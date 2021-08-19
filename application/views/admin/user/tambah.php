@@ -39,12 +39,12 @@ echo form_open(base_url('admin/user/tambah'));
 
 	<div class="col-md-12">
 		<div class="form-group"> 
-				<button class="btn btn-default" name="reset" type="reset">
-					<i class="fa fa-rotate-left"></i> Reset
-				</button>
-				<button class="btn btn-primary" name="submit" type="submit">
-					<i class="fa fa-check"></i> Simpan
-				</button>
+			<button class="btn btn-primary" name="submit" type="submit">
+				<i class="fa fa-check"></i> Simpan
+			</button>
+			<button class="btn btn-default" name="reset" type="reset">
+				<i class="fa fa-rotate-left"></i> Reset
+			</button>
 				
 		</div>
 	</div>

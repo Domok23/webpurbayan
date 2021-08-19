@@ -67,9 +67,9 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 <div class="form-group">
 <label>Jenis Berita</label>
 <select name="jenis_berita" class="form-control">
-	<option value="Berita">Berita</option>
+	<option value="Berita"  <?php if($berita->jenis_berita=="Berita") { echo "selected"; } ?>>Berita</option>
 	<option value="Profil"  <?php if($berita->jenis_berita=="Profil") { echo "selected"; } ?>>Profil</option>
-  <option value="kampung"  <?php if($berita->jenis_berita=="Kampung") { echo "selected"; } ?>>Kampung</option>
+  <option value="Kampung" <?php if($berita->jenis_berita=="Kampung") { echo "selected"; } ?>>Kampung</option>
 </select>
 </div>
 
@@ -102,10 +102,10 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 </div>
 
 <div class="form-group text-right">
-<button type="submit" name="submit" class="btn btn-primary">
-  <i class="fa fa-save"></i> Simpan Data
-</button>
 <input type="reset" name="reset" class="btn btn-warning" value="Atur ulang">
+<button type="submit" name="submit" class="btn btn-primary">
+  <i class="fa fa-check"></i> Simpan Data
+</button>
 </div>
 
 </div>

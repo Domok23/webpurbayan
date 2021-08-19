@@ -13,14 +13,13 @@ echo form_open(base_url('admin/user/proses'));
     </button>
   </div>
 </p>
-
 <div class="table-responsive mailbox-messages">
 <table id="example1" class="table table-bordered table-striped">
   <thead>
   <tr>
     <th class="text-center" width="5%">
        <!-- Check all button -->
-        <button type="button" class="btn btn-default btn-sm checkbox-toggle tombol-hapus"><i class="fa fa-square-o"></i>
+        <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
         </button>
     </th>
     <th>NAMA</th>
@@ -55,7 +54,6 @@ echo form_open(base_url('admin/user/proses'));
   <?php $i++; } //End looping ?>
 </tbody>
 </table>
-
 </div>
 <!-- /.mail-box-messages -->
 <?php 

@@ -7,7 +7,10 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 		<h4 class="alert alert-info">Update Profil Anda</h4>
 
 		<p class="text-center">
-			<img src="<?php if($user->gambar =="") { echo $this->website->icon(); }else{ echo base_url('assets/upload/user/thumbs/'.$user->gambar); } ?>" style="max-width: 150px; height: auto;" class="img img-circle img-thumbnail">
+			<img src="<?php if($user->gambar =="") {
+				 echo $this->website->icon();
+				 }else{ 
+					 echo base_url('assets/upload/user/thumbs/'.$user->gambar); }?>"style="max-width: 150px; height: auto;" class="img img-circle img-thumbnail">
 		</p>
 
 		<?php echo form_open_multipart(base_url('admin/akun'),'id="tambah"') ?>

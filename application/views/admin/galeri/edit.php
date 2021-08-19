@@ -72,9 +72,9 @@ echo form_open_multipart(base_url('admin/galeri/edit/'.$galeri->id_galeri));
 <input type="url" name="website" class="form-control" placeholder="http://website.com" value="<?php echo $galeri->website ?>">
 </div>
 
-<div class="md-col-12">
-<input type="submit" name="submit" class="btn btn-primary" value="Simpan Data">
+<div class="md-col-12 text-right">
 <input type="reset" name="reset" class="btn btn-warning" value="Atur ulang">
+<input type="submit" name="submit" class="btn btn-primary" value="Simpan Data">
 </div>
 
 </div>
