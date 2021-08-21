@@ -27,19 +27,17 @@
     }
   </style>
 </head>
-<body class="hold-transition login-page" style="background-color: #0054ae;">
+<body class="bg-gradient-primary">
 <div class="login-box">
   
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card shadow-lg" style ="border-radius: 0.8rem;">
     <div class="card-body login-card-body">
       <div class="login-logo">
         <img src="<?php echo $this->website->icon(); ?>" alt="<?php echo $this->website->namaweb(); ?>" class="img img-responsive img-thumbnail img-circle" style="max-width: 30%; height: auto;">
         <br>
-        <h2 style="font-weight: bold; font-size: 18px; margin-top: 20px;"><?php echo $this->website->namaweb() ?></h2>
+        <h2 style="font-weight: bold; font-size: 24px; margin-top: 20px;"><?php echo $this->website->namaweb() ?></h2>
       </div>
-
-      <p class="login-box-msg">Masukkan Email dan Password</p>
 
       <?php 
       // Notifikasi error
@@ -50,20 +48,24 @@
        ?>
 
         <div class="form-group">
-          <input type="text" name="email" class="form-control form-control-lg" placeholder="Email" value="<?= set_value ('email')?>">
+          <input style ="border-radius: 5rem;" type="text" name="email" class="form-control form-control-lg" placeholder="Masukkan Email" value="<?= set_value ('email')?>">
         </div>
         <div class="form-group">
-          <input type="password" name="password" class="form-control form-control-lg" placeholder="Password">
+          <input style ="border-radius: 5rem;" type="password" name="password" class="form-control form-control-lg" placeholder="Masukkan Password">
         </div>
         <div class="row">
           <div class="col-12">
           </div>
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+            <button style ="border-radius: 5rem;" type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
           </div>
           <!-- /.col -->
         </div>
+        <hr>
+          <div class="text-center">
+            <a class="small" href="<?= base_url('login/forgotpassword'); ?>">Forgot Password?</a>
+          </div>
       
       <?php echo form_close(); ?>
 

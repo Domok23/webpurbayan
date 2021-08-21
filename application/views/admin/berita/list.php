@@ -86,12 +86,12 @@ if($this->uri->segment(3) != "") {
     <td>
       <div class="md-col-12">
         <a href="<?php echo base_url('berita/read/'.$berita->slug_berita) ?>" 
-        class="btn btn-success btn-xs" target="_blank"><i class="fa fa-eye"></i>lihat</a>
+        class="btn btn-success btn-xs" target="_blank"><i class="fa fa-eye"></i> Lihat</a>
 
         <a href="<?php echo base_url('admin/berita/edit/'.$berita->id_berita) ?>" 
-        class="btn btn-warning btn-xs"><i class="fa fa-edit"></i>edit</a>
+        class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
 
-        <a href="<?php echo base_url('admin/berita/delete/'.$berita->id_berita) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o">hapus</i></a>
+        <a href="<?php echo base_url('admin/berita/delete/'.$berita->id_berita) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o"></i> Hapus</a>
       </div>
     </td>
 </tr>

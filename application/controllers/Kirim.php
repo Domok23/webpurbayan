@@ -33,5 +33,5 @@ class Kirim extends CI_Controller {
 		
 		echo $this->email->print_debugger();
 	}
-
+}
 /* End of file Kirim.php */

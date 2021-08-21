@@ -1,12 +1,11 @@
-<button class="btn btn-primary" data-toggle="modal" data-target="#Tambah">
+<button class="btn btn-success" data-toggle="modal" data-target="#Tambah">
     <i class="fa fa-plus"></i> Tambah
 </button>
 <div class="modal fade" id="Tambah" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h4 class="modal-title" id="myModalLabel">Tambah data?</h4>
+    <h4 class="modal-title" id="myModalLabel">Tambah Data?</h4>
 </div>
 <div class="modal-body">
     
@@ -26,8 +25,9 @@ echo form_open(base_url('admin/kategori_galeri'));
 <input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan') ?>" required>
 </div>
 
-<div class="form-group text-center">
-<input type="submit" name="submit" class="btn btn-success btn-lg" value="Simpan Data">
+<div class="form-group text-right">
+<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Batal</button>
+<input type="submit" name="submit" class="btn btn-success btn-sm" value="Simpan Data">
 </div>
 <div class="clearfix"></div>
 
@@ -35,12 +35,6 @@ echo form_open(base_url('admin/kategori_galeri'));
 // Form close 
 echo form_close();
 ?>
-
-</div>
-<div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    
-    
 
 </div>
 </div>

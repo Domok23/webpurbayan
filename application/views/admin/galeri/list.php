@@ -66,10 +66,10 @@ echo form_open(base_url('admin/galeri/proses'));
       <div class="md-col-12">
 
       <a href="<?php echo base_url('admin/galeri/edit/'.$galeri->id_galeri) ?>" 
-      class="btn btn-warning btn-xs"><i class="fa fa-edit"></i>edit</a>
+      class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
 
        <a href="<?php echo base_url('admin/galeri/delete/'.$galeri->id_galeri) ?>" 
-      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o"></i>hapus</a>
+      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o"></i> Hapus</a>
     </div>
     </td>
 </tr>
