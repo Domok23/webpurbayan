@@ -44,12 +44,12 @@
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-newspaper-o"></i>
-              <p>BERITA, PROFIL &amp; DESA <i class="right fa fa-angle-left"></i></p>
+              <p>BERITA<i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="treeview-menu"><a href="<?php echo base_url('admin/berita') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p>Data Berita &amp; Profil</p></a>
+              <li class="treeview-menu"><a href="<?php echo base_url('admin/berita') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p>Data Berita</p></a>
               </li>
-              <li class="treeview-menu"><a href="<?php echo base_url('admin/berita/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Berita &amp; Profil</p></a>
+              <li class="treeview-menu"><a href="<?php echo base_url('admin/berita/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Berita</p></a>
               </li>
               
             </ul>

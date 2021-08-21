@@ -23,7 +23,7 @@ class Berita extends CI_Controller {
 		$berita = $this->berita_model->listing();
 		$site 	= $this->konfigurasi_model->listing();
 
-		$data = array(	'title'			=> 'Berita/Profil ('.count($berita).')',
+		$data = array(	'title'			=> 'Berita ('.count($berita).')',
 						'berita'		=> $berita,
 						'site'			=> $site,
 						'isi'			=> 'admin/berita/list');
@@ -152,7 +152,7 @@ class Berita extends CI_Controller {
       		if(! $this->upload->do_upload('gambar')) {
 		// End validasi
 
-		$data = array(	'title'			=> 'Tambah Berita/Profil',
+		$data = array(	'title'			=> 'Tambah Berita',
 						'error'    		=> $this->upload->display_errors(),
 						'isi'			=> 'admin/berita/tambah');
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
@@ -218,7 +218,7 @@ class Berita extends CI_Controller {
 	        redirect(base_url('admin/berita/jenis_berita/'.$i->post('jenis_berita')),'refresh');
 		}}
 		// End masuk database
-		$data = array(	'title'			=> 'Tambah Berita/Profil',
+		$data = array(	'title'			=> 'Tambah Berita',
 						'isi'			=> 'admin/berita/tambah');
 		$this->load->view('admin/layout/wrapper', $data, FALSE);		
 	}
@@ -249,7 +249,7 @@ class Berita extends CI_Controller {
       		if(! $this->upload->do_upload('gambar')) {
 		// End validasi
 
-		$data = array(	'title'			=> 'Edit Berita/Profil',
+		$data = array(	'title'			=> 'Edit Berita',
 						'berita'		=> $berita,
 						'error'    		=> $this->upload->display_errors(),
 						'isi'			=> 'admin/berita/edit');
@@ -323,7 +323,7 @@ class Berita extends CI_Controller {
 	        redirect(base_url('admin/berita/jenis_berita/'.$i->post('jenis_berita')),'refresh');
 		}}
 		// End masuk database
-		$data = array(	'title'			=> 'Edit Berita/Profil',
+		$data = array(	'title'			=> 'Edit Berita',
 						'berita'		=> $berita,
 						'isi'			=> 'admin/berita/edit');
 		$this->load->view('admin/layout/wrapper', $data, FALSE);		

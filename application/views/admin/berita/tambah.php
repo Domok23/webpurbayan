@@ -19,8 +19,8 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 <div class="col-md-8">
 
 <div class="form-group form-group-lg">
-<label>Judul berita/profil/kampung</label>
-<input type="text" name="judul_berita" class="form-control" placeholder="Judul berita/profil/kampung" required="required" value="<?php echo set_value('judul_berita') ?>">
+<label>Judul berita</label>
+<input type="text" name="judul_berita" class="form-control" placeholder="Judul berita/" required="required" value="<?php echo set_value('judul_berita') ?>">
 </div>
 
 </div>
@@ -28,8 +28,8 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 <div class="col-md-4">
 
 <div class="form-group form-group-lg">
-<label>Icon berita/profil/kampung</label>
-<input type="text" name="icon" class="form-control" placeholder="Icon berita/profil/kampung" value="<?php echo set_value('icon') ?>">
+<label>Icon berita</label>
+<input type="text" name="icon" class="form-control" placeholder="Icon berita" value="<?php echo set_value('icon') ?>">
 </div>
 
 </div>
@@ -70,7 +70,6 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 <label>Jenis Berita</label>
 <select name="jenis_berita" class="form-control">
 	<option value="Berita">Berita</option>
-	<option value="Profil">Profil</option>
   <option value="Kampung">Kampung</option>
 </select>
 </div>
