@@ -29,11 +29,7 @@ $nav_kampung                = $this->nav_model->nav_kampung();
             <li><a href="<?php echo base_url() ?>" class="active">BERANDA</a></li>
 
             <!-- PROFIL -->
-            <li>
-            <?php foreach($nav_profil as $nav_profil) { ?>
-                <a href="<?php echo base_url('berita/profil/'.$nav_profil->slug_berita) ?>">PROFIL</a>
-            <?php }?>
-            </li>
+            <li><a href="<?php echo base_url('profil') ?>">PROFIL</a></li>
 
             <!-- KAMPUNG -->
             <li class="dropdown">
@@ -44,9 +40,6 @@ $nav_kampung                = $this->nav_model->nav_kampung();
                         <?php } ?> 
                     </ul>
                 </li>
-                
-            
-                
                 
             <!-- berita -->
             <li><a href="<?php echo base_url('berita') ?>">BERITA</a></li>

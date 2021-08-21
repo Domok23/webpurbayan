@@ -181,15 +181,6 @@ class Berita extends CI_Controller {
 
 		$listing 	= $this->berita_model->listing_profil();
 
-		// Update hit
-		if($berita) {
-			$newhits = $berita->hits + 1;
-			$hit = array(	'id_berita'	=> $berita->id_berita,
-							'hits'		=> $newhits);
-			$this->berita_model->update_hit($hit);
-		}
-		//  End update hit
-
 		$data = array(	'title'		=> $berita->judul_berita,
 						'deskripsi'	=> $berita->judul_berita,
 						'keywords'	=> $berita->judul_berita,
