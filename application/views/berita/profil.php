@@ -5,11 +5,9 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <div class="single-event-item">
-              <?php if($berita->gambar != "" || $berita->gambar != NULL) { ?>
                 <div class="single-event-img">
-                  <img src="<?php echo base_url('assets/upload/image/' . $berita->gambar); ?>" alt="single-event-img-1" class="img-responsive img-fluid"/>
+                  <img src="<?php  echo $this->website->logo(); ?>" alt="single-event-img-1" class="img-responsive img-fluid" style="max-width: 200px; height: auto;"/>
                 </div>
-              <?php } ?>
               <!-- .single-event-img -->
               <div class="single-event-content buttom-rounded">
                 <h3> PROFILE <?php echo $site->namaweb; ?></h3><hr>

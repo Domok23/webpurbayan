@@ -54,7 +54,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
     <div class="col-md-6">
     <div class="form-group">
     	<label>Unggah Ikon Baru</label>
-        <input type="file" name="icon" class="form-control" id="file">
+        <input type="file" name="icon" class="form-control mb-3" id="file">
         <div id="imagePreview"></div>
     </div>
     </div>

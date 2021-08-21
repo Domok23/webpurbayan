@@ -99,7 +99,7 @@ class Konfigurasi extends CI_Controller {
 			$this->load->library('upload', $config);
 			if(! $this->upload->do_upload('logo')) {
 				
-		$data = array(	'title'	=> 'New logo',
+		$data = array(	'title'	=> 'Ganti Logo Baru',
 						'site'	=> $site,
 						'error'	=> $this->upload->display_errors(),
 						'isi'	=> 'admin/konfigurasi/logo');
@@ -125,13 +125,13 @@ class Konfigurasi extends CI_Controller {
 				$i = $this->input;
 				$data = array(	'id_konfigurasi'=> $i->post('id_konfigurasi'),
 								'logo'			=> $upload_data['uploads']['file_name'],
-								'id_user'			=> $this->session->userdata('id'));
+								'id_user'		=> $this->session->userdata('id'));
 				$this->konfigurasi_model->edit($data);
-				$this->session->set_flashdata('sukses','Logo changed');
+				$this->session->set_flashdata('sukses','Logo berhasil diganti');
 				redirect(base_url('admin/konfigurasi/logo'));
 		}}
 		// Default page
-		$data = array(	'title'	=> 'New logo',
+		$data = array(	'title'	=> 'Ganti Logo Baru',
 						'site'	=> $site,
 						'isi'	=> 'admin/konfigurasi/logo');
 		$this->load->view('admin/layout/wrapper',$data);
@@ -152,7 +152,7 @@ class Konfigurasi extends CI_Controller {
 			$this->load->library('upload', $config);
 			if(! $this->upload->do_upload('icon')) {
 				
-		$data = array(	'title'	=> 'New Icon',
+		$data = array(	'title'	=> 'Ganti Ikon Baru',
 						'site'	=> $site,
 						'error'	=> $this->upload->display_errors(),
 						'isi'	=> 'admin/konfigurasi/icon');
@@ -180,11 +180,11 @@ class Konfigurasi extends CI_Controller {
 								'icon'			=> $upload_data['uploads']['file_name'],
 								'id_user'			=> $this->session->userdata('id'));
 				$this->konfigurasi_model->edit($data);
-				$this->session->set_flashdata('sukses','Icon changed');
+				$this->session->set_flashdata('sukses','Ikon berhasil diganti');
 				redirect(base_url('admin/konfigurasi/icon'));
 		}}
 		// Default page
-		$data = array(	'title'	=> 'New Icon',
+		$data = array(	'title'	=> 'Ganti Ikon Baru',
 						'site'	=> $site,
 						'isi'	=> 'admin/konfigurasi/icon');
 		$this->load->view('admin/layout/wrapper',$data);
