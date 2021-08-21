@@ -25,15 +25,14 @@ $nav_kampung                = $this->nav_model->nav_kampung();
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <!-- home -->
+            <!-- BERANDA -->
             <li><a href="<?php echo base_url() ?>" class="active">BERANDA</a></li>
 
             <!-- PROFIL -->
-            <?php foreach($nav_profil as $nav_profil) { ?>
-                <a href="<?php echo base_url('berita/profil/'.$nav_profil->slug_berita) ?>"></a>
-            <?php }?>
             <li>
+            <?php foreach($nav_profil as $nav_profil) { ?>
                 <a href="<?php echo base_url('berita/profil/'.$nav_profil->slug_berita) ?>">PROFIL</a>
+            <?php }?>
             </li>
 
             <!-- KAMPUNG -->

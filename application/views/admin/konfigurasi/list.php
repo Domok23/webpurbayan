@@ -38,6 +38,8 @@ if($this->session->flashdata('sukses')) {
     <label>Singkatan</label>
     <input type="text" name="singkatan" placeholder="Singkatan organisasi/perusahaan" value="<?php echo $site->singkatan ?>" required class="form-control">
     </div>
+
+    
     
     <div class="form-group">
     <label>Tagline</label>

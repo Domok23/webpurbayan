@@ -90,7 +90,6 @@ class Berita_model extends CI_Model {
 		$this->db->select('berita.*, users.nama');
 		$this->db->from('berita');
 		// Join dg 2 tabel
-		
 		$this->db->join('users','users.id_user = berita.id_user','LEFT');
 		// End join
 		$this->db->where(array(	'berita.status_berita'	=> $status_berita));
@@ -117,7 +116,6 @@ class Berita_model extends CI_Model {
 		$this->db->select('berita.*, users.nama');
 		$this->db->from('berita');
 		// Join dg 2 tabel
-		
 		$this->db->join('users','users.id_user = berita.id_user','LEFT');
 		// End join
 		$this->db->where(array(	'berita.id_user'	=> $id_user));
@@ -127,8 +125,6 @@ class Berita_model extends CI_Model {
 	}
 
 	
-
-
 	// Listing berita
 	public function berita($limit,$start) {
 		$this->db->select('berita.*, 
@@ -151,7 +147,6 @@ class Berita_model extends CI_Model {
 		$this->db->select('berita.*, users.nama');
 		$this->db->from('berita');
 		// Join dg 2 tabel
-		
 		$this->db->join('users','users.id_user = berita.id_user','LEFT');
 		// End join
 		$this->db->where(array(	'berita.status_berita'	=> 'Publish',
@@ -204,7 +199,6 @@ class Berita_model extends CI_Model {
 		$this->db->select('berita.*, users.nama');
 		$this->db->from('berita');
 		// Join dg 2 tabel
-		
 		$this->db->join('users','users.id_user = berita.id_user','LEFT');
 		// End join
 		$this->db->where(array(	'berita.status_berita'	=> 'Publish',
@@ -220,7 +214,6 @@ class Berita_model extends CI_Model {
 		$this->db->select('berita.*, users.nama');
 		$this->db->from('berita');
 		// Join dg 2 tabel
-		
 		$this->db->join('users','users.id_user = berita.id_user','LEFT');
 		// End join
 		$this->db->where(array(	'berita.status_berita'	=> 'Publish',
@@ -236,7 +229,6 @@ class Berita_model extends CI_Model {
 		$this->db->select('berita.*, users.nama');
 		$this->db->from('berita');
 		// Join dg 2 tabel
-		
 		$this->db->join('users','users.id_user = berita.id_user','LEFT');
 		// End join
 		$this->db->where(array(	'berita.status_berita'	=> 'Publish',

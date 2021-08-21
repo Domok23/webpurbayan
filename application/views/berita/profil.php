@@ -12,9 +12,37 @@
               <?php } ?>
               <!-- .single-event-img -->
               <div class="single-event-content buttom-rounded">
-                <h3><?php echo $berita->judul_berita; ?></h3><hr>
-                <?php echo $berita->isi; ?>
+                <h3> PROFILE <?php echo $site->namaweb; ?></h3><hr>
+                <?php echo $site->tentang; ?>
               </div>
+              <div class="contact-us">
+                <div class="row">
+                    <!-- .col-md-8 -->
+                    <div class="col-md-12" >
+                        <h3 class="contact-title">KONTAK KAMI</h3>
+                        <!-- .contact-address -->
+                        <ul class="social-icon-rounded contact-social-icon">
+                            <li><a href="<?php echo $site->facebook; ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $site->twitter; ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $site->instagram; ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $site->google_plus; ?>"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- .col-md-4 -->
+                </div>
+                <!-- .row -->
+              </div>
+                <!-- STart Maps Section -->
+                <style type="text/css" media="screen">
+                    iframe {
+                        width: 100%;
+                        height: auto;
+                        min-height: 400px;
+                    }
+                </style>
+                <div id="map"><?php echo $site->google_map; ?></div>
+                <!-- End Maps Section -->
+
               <!-- .single-event-content -->
             </div>
             <!-- .single-event-item -->

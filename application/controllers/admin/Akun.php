@@ -32,7 +32,7 @@ class Akun extends CI_Controller {
 			if(!empty($_FILES['gambar']['name'])) {
 			$config['upload_path'] 		= './assets/upload/user/';
 			$config['allowed_types'] 	= 'gif|jpg|png|jpeg';
-			$config['max_size']  		= '2400'; //KB
+			$config['max_size']  		= '12000'; //KB
 			$config['max_width']  		= '3000'; //Pixel
 			$config['max_height']  		= '3000'; //Pixel
 			$this->load->library('upload', $config);
@@ -62,6 +62,13 @@ class Akun extends CI_Controller {
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();
 
+				// Proses hapus gambar
+			if($user->gambar != "") {
+				unlink('./assets/upload/user/'.$user->gambar);
+				unlink('./assets/upload/user/thumbs/'.$user->gambar);
+			}
+
+			// End hapus gambar
 				$i = $this->input;
 				$this->session->set_userdata('nama',$i->post('nama'));
 				$data = array(	'id_user'			=> $id_user,
@@ -69,10 +76,7 @@ class Akun extends CI_Controller {
 								'email'				=> $i->post('email'),
 								'gambar'			=> $upload_data['uploads']['file_name'],
 							);
-				$old_image  = $upload_data['uploads']['file_name'];
-                    if ($old_image != 'default.jpg') {
-                        unlink(FCPATH . 'assets/upload/user/' . $old_image);
-                    }
+				
 				$this->user_model->edit($data);
 				$this->session->set_flashdata('sukses', 'Data '.$user->nama.' telah diupdate');
 				redirect(base_url('admin/akun'),'refresh');
