@@ -50,7 +50,6 @@ $site = $this->konfigurasi_model->listing();
 
 <?php 
 $site           = $this->konfigurasi_model->listing();
-$nav_profil     = $this->nav_model->nav_profil();
 ?>
 <!-- Start Footer Section -->
 <footer>

@@ -1,7 +1,6 @@
 <?php 
 $site                       = $this->konfigurasi_model->listing(); 
 $site_nav                   = $this->konfigurasi_model->listing();
-$nav_profil                 = $this->nav_model->nav_profil();
 $nav_berita                 = $this->nav_model->nav_berita();
 $nav_kampung                = $this->nav_model->nav_kampung();
 ?>
@@ -40,7 +39,7 @@ $nav_kampung                = $this->nav_model->nav_kampung();
                         <?php } ?> 
                     </ul>
                 </li>
-                
+
             <!-- berita -->
             <li><a href="<?php echo base_url('berita') ?>">BERITA</a></li>
             

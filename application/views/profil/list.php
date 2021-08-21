@@ -10,7 +10,7 @@
                 </div>
               <!-- .single-event-img -->
               <div class="single-event-content buttom-rounded">
-                <h3> PROFILE <?php echo $site->namaweb; ?></h3><hr>
+                <h3> PROFIL <?php echo $site->namaweb; ?></h3><hr>
                 <?php echo $site->tentang; ?>
               </div>
               <div class="contact-us">
