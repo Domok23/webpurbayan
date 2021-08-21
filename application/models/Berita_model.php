@@ -209,21 +209,6 @@ class Berita_model extends CI_Model {
 		return $query->result();
 	}
 
-	// Listing profil
-	public function listing_profil() {
-		$this->db->select('berita.*, users.nama');
-		$this->db->from('berita');
-		// Join dg 2 tabel
-		$this->db->join('users','users.id_user = berita.id_user','LEFT');
-		// End join
-		$this->db->where(array(	'berita.status_berita'	=> 'Publish',
-								'berita.jenis_berita'	=> 'Profil'));
-		$this->db->order_by('id_berita','DESC');
-		$this->db->limit(20);
-		$query = $this->db->get();
-		return $query->result();
-	}
-
 	// Listing kampung
 	public function listing_kampung() {
 		$this->db->select('berita.*, users.nama');

@@ -169,33 +169,11 @@ class Berita extends CI_Controller {
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}
 
-	// profile berita kelurahan detail
-	public function profil($slug_berita){
-		$site 		= $this->konfigurasi_model->listing();
-		$berita 	= $this->berita_model->read($slug_berita);
-		$profil 	= $this->nav_model->nav_profil();
-
-		if(count(array($berita)) < 1) {
-			redirect(base_url('oops'),'refresh');
-		}
-
-		$listing 	= $this->berita_model->listing_profil();
-
-		$data = array(	'title'		=> $berita->judul_berita,
-						'deskripsi'	=> $berita->judul_berita,
-						'keywords'	=> $berita->judul_berita,
-						'berita'	=> $berita,
-						'site'		=> $site,
-						'listing'	=> $profil,
-						'isi'		=> 'berita/profil');
-		$this->load->view('layout/wrapper', $data, FALSE);
-	}
-
-	// Profil berita kampung detail
+	// about 'berita' kampung detail
 	public function kampung($slug_berita)	{
 		$site 		= $this->konfigurasi_model->listing();
 		$berita 	= $this->berita_model->read($slug_berita);
-		$profil 	= $this->nav_model->nav_kampung();
+		$kampung 	= $this->nav_model->nav_kampung();
 
 		if(count(array($berita)) < 1) {
 			redirect(base_url('oops'),'refresh');
@@ -217,7 +195,7 @@ class Berita extends CI_Controller {
 						'keywords'	=> $berita->judul_berita,
 						'berita'	=> $berita,
 						'site'		=> $site,
-						'listing'	=> $profil,
+						'listing'	=> $kampung,
 						'isi'		=> 'berita/kampung');
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}
