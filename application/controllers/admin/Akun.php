@@ -67,8 +67,8 @@ class Akun extends CI_Controller {
 				unlink('./assets/upload/user/'.$user->gambar);
 				unlink('./assets/upload/user/thumbs/'.$user->gambar);
 			}
-
 			// End hapus gambar
+			
 				$i = $this->input;
 				$this->session->set_userdata('nama',$i->post('nama'));
 				$data = array(	'id_user'			=> $id_user,
