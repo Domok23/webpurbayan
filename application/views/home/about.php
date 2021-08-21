@@ -1,6 +1,5 @@
 <!-- Start About Greenforest Section -->
-<?php 
-$nav_profil = $this->nav_model->nav_profil();
+<?php
 ?>
 <section class="bg-about-greenforest">
     <div class="container">
@@ -11,9 +10,7 @@ $nav_profil = $this->nav_model->nav_profil();
                         <div class="about-greenforest-content">
                             <h2><?php echo $site->namaweb ?></h2>
                             <p class="text-justify"><?php echo character_limiter(strip_tags($site->tentang), 575); ?></p>
-                            <?php foreach($nav_profil as $nav_profil) { ?>
-                                <a href="<?php echo base_url('berita/profil/'.$nav_profil->slug_berita); ?>" class="btn btn-default"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
-                            <?php }?>
+                                <a href="<?php echo base_url('profil'); ?>" class="btn btn-default"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
                         </div>
                         <!-- .about-greenforest-content -->
                     </div>
