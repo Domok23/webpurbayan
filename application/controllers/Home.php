@@ -74,7 +74,6 @@ class Home extends CI_Controller {
 		$site 			= $this->konfigurasi_model->listing();
 
 		$data = array(	'title'				=> 'Not found',
-						'deskripsi'			=> $site->deskripsi,
 						'site'				=> $site,
 						'isi'				=> 'home/oops'
 			);

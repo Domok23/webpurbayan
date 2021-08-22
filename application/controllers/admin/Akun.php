@@ -99,7 +99,7 @@ class Akun extends CI_Controller {
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 	}
 
-	// Ubah Password
+	// Ganti Password
 	public function password()
 	{
 		$id_user 	= $this->session->userdata('id_user');
@@ -108,36 +108,49 @@ class Akun extends CI_Controller {
 		// Validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('password','Password','required|trim|min_length[6]|max_length[32]',
+		$valid->set_rules('current_password','Password saat ini','required|trim',
+			array(	'required'		=> '%s harus diisi'));
+
+		$valid->set_rules('new_password','Password baru','required|trim|min_length[6]|max_length[32]',
 			array(	'required'		=> '%s harus diisi',
 					'min_length'	=> '%s minimal 6 karakter',
 					'max_length'	=> '%s maksimal 32 karakter'));
 
-		$valid->set_rules('passconf', 'Konfirmasi password', 'required|matches[password]',
+		$valid->set_rules('passconf', 'Konfirmasi password', 'required|matches[new_password]',
 			array(	'required'	=> '%s harus diisi',
 					'matches'	=> '%s tidak cocok. Pastikan password Anda sama'));
 
 		if($valid->run()===FALSE) {
 		// End validasi
 
-		$data = array(	'title'		=> 'Profil Akun Anda: '.$this->session->userdata('nama'),
+		$data = array(	'title'		=> 'Password '.$this->session->userdata('nama'),
 						'user'		=> $user,
 						'isi'		=> 'admin/akun/password'
 					);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 		// Masuk database
 		}else{
+			$current_password = $this->input->post('current_password');
+            $new_password = $this->input->post('new_password');
+                if ($current_password == $new_password) {
+                    $this->session->set_flashdata('warning', 'Password baru tidak bolah sama dengan password saat ini!');
+					redirect(base_url('admin/akun/password'),'refresh');
+                } 
+				else {
+					// password oke
+					$i = $this->input;
+					$this->session->set_userdata('nama',$i->post('nama'));
+					$data = array(	'id_user'			=> $id_user,
+									'password'			=> sha1($i->post('new_password')),
+									'password_hint'		=> $i->post('new_password')
+								);
+					$this->user_model->edit($data);
+					$this->session->set_flashdata('sukses', 'Password '.$user->nama.' telah diganti');
+					redirect(base_url('admin/akun/password'),'refresh');
+				}
 			
-			$i = $this->input;
-			$this->session->set_userdata('nama',$i->post('nama'));
-			$data = array(	'id_user'			=> $id_user,
-							'password'			=> sha1($i->post('password')),
-							'password_hint'		=> $i->post('password')
-						);
-			$this->user_model->edit($data);
-			$this->session->set_flashdata('sukses', 'Data '.$user->nama.' telah diupdate');
-			redirect(base_url('admin/akun'),'refresh');
 		}
+		
 	}
 }
 

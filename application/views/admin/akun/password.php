@@ -9,9 +9,16 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 <?php echo form_open_multipart(base_url('admin/akun/password'),'id="tambah"') ?>
 
 <div class="form-group row">
+	<label class="col-sm-4 control-label text-right">Password saat ini<span class="text-danger">*</span></label>
+	<div class="col-sm-8">
+		<input type="password" name="current_password" id="current_password" class="form-control" placeholder="Password saat ini" value="<?php echo set_value('current_password') ?>" minlength="6" maxlength="32" required>
+	</div>
+</div>
+
+<div class="form-group row">
 	<label class="col-sm-4 control-label text-right">Password baru<span class="text-danger">*</span></label>
 	<div class="col-sm-8">
-		<input type="password" name="password" id="password" class="form-control" placeholder="Password baru" value="<?php echo set_value('password') ?>" minlength="6" maxlength="32" required>
+		<input type="password" name="new_password" id="new_password" class="form-control" placeholder="Password baru" value="<?php echo set_value('new_password') ?>" minlength="6" maxlength="32" required>
 	</div>
 </div>
 
