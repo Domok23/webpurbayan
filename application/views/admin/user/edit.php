@@ -29,6 +29,13 @@ echo form_open(base_url('admin/user/edit/'.$user->id_user));
 		</div>
 	</div>
 
+	<div class="col-md-6">
+		<div class="form-group">
+			<label>Password</label>
+			<input type="text" name="password" class="form-control form-control-lg" value="<?php echo $user->password_hint ?>" placeholder="Password" readonly>
+		</div>
+	</div>
+
 	
 
 	<div class="col-md-12">

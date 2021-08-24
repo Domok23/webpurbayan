@@ -43,7 +43,7 @@ class User extends CI_Controller {
 		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
 			array(	'required'	=> '%s harus diisi',
 					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
-					'is_unique'		=> 'email sudah ada. Buat email baru'));
+					'is_unique'		=> 'Email sudah ada. Gunakan email lain'));
 
 		$validasi->set_rules('password','Password','required|trim|min_length[6]|max_length[32]',
 			array(	'required'		=> '%s harus diisi',
@@ -66,6 +66,7 @@ class User extends CI_Controller {
 							'nama'			=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
 							'password'		=> sha1($inp->post('password')),
+							'password_hint'	=> $inp->post('password'),
 							'akses_level'	=> $inp->post('akses_level'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
 						);
@@ -106,6 +107,7 @@ class User extends CI_Controller {
 			$data = array(	'id_user'		=> $id_user,
 							'nama'			=> $inp->post('nama'),
 							'email'			=> $inp->post('email'),
+							'password_hint'	=> $inp->post('password'),
 							'akses_level'	=> $inp->post('akses_level'),
 							'tanggal_post'	=> date('Y-m-d H:i:s')
 						);
