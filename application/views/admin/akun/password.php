@@ -18,7 +18,7 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 <div class="form-group row">
 	<label class="col-sm-4 control-label text-right">Password baru<span class="text-danger">*</span></label>
 	<div class="col-sm-8">
-		<input type="password" name="new_password" id="new_password" class="form-control" placeholder="Password baru" value="<?php echo set_value('new_password') ?>" minlength="6" maxlength="32" required>
+		<input type="password" name="new_password" id="new_password" class="form-control" placeholder="Password Baru" value="<?php echo set_value('new_password') ?>" minlength="6" maxlength="32" required>
 	</div>
 </div>
 

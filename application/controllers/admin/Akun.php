@@ -104,7 +104,6 @@ class Akun extends CI_Controller {
 	{
 		$id_user 	= $this->session->userdata('id_user');
 		$user 		= $this->user_model->detail($id_user);
-		
 
 		// Validasi
 		$valid = $this->form_validation;
@@ -149,8 +148,6 @@ class Akun extends CI_Controller {
 					$this->session->set_flashdata('sukses', 'Password '.$user->nama.' telah diganti');
 					redirect(base_url('admin/akun/password'),'refresh');
 				}
-			
-			
 		}
 		
 	}

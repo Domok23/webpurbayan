@@ -34,9 +34,7 @@
   <div class="card shadow-lg" style ="border-radius: 0.8rem; padding: 2rem;">
     <div class="card-body login-card-body">
       <div class="login-logo">
-        <img src="<?php echo $this->website->icon(); ?>" alt="<?php echo $this->website->namaweb(); ?>" class="img img-responsive img-thumbnail img-circle" style="max-width: 30%; height: auto;">
-        <br>
-        <h2 style="font-weight: bold; font-size: 24px; margin-top: 20px;"><?php echo $this->website->namaweb() ?></h2>
+        <h2 style="font-weight: bold; font-size: 24px; margin-top: 20px;">Lupa Password Anda?</h2>
       </div>
 
       <?php 
@@ -44,27 +42,24 @@
       echo validation_errors('<p class="alert alert-warning" role=alert>','</p>');
 
       // Form open 
-      echo form_open(base_url('login'));
+      echo form_open(base_url('login/forgotpassword'));
        ?>
 
         <div class="form-group">
           <input style ="border-radius: 5rem;" type="text" name="email" class="form-control form-control-lg" placeholder="Masukkan Email" value="<?= set_value ('email')?>">
-        </div>
-        <div class="form-group">
-          <input style ="border-radius: 5rem;" type="password" name="password" class="form-control form-control-lg" placeholder="Masukkan Password">
         </div>
         <div class="row">
           <div class="col-12">
           </div>
           <!-- /.col -->
           <div class="col-12">
-            <button style ="border-radius: 5rem;" type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+            <button style ="border-radius: 5rem;" type="submit" class="btn btn-primary btn-block btn-lg">Reset Password</button>
           </div>
           <!-- /.col -->
         </div>
         <hr>
           <div class="text-center">
-            <a class="small" href="<?= base_url('login/forgotpassword'); ?>">Forgot Password?</a>
+            <a class="small" href="<?= base_url('login'); ?>">Login Kembali?</a>
           </div>
       
       <?php echo form_close(); ?>

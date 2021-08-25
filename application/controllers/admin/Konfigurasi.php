@@ -52,8 +52,6 @@ class Konfigurasi extends CI_Controller {
 		}
 	}
 
-
-
 	// Email Setting Configuration
 	public function email_setting() {
 		$site = $this->konfigurasi_model->listing();

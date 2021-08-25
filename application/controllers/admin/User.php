@@ -40,7 +40,7 @@ class User extends CI_Controller {
 		$validasi->set_rules('nama','Nama User','required',
 			array(	'required'		=> '%s harus diisi'));
 
-		$validasi->set_rules('email','Email Pengguna','required|valid_email|is_unique[users.email]',
+		$validasi->set_rules('email','Email Pengguna','trim|required|valid_email|is_unique[users.email]',
 			array(	'required'	=> '%s harus diisi',
 					'valid_email'	=> '%s tidak valid. Masukkan email yang benar.',
 					'is_unique'		=> 'Email sudah ada. Gunakan email lain'));
@@ -109,7 +109,7 @@ class User extends CI_Controller {
 							'email'			=> $inp->post('email'),
 							'password_hint'	=> $inp->post('password'),
 							'akses_level'	=> $inp->post('akses_level'),
-							'tanggal_post'	=> date('Y-m-d H:i:s')
+							'tanggal_edit'	=> date('Y-m-d H:i:s')
 						);
 			$this->user_model->edit($data);
 			$this->session->set_flashdata('sukses', 'Data telah diupdate');
