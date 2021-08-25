@@ -41,6 +41,7 @@ class Login extends CI_Controller {
 		$this->simple_login->logout();
 	}
 
+    // Mengirimkan email untuk reset password
 	private function _sendEmail($token, $type)
     {
 		$site 			= $this->konfigurasi_model->listing();
@@ -73,6 +74,7 @@ class Login extends CI_Controller {
         }
     }
 
+    // Lupa password
 	public function forgotPassword()
     {
         $this->form_validation->set_rules('email','Email','trim|required|valid_email',
@@ -106,6 +108,7 @@ class Login extends CI_Controller {
         }
     }
 
+    //link Reset Password di email
 	public function resetPassword()
     {
         $email = $this->input->get('email');
@@ -129,7 +132,7 @@ class Login extends CI_Controller {
         }
     }
 
-
+    //Ganti password setelah reset di email
     public function changePassword()
     {
         if (!$this->session->userdata('reset_email')) {
@@ -163,7 +166,6 @@ class Login extends CI_Controller {
             redirect('login');
         }
     }
-
 }
 
 /* End of file Login.php */
