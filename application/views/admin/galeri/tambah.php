@@ -60,8 +60,8 @@ echo form_open_multipart(base_url('admin/galeri/tambah'));
 </div>
 
 <div class="form-group">
-<label>Link / website yang terkait dengan Galeri</label>
-<input type="url" name="website" class="form-control" placeholder="http://website.com" value="<?php echo set_value('website') ?>">
+<label>Link/Website Sumber Galeri</label>
+<input type="url" name="website" class="form-control" placeholder="Link sumber (jika ada)" value="<?php echo set_value('website') ?>">
 </div>
 
 <div class="md-col-12 text-right">
