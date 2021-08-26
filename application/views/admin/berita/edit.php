@@ -97,7 +97,7 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 
 <div class="form-group">
 <label>Isi berita</label>
-<textarea name="isi" class="form-control" id="isi" placeholder="Isi berita" placeholder="Isi berita"><?php echo $berita->isi ?></textarea>
+<textarea name="isi" class="form-control konten" id="isi" placeholder="Isi berita" placeholder="Isi berita"><?php echo $berita->isi ?></textarea>
 </div>
 
 <div class="form-group text-right">

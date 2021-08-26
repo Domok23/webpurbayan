@@ -46,7 +46,7 @@
               <i class="nav-icon fa fa-newspaper-o"></i>
               <p>Berita<i class="right fa fa-angle-left"></i></p>
             </a>
-            <ul class="nav nav-treeview" style="background-color: #292834;">
+            <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
               <li class="nav-item"><a href="<?php echo base_url('admin/berita') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p style="font-size: 14px;">Data Berita</p></a>
               </li>
               <li class="nav-item"><a href="<?php echo base_url('admin/berita/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p style="font-size: 14px;">Tambah Berita</p></a>
@@ -61,13 +61,13 @@
               <i class="nav-icon fa fa-image"></i>
               <p>Galeri &amp; Banner <i class="right fa fa-angle-left"></i></p>
             </a>
-            <ul class="nav nav-treeview" style="background-color: #292834;">
+            <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 12px;">
 
-              <li class="nav-item"><a href="<?php echo base_url('admin/galeri') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p style="font-size: 14px;">Data Galeri &amp; Banner</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/galeri') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p>Data Galeri &amp; Banner</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/galeri/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p style="font-size: 14px;">Tambah Galeri &amp; Banner</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/galeri/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Galeri &amp; Banner</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/kategori_galeri') ?>" class="nav-link"><i class="fa fa-tags nav-icon"></i><p style="font-size: 14px;">Kategori Galeri &amp; Banner</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/kategori_galeri') ?>" class="nav-link"><i class="fa fa-tags nav-icon"></i><p>Kategori Galeri &amp; Banner</p></a>
               </li>
               
             </ul>
@@ -90,7 +90,7 @@
               <i class="nav-icon fa fa-wrench"></i>
               <p>Konfigurasi <i class="right fa fa-angle-left"></i></p>
             </a>
-            <ul class="nav nav-treeview" style="background-color: #292834;">
+            <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
               
               <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link"><i class="fa fa-wrench nav-icon"></i><p style="font-size: 14px;">Konfigurasi Umum</p></a>
               </li>

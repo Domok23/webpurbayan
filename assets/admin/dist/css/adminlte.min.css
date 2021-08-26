@@ -8226,6 +8226,11 @@ html {
 .sidebar-light-primary .sidebar a:hover {
   text-decoration: none;
 }
+
+.corner {
+  border-radius: 5px;
+}
+
 .sidebar-light-primary .nav-treeview > .nav-item > .nav-link {
   color: #777;
 }

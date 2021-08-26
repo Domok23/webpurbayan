@@ -102,7 +102,7 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 
 <div class="form-group">
 <label>Isi berita </label>
-<textarea name="isi" class="form-control" id="isi" placeholder="Isi berita"><?php echo set_value('isi') ?></textarea>
+<textarea name="isi" class="form-control konten" id="isi" placeholder="Isi berita"><?php echo set_value('isi') ?></textarea>
 </div>
 
 <div class="form-group text-right">
