@@ -72,7 +72,6 @@ class Konfigurasi extends CI_Controller {
 							'protocol'			=> $i->post('protocol'),
 							'smtp_host'			=> $i->post('smtp_host'),
 							'smtp_port'			=> $i->post('smtp_port'),
-							'smtp_timeout'		=> $i->post('smtp_timeout'),
 							'smtp_user'			=> $i->post('smtp_user'),
 							'smtp_pass'			=> $i->post('smtp_pass'),
 							);

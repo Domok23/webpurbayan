@@ -17,26 +17,21 @@ echo validation_errors('<div class="alert alert-success  alert-dismissible"><a h
 <div class="col-md-4">
     <div class="form-group">
     <label>Protocol Email</label>
-    <input type="text" name="protocol" placeholder="Protocol Email" value="<?php echo $site->protocol ?>" required class="form-control">
+    <input type="text" name="protocol" placeholder="Protocol Email" value="<?php echo $site->protocol ?>" required class="form-control" readonly>
     </div>
     
     <div class="form-group">
     <label>SMTP Host</label>
-    <input type="text" name="smtp_host" placeholder="SMTP Host" value="<?php echo $site->smtp_host ?>" class="form-control">
+    <input type="text" name="smtp_host" placeholder="SMTP Host" value="<?php echo $site->smtp_host ?>" class="form-control" readonly>
     </div>
     
     <div class="form-group">
     <label>SMTP Port</label>
-    <input type="number" name="smtp_port" placeholder="SMTP Port" value="<?php echo $site->smtp_port ?>" class="form-control">
+    <input type="number" name="smtp_port" placeholder="SMTP Port" value="<?php echo $site->smtp_port ?>" class="form-control" readonly>
     </div>
 </div>
 
 <div class="col-md-8">
-    
-    <div class="form-group">
-    <label>SMTP Timeout</label>
-    <input type="number" name="smtp_timeout" placeholder="SMTP Timeout" value="<?php echo $site->smtp_timeout ?>" class="form-control" required>
-    </div>
     
     
      <div class="form-group">
@@ -44,15 +39,16 @@ echo validation_errors('<div class="alert alert-success  alert-dismissible"><a h
     <input type="email" name="smtp_user" placeholder="SMTP User" value="<?php echo $site->smtp_user ?>" class="form-control">
     </div>
     
-      <div class="form-group">
+    <div class="form-group">
     <label>SMTP Password</label>
-    <input type="text" name="smtp_pass" placeholder="SMTP Password" value="<?php echo $site->smtp_pass ?>" class="form-control">
+    <input type="password" name="smtp_pass" placeholder="SMTP Password" value="<?php echo $site->smtp_pass ?>" class="form-control">
     </div>
-    
-</div>
-<div class="form-group ml-2">
+
+    <div class="form-group text-right mt-5">
     <input type="submit" name="submit" value="Simpan konfigurasi" class="btn btn-primary">
     <input type="reset" name="reset" value="Atur ulang" class="btn btn-warning">
+</div>
+    
 </div>
 </div>
 
