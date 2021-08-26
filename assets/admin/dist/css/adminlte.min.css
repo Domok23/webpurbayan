@@ -70,7 +70,7 @@ section {
 }
 body {
   margin: 0;
-  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3680,7 +3680,8 @@ input[type='submit'].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: #11101D;
+  font-weight: 600;
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
@@ -3712,6 +3713,7 @@ input[type='submit'].btn-block {
 .navbar-light .navbar-text a:hover {
   color: rgba(0, 0, 0, 0.9);
 }
+
 .navbar-dark .navbar-brand {
   color: #fff;
 }
@@ -5312,7 +5314,7 @@ button.bg-dark:hover {
   border-right: 1px solid #dee2e6 !important;
 }
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 3px solid #0080ff !important;
 }
 .border-left {
   border-left: 1px solid #dee2e6 !important;
@@ -7819,7 +7821,7 @@ html {
   }
 }
 .content-wrapper {
-  background: #f4f6f9;
+  background: #E4E9F7;
 }
 .content-wrapper > .content {
   padding: 0 0.5rem;
@@ -7858,12 +7860,11 @@ html {
 }
 .main-footer {
   padding: 15px;
-  color: #555;
   border-top: 1px solid #dee2e6;
-  background: #fff;
+  background: #ffffff;
 }
 .content-header {
-  padding: 15px 0.5rem;
+  padding: 30px 10px 0.5rem;
 }
 .content-header h1 {
   font-size: 1.8rem;
@@ -8116,7 +8117,7 @@ html {
   }
 }
 .sidebar-dark-primary {
-  background-color: #343a40;
+  background-color: #11101d;
 }
 .sidebar-dark-primary .user-panel a:hover {
   color: #fff;

@@ -41,8 +41,8 @@
         border-radius : .2rem;
     }
     .text-strong {
-      font-weight: bold;
-      background-color: #FFC;
+      font-size: 16px;
+      background-color: #e4e9f7;
     }
     .select2 {
       z-index:10050 !important;
