@@ -106,7 +106,7 @@ if($this->session->flashdata('sukses')) {
         </style>
     <?php echo $site->google_map ?>
     <hr>
-    <div class="md-col-12">
+    <div class="md-col-12 text-right">
         <input type="submit" name="submit" value="Simpan konfigurasi" class="btn btn-primary">
         <input type="reset" name="reset" value="Atur ulang" class="btn btn-warning">
     </div>
