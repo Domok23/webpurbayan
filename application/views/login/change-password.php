@@ -34,7 +34,8 @@
   <div class="card shadow-lg" style ="border-radius: 0.8rem; padding: 2rem;">
     <div class="card-body login-card-body">
       <div class="login-logo">
-        <h2 style="font-weight: bold; font-size: 24px; margin-top: 20px;">Lupa Password Anda?</h2>
+        <h2 style="font-weight: bold; font-size: 28px; margin-top: 20px;">Ganti Password Anda</h2>
+        <h5 class="mb-4"><?= $this->session->userdata('reset_email'); ?></h5>
       </div>
 
       <?php 
@@ -42,25 +43,21 @@
       echo validation_errors('<p class="alert alert-warning" role=alert>','</p>');
 
       // Form open 
-      echo form_open(base_url('login/forgotpassword'));
+      echo form_open(base_url('login/changepassword'));
        ?>
 
         <div class="form-group">
-          <input style ="border-radius: 5rem;" type="text" name="email" class="form-control form-control-lg" placeholder="Masukkan Email" value="<?= set_value ('email')?>">
+          <input style ="border-radius: 5rem;" type="password" name="new_password" id="new_password" class="form-control form-control-lg" placeholder="Masukkan password baru" value="<?= set_value ('new_password')?>">
+        </div>
+        <div class="form-group">
+          <input style ="border-radius: 5rem;" type="password" name="passconf" id="passconf" class="form-control form-control-lg" placeholder="Konfirmasi password" value="<?= set_value ('passconf')?>">
         </div>
         <div class="row">
           <div class="col-12">
-          </div>
-          <!-- /.col -->
-          <div class="col-12">
-            <button style ="border-radius: 5rem;" type="submit" class="btn btn-primary btn-block btn-lg">Reset Password</button>
+            <button style ="border-radius: 5rem;" type="submit" class="btn btn-primary btn-block btn-lg">Ganti Password</button>
           </div>
           <!-- /.col -->
         </div>
-        <hr>
-          <div class="text-center">
-            <a href="<?= base_url('login'); ?>">Login Kembali?</a>
-          </div>
       
       <?php echo form_close(); ?>
 

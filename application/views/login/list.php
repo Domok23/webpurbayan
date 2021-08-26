@@ -64,7 +64,7 @@
         </div>
         <hr>
           <div class="text-center">
-            <a class="small" href="<?= base_url('login/forgotpassword'); ?>">Forgot Password?</a>
+            <a href="<?= base_url('login/forgotpassword'); ?>">Lupa Password?</a>
           </div>
       
       <?php echo form_close(); ?>

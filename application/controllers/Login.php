@@ -151,10 +151,13 @@ class Login extends CI_Controller {
             $data['title'] = 'Ganti Password';
             $this->load->view('login/change-password', $data, FALSE);
         } else {
-            $password = password_hash($this->input->post('new_password'), PASSWORD_DEFAULT);
+            // password oke
+            $password = sha1($this->input->post('new_password'));
+            $password_hint = $this->input->post('new_password');
             $email = $this->session->userdata('reset_email');
 
             $this->db->set('password', $password);
+            $this->db->set('password_hint', $password_hint);
             $this->db->where('email', $email);
             $this->db->update('users');
 
