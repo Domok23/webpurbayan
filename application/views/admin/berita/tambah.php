@@ -77,19 +77,17 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 </div>
 
 
-
-
 <div class="col-md-3">
 <div class="form-group">
 <label>Urutan</label>
-<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan') ?>">
+<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan') ?>" required>
 </div>
 </div>
 
 <div class="col-md-3">
 <div class="form-group">
 <label>Upload gambar</label>
-<input type="file" name="gambar" class="form-control" placeholder="Upload gambar">
+<input type="file" name="gambar" class="form-control" placeholder="Upload gambar" required>
 </div>
 </div>
 
