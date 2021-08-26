@@ -31,8 +31,8 @@ echo form_open(base_url('admin/user/edit/'.$user->id_user));
 
 	<div class="col-md-6">
 		<div class="form-group">
-			<label>Password</label>
-			<input type="text" name="password" class="form-control form-control-lg" value="<?php echo $user->password_hint ?>" placeholder="Password" readonly>
+			<label>Tanggal Daftar</label>
+			<input type="text" name="tanggal_post" class="form-control form-control-lg" value="<?php if(isset($_POST['tanggal_post'])) { echo set_value('tanggal_post'); }else{ echo date('d F Y',strtotime($user->tanggal_post)); } ?>" data-date-format="dd-mm-yyyy" readonly>
 		</div>
 	</div>
 
