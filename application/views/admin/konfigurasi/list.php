@@ -15,7 +15,7 @@ if($this->session->flashdata('sukses')) {
 <div class="col-md-12">
  <div class="form-group">
     <label>Profil Instansi</label>
-    <textarea name="tentang" class="form-control" placeholder=" Deskripsikan profil atau tentang Instansi" id="isi"><?php echo $site->profil ?></textarea>
+    <textarea name="profil" class="form-control" placeholder=" Deskripsikan profil atau tentang Instansi" id="isi"><?php echo $site->profil?></textarea>
     </div>
 
     
@@ -78,20 +78,19 @@ if($this->session->flashdata('sukses')) {
     
     <div class="form-group">
     <label>Facebook <i class="fa fa-facebook"></i></label>
-    <input type="url" name="facebook" placeholder="http://facebook.com/" value="<?php echo $site->facebook ?>" class="form-control" required>
+    <input type="url" name="facebook" placeholder="https://facebook.com/" value="<?php echo $site->facebook ?>" class="form-control" required>
     </div>
     
     <div class="form-group">
     <label>Twitter <i class="fa fa-twitter"></i></label>
-   <input type="url" name="twitter" placeholder="http://twitter.com/" value="<?php echo $site->twitter ?>" class="form-control" required>
+    <input type="url" name="twitter" placeholder="https://twitter.com/" value="<?php echo $site->twitter ?>" class="form-control" required>
     </div>
     
-     <div class="form-group">
+    <div class="form-group">
     <label>Instagram <i class="fa fa-instagram"></i></label>
-   <input type="url" name="instagram" placeholder="http://instagram.com/" value="<?php echo $site->instagram ?>" class="form-control"required>
+    <input type="url" name="instagram" placeholder="https://instagram.com/" value="<?php echo $site->instagram ?>" class="form-control"required>
     </div>
 
-    <hr>
     <div class="form-group">
     <label>Google Map</label>
     <textarea name="google_map" rows="5" class="form-control required" placeholder="Kode dari Google Map"><?php echo $site->google_map ?></textarea>
@@ -101,7 +100,7 @@ if($this->session->flashdata('sukses')) {
         <style type="text/css" media="screen">
             iframe {
                 width: 100%;
-                max-height: 200px;
+                max-height: 208px;
             }
         </style>
     <?php echo $site->google_map ?>

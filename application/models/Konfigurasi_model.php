@@ -37,12 +37,6 @@ class Konfigurasi_model extends CI_Model {
 		$this->db->update('konfigurasi',$data);
 	}
 	
-	// Check delete
-	public function check($id_konfigurasi) {
-		$query = $this->db->get_where('produk',array('id_konfigurasi' => $id_konfigurasi));
-		return $query->num_rows();
-	}
-	
 	// Delete
 	public function delete($data) {
 		$this->db->where('id_konfigurasi',$data['id_konfigurasi']);
