@@ -14,7 +14,7 @@ class Kontak extends CI_Controller {
 		$site 			= $this->konfigurasi_model->listing();
 
 		$data = array(	'title'		=> 'Kontak '.$site->namaweb.' | '.$site->tagline,
-						'deskripsi'	=> 'Kontak '.$site->namaweb.' | '.$site->tagline.' '.$site->tentang,
+						'deskripsi'	=> 'Kontak '.$site->namaweb.' | '.$site->tagline.' '.$site->profil,
 						'site'		=> $site,
 						'isi'		=> 'kontak/list');
 		$this->load->view('layout/wrapper', $data, FALSE);

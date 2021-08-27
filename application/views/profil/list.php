@@ -11,7 +11,7 @@
               <!-- .single-event-img -->
               <div class="single-event-content buttom-rounded">
                 <h3> PROFIL <?php echo $site->namaweb; ?></h3><hr>
-                <?php echo $site->tentang; ?>
+                <?php echo $site->profil; ?>
               </div>
               <div class="contact-us">
                 <div class="row">

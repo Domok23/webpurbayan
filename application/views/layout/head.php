@@ -7,7 +7,7 @@ $site_info = $this->konfigurasi_model->listing();
 <head>
 <meta charset="utf-8">
 <title><?php echo $title; ?></title>
-<meta name="description" content="<?php echo strip_tags($site_info->tentang).', '.$title ?>">
+<meta name="description" content="<?php echo strip_tags($site_info->profil).', '.$title ?>">
 <meta name="author" content="<?php echo $site_info->namaweb ?>">
 <!-- icon -->
 <link rel="shortcut icon" href="<?php echo $this->website->icon(); ?>">

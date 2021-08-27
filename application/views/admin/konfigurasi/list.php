@@ -14,8 +14,8 @@ if($this->session->flashdata('sukses')) {
 
 <div class="col-md-12">
  <div class="form-group">
-    <label>Profil atau Tentang Instansi</label>
-    <textarea name="tentang" class="form-control" placeholder=" Deskripsikan Profil atau Tentang Instansi" id="isi"><?php echo $site->tentang ?></textarea>
+    <label>Profil Instansi</label>
+    <textarea name="tentang" class="form-control" placeholder=" Deskripsikan profil atau tentang Instansi" id="isi"><?php echo $site->profil ?></textarea>
     </div>
 
     

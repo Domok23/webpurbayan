@@ -15,7 +15,7 @@ class Profil extends CI_Controller {
 		$site 			= $this->konfigurasi_model->listing();
 
 		$data = array(	'title'		=> 'Profil '.$site->namaweb.' | '.$site->tagline,
-						'deskripsi'	=> 'Profil '.$site->namaweb.' | '.$site->tagline.' '.$site->tentang,
+						'deskripsi'	=> 'Profil '.$site->namaweb.' | '.$site->tagline.' '.$site->profil,
 						'site'		=> $site,
 						'isi'		=> 'profil/list');
 		$this->load->view('layout/wrapper', $data, FALSE);

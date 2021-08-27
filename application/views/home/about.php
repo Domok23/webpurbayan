@@ -9,7 +9,7 @@
                     <div class="col-md-12">
                         <div class="about-greenforest-content">
                             <h2><?php echo $site->namaweb ?></h2>
-                            <p class="text-justify"><?php echo character_limiter(strip_tags($site->tentang), 575); ?></p>
+                            <p class="text-justify"><?php echo character_limiter(strip_tags($site->profil), 575); ?></p>
                                 <a href="<?php echo base_url('profil'); ?>" class="btn btn-default"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
                         </div>
                         <!-- .about-greenforest-content -->

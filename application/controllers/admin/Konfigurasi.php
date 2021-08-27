@@ -34,7 +34,7 @@ class Konfigurasi extends CI_Controller {
 							'namaweb'			=> $i->post('namaweb'),
 							'singkatan'			=> $i->post('singkatan'),
 							'tagline'			=> $i->post('tagline'),
-							'tentang'			=> $i->post('tentang'),
+							'profil'			=> $i->post('profil'),
 							'gambar'			=> $i->post('gambar'),
 							'website'			=> $i->post('website'),
 							'email'				=> $i->post('email'),
