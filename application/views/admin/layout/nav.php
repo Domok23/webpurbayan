@@ -47,9 +47,9 @@
               <p>Berita<i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
-              <li class="nav-item"><a href="<?php echo base_url('admin/berita') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p style="font-size: 14px;">Data Berita</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/berita') ?>" class="nav-link"><i class="fad fa-table nav-icon"></i><p style="font-size: 14px;">Data Berita</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/berita/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p style="font-size: 14px;">Tambah Berita</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/berita/tambah') ?>" class="nav-link"><i class="fad fa-plus nav-icon"></i><p style="font-size: 14px;">Tambah Berita</p></a>
               </li>
               
             </ul>
