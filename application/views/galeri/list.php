@@ -14,7 +14,7 @@
                                         <!-- .overlay-project -->
                                         <img style="width:278.5px;height:208px;" src="<?php echo base_url('assets/upload/image/thumbs/'.$galeri->gambar) ?>" alt="recent-project-img-1" class="img-responsive img-rounded">
                                         <div class="project-plus">
-                                            <a href="<?php echo base_url('assets/upload/image/'.$galeri->gambar) ?>" data-rel="lightcase:myCollection"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                            <a href="<?php echo base_url('assets/upload/image/'.$galeri->gambar) ?>" data-rel="lightcase:myCollection"><i class="fad fa-plus" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="recent-project-content">
                                             <p><a href="#"><?php echo $galeri->judul_galeri; ?></a></p>

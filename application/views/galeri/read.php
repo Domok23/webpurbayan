@@ -32,8 +32,8 @@
     </div><!-- End .carousel-inner -->
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#project-gallery" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-    <a class="right carousel-control" href="#project-gallery" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+    <a class="left carousel-control" href="#project-gallery" role="button" data-slide="prev"><i class="fad fa-angle-left"></i></a>
+    <a class="right carousel-control" href="#project-gallery" role="button" data-slide="next"><i class="fad fa-angle-right"></i></a>
 </div><!-- End .carousel -->
 </div><!-- End .col-md-7 -->
 

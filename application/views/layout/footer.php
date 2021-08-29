@@ -76,7 +76,7 @@ $site           = $this->konfigurasi_model->listing();
                                 <span><?php echo $site->telepon ?></span>
                             </li>
                             <li>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
                                 <span><?php echo $site->email ?></span>
 
                             </li>
@@ -108,9 +108,9 @@ $site           = $this->konfigurasi_model->listing();
         <!-- .copyright-txt -->
         <div class="social-box">
             <ul class="social-icon-rounded">
-                <li><a href="<?php echo $site->facebook ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="<?php echo $site->instagram ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="<?php echo $site->twitter ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="<?php echo $site->facebook ?>"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="<?php echo $site->instagram ?>"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="<?php echo $site->twitter ?>"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <!-- .social-box -->

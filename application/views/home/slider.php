@@ -34,10 +34,10 @@
 </div>
 <!-- .carosoul-inner -->
 <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
-<span class="fa fa-angle-left" aria-hidden="true"></span>
+<span class="fad fa-angle-left" aria-hidden="true"></span>
 </a>
 <a class="right carousel-control" href="#slider" role="button" data-slide="next">
-<span class="fa fa-angle-right" aria-hidden="true"></span>
+<span class="fad fa-angle-right" aria-hidden="true"></span>
 </a>
 </div>
 </div>

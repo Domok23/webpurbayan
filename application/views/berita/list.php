@@ -14,12 +14,12 @@
                                         <div class="blog-content">
                                             <h4><a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><?php echo $berita->judul_berita; ?></a></h4>
                                             <ul class="meta-post">
-                                                <li><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo date('d M Y', strtotime($berita->tanggal_publish)); ?></li>
-                                                <li><i class="fa fa-user"></i> <?php echo $berita->nama; ?></li>
+                                                <li><i class="fad fad-calendar" aria-hidden="true"></i> <?php echo date('d M Y', strtotime($berita->tanggal_publish)); ?></li>
+                                                <li><i class="fad fa-user"></i> <?php echo $berita->nama; ?></li>
                                                 <!-- <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $berita->hits; ?> Viewer</a></li> -->
                                             </ul>
                                             <p class="text-justify"><?php echo character_limiter(strip_tags($berita->isi), 500); ?></p>
-                                            <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
+                                            <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><i class="fad fa-chevron-right"></i> Selengkapnya</a>
                                         </div>
                                         <!-- .blog-content -->
                                     </div>
@@ -66,7 +66,7 @@
                                                         <div class="popular-news-contant">
                                                             <h5><a href="<?php echo base_url('berita/read/' . $populer->slug_berita); ?>"><?php echo $populer->judul_berita; ?></a></h5>
                                                             <p>
-                                                                <i class="fa fa-calendar"></i> <?php echo date('d M Y', strtotime($populer->tanggal_publish)); ?> <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $populer->hits; ?> Viewer</a>
+                                                                <i class="fad fa-calendar"></i> <?php echo date('d M Y', strtotime($populer->tanggal_publish)); ?> <a href="#"><i class="fad fa-eye" aria-hidden="true"></i> <?php echo $populer->hits; ?> Viewer</a>
                                                             </p>
                                                         </div>
                                                         <!-- .popular-news-img -->

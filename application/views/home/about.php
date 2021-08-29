@@ -10,7 +10,7 @@
                         <div class="about-greenforest-content">
                             <h2><?php echo $site->namaweb ?></h2>
                             <p class="text-justify"><?php echo character_limiter(strip_tags($site->profil), 575); ?></p>
-                                <a href="<?php echo base_url('profil'); ?>" class="btn btn-default"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
+                                <a href="<?php echo base_url('profil'); ?>" class="btn btn-default"><i class="fad fa-chevron-right"></i> Selengkapnya</a>
                         </div>
                         <!-- .about-greenforest-content -->
                     </div>

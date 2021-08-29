@@ -29,12 +29,12 @@
                 <div style="min-height: 120px !important;">
                 <h3><a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><?php echo $berita->judul_berita; ?></a></h3>
                 <ul class="meta-post">
-                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo date('H:i', strtotime($berita->tanggal_publish)); ?></li>
-                    <li><i class="fa fa-user"></i> <?php echo $berita->nama; ?></li>
+                    <li><i class="fad fa-clock" aria-hidden="true"></i> <?php echo date('H:i', strtotime($berita->tanggal_publish)); ?></li>
+                    <li><i class="fad fa-user"></i> <?php echo $berita->nama; ?></li>
                 </ul>
                 </div>
                 <p class="text-justify"><?php echo character_limiter(strip_tags($berita->isi), 200); ?></p>
-                <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>" class="btn btn-default"><i class="fa fa-chevron-right"></i> Selengkapnya</a>
+                <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>" class="btn btn-default"><i class="fad fa-chevron-right"></i> Selengkapnya</a>
             </div>
             <!-- .events-content -->
         </div>

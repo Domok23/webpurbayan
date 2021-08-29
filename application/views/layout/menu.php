@@ -52,8 +52,8 @@ $nav_kampung                = $this->nav_model->nav_kampung();
 
         <div class="menu-right-option pull-right">
             <div class="search-box">
-                <i class="fa fa-search first_click" aria-hidden="true" style="display: block;"></i>
-                <i class="fa fa-times second_click" aria-hidden="true" style="display: none;"></i>
+                <i class="fad fa-search first_click" aria-hidden="true" style="display: block;"></i>
+                <i class="fad fa-times second_click" aria-hidden="true" style="display: none;"></i>
             </div>
             <div class="search-box-text">
                 <form action="http://demos.codexcoder.com/labartisan/html/GreenForest/search">

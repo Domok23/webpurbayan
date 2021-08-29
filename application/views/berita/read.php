@@ -22,8 +22,8 @@
                                     </div>
                                     <!-- .author-option -->
                                     <ul class="meta-post">
-                                        <li><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo date('d M Y', strtotime($berita->tanggal_publish)); ?></li>
-                                        <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $berita->hits; ?> Viewer</a></li>
+                                        <li><i class="fad fa-calendar" aria-hidden="true"></i> <?php echo date('d M Y', strtotime($berita->tanggal_publish)); ?></li>
+                                        <li><a href="#"><i class="fad fa-eye" aria-hidden="true"></i> <?php echo $berita->hits; ?> Viewer</a></li>
                                     </ul>
                                 </div>
                                 <!-- .meta-box -->
