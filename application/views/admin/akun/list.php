@@ -43,8 +43,8 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 			<label class="col-sm-3 control-label"></label>
 			<div class="col-sm-9">
 				<div class="form-group">
-					<button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-check"></i> Simpan</button>
-					<button type="reset" name="reset" class="btn btn-warning"><i class="fas fa-undo"></i> Atur ulang</button>
+					<button type="submit" name="submit" class="btn btn-primary"><i class="fas fa-check"></i> Simpan</button>
+					<button type="reset" name="reset" class="btn btn-warning"><i class="fad fa-undo"></i> Atur ulang</button>
 				</div>
 			</div>
 		</div>

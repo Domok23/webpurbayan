@@ -107,7 +107,7 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 
 <div class="form-group text-right">
 <input type="reset" name="reset" class="btn btn-warning" value="Atur ulang">
-<button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-check"></i> Simpan data</button>
+<button type="submit" name="submit" class="btn btn-primary"><i class="fas fa-check"></i> Simpan data</button>
 </div>
 
 </div>

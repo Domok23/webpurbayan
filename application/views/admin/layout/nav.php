@@ -33,7 +33,7 @@
           <!-- DASBOR -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/dasbor') ?>" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fad fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
@@ -43,7 +43,7 @@
           <!-- BERITA DAN INFORMASI -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-newspaper"></i>
+              <i class="nav-icon fad fa-newspaper"></i>
               <p>Berita<i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
@@ -58,16 +58,16 @@
           <!-- GALERI -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-image"></i>
+              <i class="nav-icon fad fa-image"></i>
               <p>Galeri &amp; Banner <i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 12px;">
 
-              <li class="nav-item"><a href="<?php echo base_url('admin/galeri') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p>Data Galeri &amp; Banner</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/galeri') ?>" class="nav-link"><i class="fad fa-table nav-icon"></i><p>Data Galeri &amp; Banner</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/galeri/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Galeri &amp; Banner</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/galeri/tambah') ?>" class="nav-link"><i class="fad fa-plus nav-icon"></i><p>Tambah Galeri &amp; Banner</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/kategori_galeri') ?>" class="nav-link"><i class="fa fa-tags nav-icon"></i><p>Kategori Galeri &amp; Banner</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/kategori_galeri') ?>" class="nav-link"><i class="fad fa-tags nav-icon"></i><p>Kategori Galeri &amp; Banner</p></a>
               </li>
               
             </ul>
@@ -77,7 +77,7 @@
           <!-- MENU USER -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/user') ?>" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
+              <i class="nav-icon fad fa-users"></i>
               <p>
                 Pengelola Sistem
               </p>
@@ -87,18 +87,18 @@
           <!-- KONFIGURASI MENU -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-cogs"></i>
+              <i class="nav-icon fad fa-cogs"></i>
               <p>Konfigurasi <i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
               
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link"><i class="fas fa-tasks nav-icon"></i><p style="font-size: 14px;">Konfigurasi Umum</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link"><i class="fad fa-tasks nav-icon"></i><p style="font-size: 14px;">Konfigurasi Umum</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/logo') ?>" class="nav-link"><i class="fas fa-home nav-icon"></i><p style="font-size: 14px;">Ganti Logo</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/logo') ?>" class="nav-link"><i class="fad fa-home nav-icon"></i><p style="font-size: 14px;">Ganti Logo</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/icon') ?>" class="nav-link"><i class="fas fa-eye nav-icon"></i><p style="font-size: 14px;">Ganti Icon</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/icon') ?>" class="nav-link"><i class="fad fa-eye nav-icon"></i><p style="font-size: 14px;">Ganti Icon</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/email_setting') ?>" class="nav-link"><i class="fas fa-envelope nav-icon"></i><p style="font-size: 14px;">Email Setting</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/email_setting') ?>" class="nav-link"><i class="fad fa-envelope nav-icon"></i><p style="font-size: 14px;">Email Setting</p></a>
               </li>
             </ul>
           </li>
@@ -106,7 +106,7 @@
           <!-- Logout -->
           <li class="nav-item">
             <a href="<?php echo base_url('login/logout') ?>" class="nav-link">
-              <i class="nav-icon fas fa-arrow-alt-circle-left"></i>
+              <i class="nav-icon fad fa-arrow-alt-circle-left"></i>
                 Logout
               </p>
             </a>

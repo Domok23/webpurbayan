@@ -9,10 +9,10 @@ echo form_open(base_url('admin/galeri/proses'));
 ?>
 <p class="md-col-12">
   <a href="<?php echo base_url('admin/galeri/tambah') ?>" class="btn btn-success">
-  <i class="fa fa-plus"></i> Tambah Galeri</a>
+  <i class="fas fa-plus"></i> Tambah Galeri</a>
 
   <button class="btn btn-danger tombol-hapus" type="submit" name="hapus" onclick="return confirm('Apakah anda yakin akan menghapus data?');">
-      <i class="fas fa-trash-alt"></i> Hapus
+      <i class="fad fa-trash-alt"></i> Hapus
     </button> 
 
 </p>
@@ -25,7 +25,7 @@ echo form_open(base_url('admin/galeri/proses'));
     <th>
         <div class="mailbox-controls">
             <!-- Check all button -->
-            <button type="button" class="btn btn-default btn-xs checkbox-toggle"><i class="far fa-check-square"></i>
+            <button type="button" class="btn btn-default btn-xs checkbox-toggle"><i class="fad fa-check-square"></i>
             </button>
         </div>
     </th>
@@ -66,10 +66,10 @@ echo form_open(base_url('admin/galeri/proses'));
       <div class="md-col-12">
 
       <a href="<?php echo base_url('admin/galeri/edit/'.$galeri->id_galeri) ?>" 
-      class="btn btn-warning btn-xs"><i class="far fa-edit"></i> Edit</a>
+      class="btn btn-warning btn-xs"><i class="fad fa-edit"></i> Edit</a>
 
        <a href="<?php echo base_url('admin/galeri/delete/'.$galeri->id_galeri) ?>" 
-      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="far fa-trash-alt"></i> Hapus</a>
+      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fad fa-trash-alt"></i> Hapus</a>
     </div>
     </td>
 </tr>

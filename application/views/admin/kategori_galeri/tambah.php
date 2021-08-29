@@ -1,5 +1,5 @@
 <button class="btn btn-success" data-toggle="modal" data-target="#Tambah">
-    <i class="fa fa-plus"></i> Tambah
+    <i class="fas fa-plus"></i> Tambah
 </button>
 <div class="modal fade" id="Tambah" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog">

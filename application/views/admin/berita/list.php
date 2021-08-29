@@ -4,27 +4,27 @@ echo form_open(base_url('admin/berita/proses'));
 ?>
 <p class="md-col-12">
   <a href="<?php echo base_url('admin/berita/tambah') ?>" class="btn btn-success">
-  <i class="fa fa-plus mr-1"></i> Tambah Berita</a>
+  <i class="fas fa-plus mr-1"></i> Tambah Berita</a>
 
   <button class="btn btn-primary" type="submit" name="publish" onClick="check();" >
-    <i class="far fa-paper-plane mr-1"></i> Publikasikan
+    <i class="fad fa-paper-plane mr-1"></i> Publikasikan
   </button>
   
   <button class="btn btn-warning" type="submit" name="draft" onClick="check();" >
-      <i class="far fa-times-circle mr-1"></i> Jangan Publikasikan
+      <i class="fad fa-times-circle mr-1"></i> Jangan Publikasikan
   </button>
 
 
   
   <button class="btn btn-danger" type="submit" name="hapus" onclick="return confirm('Apakah anda yakin akan menghapus data?');" >
-      <i class="fas fa-trash-alt mr-1"></i> Hapus
+      <i class="fad fa-trash-alt mr-1"></i> Hapus
     </button> 
 <?php 
 $url_navigasi = $this->uri->segment(2); 
 if($this->uri->segment(3) != "") { 
  ?>
 <a href="<?php echo base_url('admin/'.$url_navigasi) ?>"  class="btn btn-primary">
- <i class="fas fa-chevron-circle-left mr-1"></i> Kembali</a>
+ <i class="fad fa-chevron-circle-left mr-1"></i> Kembali</a>
  <?php } ?>
 </p>
 <div class="table-responsive mailbox-messages">
@@ -66,7 +66,7 @@ if($this->uri->segment(3) != "") {
     </td>
     <td>
     <a href="<?php echo base_url('admin/berita/edit/'.$berita->id_berita) ?>">
-    <?php echo $berita->judul_berita ?> <sup><i class="far fa-edit"></i></sup>
+    <?php echo $berita->judul_berita ?> <sup><i class="fad fa-edit"></i></sup>
     </a>
       <small>
         <br>Posted: <?php echo date('d M Y H:i: s',strtotime($berita->tanggal_post)) ?>
@@ -88,12 +88,12 @@ if($this->uri->segment(3) != "") {
     <td>
       <div class="md-col-12">
         <a href="<?php echo base_url('berita/read/'.$berita->slug_berita) ?>" 
-        class="btn btn-success btn-xs" target="_blank"><i class="far fa-eye"></i> Lihat</a>
+        class="btn btn-success btn-xs" target="_blank"><i class="fad fa-eye"></i> Lihat</a>
 
         <a href="<?php echo base_url('admin/berita/edit/'.$berita->id_berita) ?>" 
-        class="btn btn-warning btn-xs"><i class="far fa-edit"></i> Edit</a>
+        class="btn btn-warning btn-xs"><i class="fad fa-edit"></i> Edit</a>
 
-        <a href="<?php echo base_url('admin/berita/delete/'.$berita->id_berita) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="far fa-trash-alt"></i> Hapus</a>
+        <a href="<?php echo base_url('admin/berita/delete/'.$berita->id_berita) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fad fa-trash-alt"></i> Hapus</a>
       </div>
     </td>
 </tr>

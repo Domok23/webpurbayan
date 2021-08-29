@@ -6,10 +6,10 @@ echo form_open(base_url('admin/user/proses'));
 <p>
   <div class="md-col-12">
     <a href="<?php echo base_url('admin/user/tambah') ?>" class="btn btn-success">
-    <i class="fa fa-plus"></i> Tambah Baru</a>
+    <i class="fas fa-plus"></i> Tambah Baru</a>
 
     <button class="btn btn-danger" name="hapus" type="submit" onclick="return confirm('Apakah anda yakin akan menghapus data?');">
-      <i class="fas fa-trash-alt"></i> Hapus
+      <i class="fad fa-trash-alt"></i> Hapus
     </button>
   </div>
 </p>
@@ -19,7 +19,7 @@ echo form_open(base_url('admin/user/proses'));
   <tr>
     <th class="text-center" width="5%">
        <!-- Check all button -->
-        <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
+        <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fad fa-check-square"></i>
         </button>
     </th>
     <th>NAMA</th>
@@ -45,8 +45,8 @@ echo form_open(base_url('admin/user/proses'));
     <td><?php echo $user->email ?></td>
     <td>
       <div class="md-col-12">
-        <a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>" class="btn btn-warning btn-xs"><i class="far fa-edit"></i> Edit</a>
-        <a href="<?php echo base_url('admin/user/delete/'.$user->id_user) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="far fa-trash-alt"></i> Hapus</a>
+        <a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>" class="btn btn-warning btn-xs"><i class="fad fa-edit"></i> Edit</a>
+        <a href="<?php echo base_url('admin/user/delete/'.$user->id_user) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fad fa-trash-alt"></i> Hapus</a>
       </div>
     </td>
   </tr>

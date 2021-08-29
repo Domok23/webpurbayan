@@ -92,7 +92,7 @@ if($this->session->flashdata('sukses')) {
     </div>
 
     <div class="form-group">
-    <label><i class="fas fa-map-marked-alt"></i> Google Map</label>
+    <label><i class="fad fa-map-marked-alt"></i> Google Map</label>
     <textarea name="google_map" rows="5" class="form-control required" placeholder="Kode dari Google Map"><?php echo $site->google_map ?></textarea>
     </div>
     

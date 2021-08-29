@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="<?php echo $this->website->icon(); ?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link href="<?php echo base_url() ?>assets/admin/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+  <link href="<?php echo base_url() ?>assets/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- DataTables -->

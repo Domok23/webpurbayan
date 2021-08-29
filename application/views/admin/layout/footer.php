@@ -153,11 +153,11 @@ $( ".tanggal" ).datepicker({
       if (clicks) {
         //Uncheck all checkboxes
         $('.mailbox-messages input[type=\'checkbox\']').iCheck('uncheck')
-        $('.fa', this).removeClass('fa-check-square-o').addClass('fa-square-o')
+        $('.fa', this).removeClass('fa-check-square').addClass('fa-square')
       } else {
         //Check all checkboxes
         $('.mailbox-messages input[type=\'checkbox\']').iCheck('check')
-        $('.fa', this).removeClass('fa-square-o').addClass('fa-check-square-o')
+        $('.fa', this).removeClass('fa-square').addClass('fa-check-square')
       }
       $(this).data('clicks', !clicks)
     })

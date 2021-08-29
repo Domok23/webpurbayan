@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-12 col-sm-6 col-md-3">
     <div class="info-box">
-      <span class="info-box-icon btn-info elevation-1"><i class="far fa-newspaper"></i></span>
+      <span class="info-box-icon btn-info elevation-1"><i class="fad fa-newspaper"></i></span>
 
       <div class="info-box-content">
         <span class="info-box-text">Berita</span>
@@ -19,7 +19,7 @@
 
   <div class="col-12 col-sm-6 col-md-3">
     <div class="info-box mb-3">
-      <span class="info-box-icon btn-primary elevation-1"><i class="fa fa-image"></i></span>
+      <span class="info-box-icon btn-primary elevation-1"><i class="fad fa-image"></i></span>
 
       <div class="info-box-content">
         <span class="info-box-text">Galeri</span>
@@ -35,7 +35,7 @@
 
   <div class="col-12 col-sm-6 col-md-3">
     <div class="info-box">
-      <span class="info-box-icon btn-success elevation-1"><i class="fas fa-users"></i></span>
+      <span class="info-box-icon btn-success elevation-1"><i class="fad fa-users"></i></span>
 
       <div class="info-box-content">
         <span class="info-box-text">Pengelola</span>
