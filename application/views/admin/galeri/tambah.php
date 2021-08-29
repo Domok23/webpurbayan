@@ -14,19 +14,16 @@ if(isset($error)) {
 echo form_open_multipart(base_url('admin/galeri/tambah'));
 ?>
 <div class="row">
-<div class="col-md-4">
-
+<div class="col-md-12">
 <div class="form-group form-group-lg">
-<label>Judul galeri</label>
-<input type="text" name="judul_galeri" class="form-control" placeholder="Judul galeri" value="<?php echo set_value('judul_galeri') ?>">
-</div>
-
+<label>Judul galeri <span class="text-danger">*</span></label>
+<input type="text" name="judul_galeri" class="form-control" placeholder="Judul galeri" value="<?php echo set_value('judul_galeri') ?>" required>
 </div>
 </div>
 
-<div class="row col-md-4">
 
-<div class="form-group form-group-lg">
+<div class="col-md-3">
+<div class="form-group">
 <label>Kategori Galeri</label>
 <select name="id_kategori_galeri" class="form-control">
 	<?php foreach($kategori_galeri as $kategori_galeri) { ?>
@@ -34,7 +31,9 @@ echo form_open_multipart(base_url('admin/galeri/tambah'));
 	<?php } ?>
 </select>
 </div>
+</div>
 
+<div class="col-md-4">
 <div class="form-group">
 <label>Jenis/Posisi Galeri</label>
 <select name="jenis_galeri" class="form-control">
@@ -42,26 +41,28 @@ echo form_open_multipart(base_url('admin/galeri/tambah'));
 	<option value="Homepage">Homepage - Gambar Slider</option>
 </select>
 </div>
-
 </div>
 
-<div class="row col-md-4">
+<div class="col-md-5">
 <div class="form-group">
-<label>Upload gambar</label>
+<label>Upload gambar <span class="text-danger">*</span></label>
 <input type="file" name="gambar" class="form-control" required="required" placeholder="Upload gambar">
 </div>
 </div>
 
 <div class="col-md-12">
-
 <div class="form-group">
-<label>Isi galeri</label>
-<textarea name="isi" id="isi" class="form-control konten" placeholder="Isi galeri"><?php echo set_value('isi') ?></textarea>
+<label>Link/Website Sumber Gambar</label>
+<input type="url" name="website" class="form-control" placeholder="Link sumber (jika ada)" value="<?php echo set_value('website') ?>">
+</div>
 </div>
 
+<div class="col-md-12">
+
+
 <div class="form-group">
-<label>Link/Website Sumber Galeri</label>
-<input type="url" name="website" class="form-control" placeholder="Link sumber (jika ada)" value="<?php echo set_value('website') ?>">
+<label>Keterangan</label>
+<textarea name="isi" id="isi" class="form-control konten" placeholder="Isi galeri"><?php echo set_value('isi') ?></textarea>
 </div>
 
 <div class="md-col-12 text-right">

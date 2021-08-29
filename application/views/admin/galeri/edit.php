@@ -14,34 +14,28 @@ if(isset($error)) {
 echo form_open_multipart(base_url('admin/galeri/edit/'.$galeri->id_galeri));
 ?>
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-12">
 
 <div class="form-group form-group-lg">
 <label>Judul galeri</label>
 <input type="text" name="judul_galeri" class="form-control" placeholder="Judul galeri" value="<?php echo $galeri->judul_galeri ?>">
 </div>
-
 </div>
 
-<div class="col-md-4">
-
-</div>
-
-<div class="row col-md-4">
-
+<div class="col-md-3">
 <div class="form-group form-group-lg">
 <label>Kategori Galeri</label>
 <select name="id_kategori_galeri" class="form-control">
-
 	<?php foreach($kategori_galeri as $kategori_galeri) { ?>
 	<option value="<?php echo $kategori_galeri->id_kategori_galeri ?>" 
 	<?php if($galeri->id_kategori_galeri==$kategori_galeri->id_kategori_galeri) { echo "selected"; } ?>
 	><?php echo $kategori_galeri->nama_kategori_galeri ?></option>
 	<?php } ?>
-
 </select>
-
 </div>
+</div>
+
+<div class="col-md-4">
 <div class="form-group">
 <label>Jenis/Posisi Galeri</label>
 <select name="jenis_galeri" class="form-control">
@@ -53,7 +47,7 @@ echo form_open_multipart(base_url('admin/galeri/edit/'.$galeri->id_galeri));
 </div>
 </div>
 
-<div class="row col-md-4">
+<div class="col-md-5">
 <div class="form-group">
 <label>Upload gambar</label>
 <input type="file" name="gambar" class="form-control" placeholder="Upload gambar">
@@ -61,15 +55,17 @@ echo form_open_multipart(base_url('admin/galeri/edit/'.$galeri->id_galeri));
 </div>
 
 <div class="col-md-12">
-
-<div class="form-group">
-<label>Isi galeri</label>
-<textarea name="isi" id="isi" class="form-control konten" placeholder="Isi galeri"><?php echo $galeri->isi ?></textarea>
-</div>
-
 <div class="form-group">
 <label>Link/Website Sumber Galeri</label>
 <input type="url" name="website" class="form-control" placeholder="Link sumber (jika ada)" value="<?php echo $galeri->website ?>">
+</div>
+</div>
+
+<div class="col-md-12">
+
+<div class="form-group">
+<label>Keterangan</label>
+<textarea name="isi" id="isi" class="form-control konten" placeholder="Isi galeri"><?php echo $galeri->isi ?></textarea>
 </div>
 
 <div class="md-col-12 text-right">
