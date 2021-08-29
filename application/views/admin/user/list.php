@@ -9,7 +9,7 @@ echo form_open(base_url('admin/user/proses'));
     <i class="fa fa-plus"></i> Tambah Baru</a>
 
     <button class="btn btn-danger" name="hapus" type="submit" onclick="return confirm('Apakah anda yakin akan menghapus data?');">
-      <i class="fa fa-trash"></i> Hapus
+      <i class="fas fa-trash-alt"></i> Hapus
     </button>
   </div>
 </p>
@@ -45,8 +45,8 @@ echo form_open(base_url('admin/user/proses'));
     <td><?php echo $user->email ?></td>
     <td>
       <div class="md-col-12">
-        <a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
-        <a href="<?php echo base_url('admin/user/delete/'.$user->id_user) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o"></i> Hapus</a>
+        <a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>" class="btn btn-warning btn-xs"><i class="far fa-edit"></i> Edit</a>
+        <a href="<?php echo base_url('admin/user/delete/'.$user->id_user) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="far fa-trash-alt"></i> Hapus</a>
       </div>
     </td>
   </tr>

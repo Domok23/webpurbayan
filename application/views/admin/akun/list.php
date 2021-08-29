@@ -5,7 +5,7 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 <div class="row">
 	<div class="col-md-12">
 		<h4 class="alert alert-info">Update Profil Anda</h4>
-		<p class="text-center">
+		<p class="text-center mt-3">
 			<img src="<?php if($user->gambar =="") { echo base_url('assets/upload/user/default.png'); }else{ echo base_url('assets/upload/user/thumbs/'.$user->gambar); }?>"style="max-width: 150px; height: auto;" class="img img-circle img-thumbnail">
 		</p>
 
@@ -44,7 +44,7 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 			<div class="col-sm-9">
 				<div class="form-group">
 					<button type="submit" name="submit" class="btn btn-primary"><i class="fa fa-check"></i> Simpan</button>
-					<button type="reset" name="reset" class="btn btn-warning"><i class="fa fa-rotate-left"></i> Atur ulang</button>
+					<button type="reset" name="reset" class="btn btn-warning"><i class="fas fa-undo"></i> Atur ulang</button>
 				</div>
 			</div>
 		</div>

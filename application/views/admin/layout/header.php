@@ -9,7 +9,7 @@
         <a href="<?php echo base_url() ?>" target="_blank" class="nav-link">Beranda Website</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php echo base_url('admin/dasbor') ?>" class="nav-link">Dasbor</a>
+        <a href="<?php echo base_url('admin/dasbor') ?>" class="nav-link">Dashboard</a>
       </li>
     </ul>
     <!-- Right navbar links -->
@@ -26,17 +26,18 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="<?php echo base_url('admin/akun') ?>">
-                                    <i class="fa fa-user mr-2 "></i>
-                                    My Profile
+                                    <i class="fas fa-user-circle mr-2 "></i>
+                                    
+                                    Profil Saya
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="<?php echo base_url('admin/akun/password') ?>">
-                                    <i class="fa fa-key mr-2 "></i>
+                                    <i class="fas fa-key mr-2 "></i>
                                     Ganti Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="<?php echo base_url('login/logout') ?>">
-                                    <i class="fa fa-sign-out mr-2"></i>
+                                    <i class="fas fa-arrow-alt-circle-left mr-2"></i>
                                     Logout
                                 </a>
                             </div>

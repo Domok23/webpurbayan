@@ -92,7 +92,7 @@ class Akun extends CI_Controller {
 			redirect(base_url('admin/akun'),'refresh');
 		}}
 		// End masuk database
-		$data = array(	'title'		=> 'Profil Akun Anda: '.$this->session->userdata('nama'),
+		$data = array(	'title'		=> 'Profil Akun: '.$this->session->userdata('nama'),
 						'user'		=> $user,
 						'isi'		=> 'admin/akun/list'
 					);
@@ -123,7 +123,7 @@ class Akun extends CI_Controller {
 		if($valid->run()===FALSE) {
 		// End validasi
 
-		$data = array(	'title'		=> 'Password '.$this->session->userdata('nama'),
+		$data = array(	'title'		=> 'Ganti Password: '.$this->session->userdata('nama'),
 						'user'		=> $user,
 						'isi'		=> 'admin/akun/password'
 					);

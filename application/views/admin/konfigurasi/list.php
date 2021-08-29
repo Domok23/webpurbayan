@@ -77,22 +77,22 @@ if($this->session->flashdata('sukses')) {
 <h3>Sosial Media:</h3><hr>
     
     <div class="form-group">
-    <label>Facebook <i class="fa fa-facebook"></i></label>
+    <label><i class="fab fa-facebook"></i> Facebook</label>
     <input type="url" name="facebook" placeholder="https://facebook.com/" value="<?php echo $site->facebook ?>" class="form-control" required>
     </div>
     
     <div class="form-group">
-    <label>Twitter <i class="fa fa-twitter"></i></label>
+    <label><i class="fab fa-twitter"></i> Twitter</label>
     <input type="url" name="twitter" placeholder="https://twitter.com/" value="<?php echo $site->twitter ?>" class="form-control" required>
     </div>
     
     <div class="form-group">
-    <label>Instagram <i class="fa fa-instagram"></i></label>
+    <label><i class="fab fa-instagram"></i> Instagram</label>
     <input type="url" name="instagram" placeholder="https://instagram.com/" value="<?php echo $site->instagram ?>" class="form-control"required>
     </div>
 
     <div class="form-group">
-    <label>Google Map</label>
+    <label><i class="fas fa-map-marked-alt"></i> Google Map</label>
     <textarea name="google_map" rows="5" class="form-control required" placeholder="Kode dari Google Map"><?php echo $site->google_map ?></textarea>
     </div>
     

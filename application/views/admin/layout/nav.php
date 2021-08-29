@@ -33,7 +33,7 @@
           <!-- DASBOR -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/dasbor') ?>" class="nav-link">
-              <i class="nav-icon fa fa-dashboard"></i>
+              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
@@ -43,7 +43,7 @@
           <!-- BERITA DAN INFORMASI -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-newspaper-o"></i>
+              <i class="nav-icon fas fa-newspaper"></i>
               <p>Berita<i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
@@ -58,7 +58,7 @@
           <!-- GALERI -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-image"></i>
+              <i class="nav-icon fas fa-image"></i>
               <p>Galeri &amp; Banner <i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 12px;">
@@ -77,7 +77,7 @@
           <!-- MENU USER -->
           <li class="nav-item">
             <a href="<?php echo base_url('admin/user') ?>" class="nav-link">
-              <i class="nav-icon fa fa-lock"></i>
+              <i class="nav-icon fas fa-users"></i>
               <p>
                 Pengelola Sistem
               </p>
@@ -87,18 +87,18 @@
           <!-- KONFIGURASI MENU -->
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-wrench"></i>
+              <i class="nav-icon fas fa-cogs"></i>
               <p>Konfigurasi <i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
               
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link"><i class="fa fa-wrench nav-icon"></i><p style="font-size: 14px;">Konfigurasi Umum</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link"><i class="fas fa-tasks nav-icon"></i><p style="font-size: 14px;">Konfigurasi Umum</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/logo') ?>" class="nav-link"><i class="fa fa-home nav-icon"></i><p style="font-size: 14px;">Ganti Logo</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/logo') ?>" class="nav-link"><i class="fas fa-home nav-icon"></i><p style="font-size: 14px;">Ganti Logo</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/icon') ?>" class="nav-link"><i class="fa fa-upload nav-icon"></i><p style="font-size: 14px;">Ganti Icon</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/icon') ?>" class="nav-link"><i class="fas fa-eye nav-icon"></i><p style="font-size: 14px;">Ganti Icon</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/email_setting') ?>" class="nav-link"><i class="fa fa-sitemap nav-icon"></i><p style="font-size: 14px;">Email Setting</p></a>
+              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/email_setting') ?>" class="nav-link"><i class="fas fa-envelope nav-icon"></i><p style="font-size: 14px;">Email Setting</p></a>
               </li>
             </ul>
           </li>
@@ -106,8 +106,7 @@
           <!-- Logout -->
           <li class="nav-item">
             <a href="<?php echo base_url('login/logout') ?>" class="nav-link">
-              <i class="nav-icon fa fa-sign-out"></i>
-              <p>
+              <i class="nav-icon fas fa-arrow-alt-circle-left"></i>
                 Logout
               </p>
             </a>

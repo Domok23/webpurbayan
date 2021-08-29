@@ -25,10 +25,10 @@
     <td>
       
       <a href="<?php echo base_url('admin/kategori_galeri/edit/'.$kategori_galeri->id_kategori_galeri) ?>" 
-      class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
+      class="btn btn-warning btn-xs"><i class="far fa-edit"></i> Edit</a>
 
       <a href="<?php echo base_url('admin/kategori_galeri/delete/'.$kategori_galeri->id_kategori_galeri) ?>" 
-      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="fa fa-trash-o"></i> Hapus</a>
+      class="btn btn-danger btn-xs" onclick="return confirm('Apakah anda yakin akan menghapus data?');"><i class="far fa-trash-alt"></i> Hapus</a>
 
     </td>
 </tr>

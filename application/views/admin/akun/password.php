@@ -8,7 +8,7 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 
 <?php echo form_open_multipart(base_url('admin/akun/password'),'id="tambah"') ?>
 
-<div class="form-group row">
+<div class="form-group row mt-3">
 	<label class="col-sm-4 control-label text-right">Password saat ini<span class="text-danger">*</span></label>
 	<div class="col-sm-8">
 		<input type="password" name="current_password" id="current_password" class="form-control" placeholder="Password saat ini" value="<?php echo set_value('current_password') ?>" minlength="6" maxlength="32" required>
@@ -34,7 +34,7 @@ echo validation_errors('<p class="alert alert-warning">','</p>');
 			<div class="col-sm-8">
 				<div class="form-group">
 					<button type="submit" name="submit" class="btn btn-success"><i class="fa fa-lock"></i> Ganti Password</button>
-					<button type="reset" name="reset" class="btn btn-warning"><i class="fa fa-rotate-left"></i> Atur ulang</button>
+					<button type="reset" name="reset" class="btn btn-warning"><i class="fas fa-undo"></i> Atur ulang</button>
 				</div>
 			</div>
 		</div>

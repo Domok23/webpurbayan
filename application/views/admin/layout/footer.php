@@ -117,6 +117,8 @@ $( ".tanggal" ).datepicker({
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- skrip buatan -->
 <script src="<?php echo base_url() ?>assets/sweetalert/js/myscript.js"></script>
+<!-- fontawesome -->
+<script defer src="<?php echo base_url() ?>assets/admin/fontawesome/js/all.js"></script> <!--load all styles -->
 
 <!-- page script -->
 <script>

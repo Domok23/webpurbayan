@@ -44,7 +44,7 @@ echo form_open(base_url('admin/user/edit/'.$user->id_user));
 				<i class="fa fa-check"></i> Simpan
 			</button>
 			<button class="btn btn-default" name="reset" type="reset">
-				<i class="fa fa-rotate-left"></i> Reset
+				<i class="fa fa-undo"></i> Reset
 			</button>
 		</div>
 	</div>
