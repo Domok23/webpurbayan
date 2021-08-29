@@ -4,25 +4,25 @@ echo form_open(base_url('admin/berita/proses'));
 ?>
 <p class="md-col-12">
   <a href="<?php echo base_url('admin/berita/tambah') ?>" class="btn btn-success">
-  <i class="fa fa-plus"></i> Tambah Berita</a>
+  <i class="fa fa-plus mr-1"></i> Tambah Berita</a>
 
   <button class="btn btn-primary" type="submit" name="publish" onClick="check();" >
-    <i class="far fa-paper-plane"></i> Publikasikan
+    <i class="far fa-paper-plane mr-1"></i> Publikasikan
   </button>
   
   <button class="btn btn-warning" type="submit" name="draft" onClick="check();" >
-      <i class="far fa-times-circle"></i> Jangan Publikasikan
+      <i class="far fa-times-circle mr-1"></i> Jangan Publikasikan
   </button>
   
   <button class="btn btn-danger" type="submit" name="hapus" onclick="return confirm('Apakah anda yakin akan menghapus data?');" >
-      <i class="fas fa-trash-alt"></i> Hapus
+      <i class="fas fa-trash-alt mr-1"></i> Hapus
     </button> 
 <?php 
 $url_navigasi = $this->uri->segment(2); 
 if($this->uri->segment(3) != "") { 
  ?>
 <a href="<?php echo base_url('admin/'.$url_navigasi) ?>"  class="btn btn-primary">
- <i class="fa fa-backward"></i> Kembali</a>
+ <i class="fas fa-chevron-circle-left mr-1"></i> Kembali</a>
  <?php } ?>
 </p>
 <div class="table-responsive mailbox-messages">
@@ -37,10 +37,10 @@ if($this->uri->segment(3) != "") {
         </div>
     </th>
     <th width="10%">GAMBAR</th>
-    <th width="35%">JUDUL</th>
+    <th width="30%">JUDUL</th>
     <th width="10%">JENIS</th>
     <th width="10%">STATUS</th>
-    <th width="10%">AUTHOR</th>
+    <th width="15%">AUTHOR</th>
     <th width="15%">ACTION</th>
 </tr>
 </thead>
@@ -75,13 +75,13 @@ if($this->uri->segment(3) != "") {
     </td>
     <td>
     <a href="<?php echo base_url('admin/berita/jenis_berita/'.$berita->jenis_berita) ?>">
-    <?php echo $berita->jenis_berita ?><sup><i class="fa fa-link"></i></sup>
+    <?php echo $berita->jenis_berita ?><sup></sup>
     </a></td>
-    <td><a href="<?php echo base_url('admin/berita/status_berita/'.$berita->status_berita) ?>"><?php echo $berita->status_berita ?><sup><i class="fa fa-link"></i></sup>
+    <td><a href="<?php echo base_url('admin/berita/status_berita/'.$berita->status_berita) ?>"><?php echo $berita->status_berita ?><sup></sup>
     </a></td>
     <td>
     <a href="<?php echo base_url('admin/berita/author/'.$berita->id_user) ?>">
-    <?php echo $berita->nama ?><sup><i class="fa fa-link"></i></sup>
+    <?php echo $berita->nama ?><sup></sup>
     </a></td>
     <td>
       <div class="md-col-12">

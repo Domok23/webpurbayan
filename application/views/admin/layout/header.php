@@ -6,10 +6,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php echo base_url() ?>" target="_blank" class="nav-link">Beranda Website</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php echo base_url('admin/dasbor') ?>" class="nav-link">Dashboard</a>
+        <a href="<?php echo base_url() ?>" target="_blank" class="nav-link">Beranda Website <i class="fas fa-angle-double-right"></i></a>
       </li>
     </ul>
     <!-- Right navbar links -->
