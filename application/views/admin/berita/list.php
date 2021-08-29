@@ -11,8 +11,10 @@ echo form_open(base_url('admin/berita/proses'));
   </button>
   
   <button class="btn btn-warning" type="submit" name="draft" onClick="check();" >
-      <i class="far fa-times-circle mr-1"></i> Jangan Publikasikan
+      <i class="far fa-times-circle mr-2"></i> Jangan Publikasikan
   </button>
+
+
   
   <button class="btn btn-danger" type="submit" name="hapus" onclick="return confirm('Apakah anda yakin akan menghapus data?');" >
       <i class="fas fa-trash-alt mr-1"></i> Hapus
