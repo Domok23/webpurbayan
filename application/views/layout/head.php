@@ -28,6 +28,9 @@ $site_info = $this->konfigurasi_model->listing();
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/tema/assets/css/responsive.css" media="all" />
 <!-- DataTables CSS -->
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/datatables/dataTables.bootstrap4.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="<?php echo base_url() ?>assets/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
 <!-- Select2 -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/select2/select2.min.css">
   <style type="text/css" media="screen">

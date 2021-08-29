@@ -154,6 +154,8 @@ $site           = $this->konfigurasi_model->listing();
 <script type="text/javascript" src="<?php echo base_url() ?>assets/tema/assets/js/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/tema/assets/js/custom.isotope.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>assets/tema/assets/js/custom.js"></script>
+<!-- fontawesome -->
+<script defer src="<?php echo base_url() ?>assets/admin/fontawesome/js/all.js"></script> <!--load all styles -->
 <!-- Select2 -->
 <script src="<?php echo base_url() ?>assets/admin/plugins/select2/select2.full.min.js"></script>
 <!-- DataTables JS -->
