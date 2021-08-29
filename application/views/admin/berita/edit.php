@@ -14,44 +14,37 @@ if(isset($error)) {
 echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 ?>
 <div class="row">
-<div class="col-md-8">
 
+<div class="col-md-8">
 <div class="form-group form-group-lg">
 <label>Judul berita</label>
 <input type="text" name="judul_berita" class="form-control" placeholder="Judul berita" required="required" value="<?php echo $berita->judul_berita ?>">
 </div>
-
 </div>
 
 <div class="col-md-4">
-
 <div class="form-group form-group-lg">
 <label>Icon berita</label>
 <input type="text" name="icon" class="form-control" placeholder="Icon berita" value="<?php echo $berita->icon ?>">
 </div>
-
 </div>
 
-<div class="col-md-6">
 
-<div class="form-group form-group-lg">
-
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
+  <div class="form-group form-group-lg">
     <label>Tanggal Publish</label>
     <input type="text" name="tanggal_publish" class="form-control tanggal" placeholder="Tanggal publikasi" value="<?php if(isset($_POST['tanggal_publish'])) { echo set_value('tanggal_publish'); }else{ echo date('Y-m-d',strtotime($berita->tanggal_publish)); } ?>" data-date-format="dd-mm-yyyy">
   </div>
-  <div class="col-md-6">
+  </div>
+
+  <div class="col-md-4">
+  <div class="form-group form-group-lg">
   <label>Jam Publish</label>
   <input type="text" name="jam_publish" class="form-control time-picker" placeholder="Jam publikasi" value="<?php if(isset($_POST['jam_publish'])) { echo set_value('jam_publish'); }else{ echo date('H:i:s',strtotime($berita->tanggal_publish)); } ?>">
   </div>
-</div>
-</div>
+  </div>
 
-</div>
-
-<div class="col-md-6">
-
+<div class="col-md-4">
 <div class="form-group form-group-lg">
 <label>Status Berita</label>
 <select name="status_berita" class="form-control">
@@ -59,11 +52,10 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 	<option value="Draft" <?php if($berita->status_berita=="Draft") { echo "selected"; } ?>>Simpan sebagai draft</option>
 </select>
 </div>
-
 </div>
 
-<div class="col-md-3">
 
+<div class="col-md-4">
 <div class="form-group">
 <label>Jenis Berita</label>
 <select name="jenis_berita" class="form-control">
@@ -71,22 +63,22 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
   <option value="Kampung" <?php if($berita->jenis_berita=="Kampung") { echo "selected"; } ?>>Kampung</option>
 </select>
 </div>
-
 </div>
 
-<div class="col-md-3">
+<div class="col-md-4">
+<div class="form-group">
+<label>Urutan</label>
+<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo $berita->urutan ?>">
+</div>
+</div>
+
+<div class="col-md-4">
 <div class="form-group">
 <label>Upload gambar</label>
 <input type="file" name="gambar" class="form-control" placeholder="Upload gambar">
 </div>
 </div>
 
-<div class="col-md-3">
-<div class="form-group">
-<label>Urutan</label>
-<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo $berita->urutan ?>">
-</div>
-</div>
 
 <div class="col-md-12">
 
