@@ -35,7 +35,7 @@ $nav_kampung                = $this->nav_model->nav_kampung();
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KAMPUNG WISATA<span class="caret"></span></a>
                 <ul class="dropdown-menu sub-menu">
                     <?php foreach($nav_kampung as $nav_kampung) { ?>
-                        <li class="sub-active"><a href="<?php echo base_url('berita/kampung/'.$nav_kampung->slug_berita) ?>"><i class="fad fa-angle-double-right mr-2" aria-hidden="true"></i> <?php echo $nav_kampung->judul_berita ?></a></li>
+                        <li class="sub-active"><a href="<?php echo base_url('kampung/kampung/'.$nav_kampung->slug_kampung) ?>"><i class="fad fa-angle-double-right mr-2" aria-hidden="true"></i> <?php echo $nav_kampung->judul_kampung ?></a></li>
                         <?php } ?> 
                     </ul>
                 </li>

@@ -18,6 +18,15 @@ class Dasbor_model extends CI_Model {
 		return $query->row();
 	}
 
+	// Total kampung
+	public function kampung()
+	{
+		$this->db->select('COUNT(*) AS total');
+		$this->db->from('kampung');
+		$query = $this->db->get();
+		return $query->row();
+	}
+
 	// Total galeri
 	public function galeri()
 	{

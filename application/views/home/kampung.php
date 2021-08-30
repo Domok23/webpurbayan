@@ -13,9 +13,9 @@
                         <div class="our-services-items">
                             <i class="<?php echo $kampung->icon ?> fa-5x" style="color:#337ab7; margin-bottom: 20px;"></i>
                             <div class="our-services-content">
-                                <h4><a href="<?php echo base_url('berita/kampung/'.$kampung->slug_berita) ?>"><?php echo $kampung->judul_berita ?></a></h4>
+                                <h4><a href="<?php echo base_url('kampung/kampung/'.$kampung->slug_kampung) ?>"><?php echo $kampung->judul_kampung ?></a></h4>
                                 <p><?php echo $kampung->keywords; ?></p>
-                                <a href="<?php echo base_url('berita/kampung/'.$kampung->slug_berita) ?>">Selengkapnya<i class="fad fa-angle-double-right" aria-hidden="true"></i></a>
+                                <a href="<?php echo base_url('kampung/kampung/'.$kampung->slug_kampung) ?>">Selengkapnya<i class="fad fa-angle-double-right" aria-hidden="true"></i></a>
                             </div>
                             <!-- .our-services-content -->
                         </div>

@@ -6,15 +6,15 @@
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <div class="single-event-item">
-              <?php if($berita->gambar != "" || $berita->gambar != NULL) { ?>
+              <?php if($kampung->gambar != "" || $kampung->gambar != NULL) { ?>
                 <div class="single-event-img">
-                  <img src="<?php echo base_url('assets/upload/image/' . $berita->gambar); ?>" alt="single-event-img-1" class="img-responsive img-rounded" />
+                  <img src="<?php echo base_url('assets/upload/image/' . $kampung->gambar); ?>" alt="single-event-img-1" class="img-responsive img-rounded" />
                 </div>
               <?php } ?>
               <!-- .single-event-img -->
               <div class="single-event-content">
-                <h3><?php echo $berita->judul_berita; ?></h3><hr>
-                <?php echo $berita->isi; ?>
+                <h3><?php echo $kampung->judul_kampung; ?></h3><hr>
+                <?php echo $kampung->isi; ?>
               </div>
               <!-- .single-event-content -->
             </div>
