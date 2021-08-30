@@ -210,19 +210,19 @@ class Berita_model extends CI_Model {
 	}
 
 	// Listing kampung
-	public function listing_kampung() {
-		$this->db->select('berita.*, users.nama');
-		$this->db->from('berita');
-		// Join dg 2 tabel
-		$this->db->join('users','users.id_user = berita.id_user','LEFT');
-		// End join
-		$this->db->where(array(	'berita.status_berita'	=> 'Publish',
-								'berita.jenis_berita'	=> 'Kampung'));
-		$this->db->order_by('id_berita','DESC');
-		$this->db->limit(20);
-		$query = $this->db->get();
-		return $query->result();
-	}
+	// public function listing_kampung() {
+	// 	$this->db->select('berita.*, users.nama');
+	// 	$this->db->from('berita');
+	// 	// Join dg 2 tabel
+	// 	$this->db->join('users','users.id_user = berita.id_user','LEFT');
+	// 	// End join
+	// 	$this->db->where(array(	'berita.status_berita'	=> 'Publish',
+	// 							'berita.jenis_berita'	=> 'Kampung'));
+	// 	$this->db->order_by('id_berita','DESC');
+	// 	$this->db->limit(20);
+	// 	$query = $this->db->get();
+	// 	return $query->result();
+	// }
 
 	// Listing headline
 	public function listing_headline() {
@@ -240,7 +240,6 @@ class Berita_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
-
 
 	// Read data
 	public function read($slug_berita) {

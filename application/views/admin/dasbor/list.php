@@ -1,9 +1,26 @@
 <!-- Info boxes -->
 <div class="row">
-  <div class="col-12 col-sm-6 col-md-3">
+
+    <div class="col-12 col-sm-6 col-md-2">
+    <div class="info-box">
+      <span class="info-box-icon btn-warning elevation-1"><i class="fad fa-tree"></i></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Kampung</span>
+        <span class="info-box-number">
+          <small>Total: </small>
+          <?php echo $this->dasbor_model->kampung()->total; ?>
+        </span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+    <!-- /.col -->
+
+  <div class="col-12 col-sm-6 col-md-2">
     <div class="info-box">
       <span class="info-box-icon btn-info elevation-1"><i class="fad fa-newspaper"></i></span>
-
       <div class="info-box-content">
         <span class="info-box-text">Berita</span>
         <span class="info-box-number">
@@ -17,10 +34,9 @@
   </div>
     <!-- /.col -->
 
-  <div class="col-12 col-sm-6 col-md-3">
+  <div class="col-12 col-sm-6 col-md-2">
     <div class="info-box mb-3">
       <span class="info-box-icon btn-primary elevation-1"><i class="fad fa-image"></i></span>
-
       <div class="info-box-content">
         <span class="info-box-text">Galeri</span>
         <span class="info-box-number"><?php echo $this->dasbor_model->galeri()->total; ?>
@@ -33,15 +49,30 @@
   </div>
   <!-- /.col -->
 
-  <div class="col-12 col-sm-6 col-md-3">
+  <div class="col-12 col-sm-6 col-md-2">
     <div class="info-box">
       <span class="info-box-icon btn-success elevation-1"><i class="fad fa-users"></i></span>
-
       <div class="info-box-content">
         <span class="info-box-text">Pengelola</span>
         <span class="info-box-number">
           <?php echo $this->dasbor_model->user()->total; ?>
           <small>Admin</small>
+        </span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+    <!-- /.col -->
+
+  <div class="col-12 col-sm-6 col-md-2">
+    <div class="info-box">
+      <span class="info-box-icon btn-warning elevation-1"><i class="fad fa-sitemap"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-text">UMKM</span>
+        <span class="info-box-number">
+          <small>Total: </small>
+          <?php echo $this->dasbor_model->user()->total; ?>
         </span>
       </div>
       <!-- /.info-box-content -->

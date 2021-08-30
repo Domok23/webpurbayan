@@ -170,35 +170,35 @@ class Berita extends CI_Controller {
 	}
 
 	// about 'berita' kampung detail
-	public function kampung($slug_berita)	{
-		$site 		= $this->konfigurasi_model->listing();
-		$berita 	= $this->berita_model->read($slug_berita);
-		$kampung 	= $this->nav_model->nav_kampung();
+	// public function kampung($slug_berita)	{
+	// 	$site 		= $this->konfigurasi_model->listing();
+	// 	$berita 	= $this->berita_model->read($slug_berita);
+	// 	$kampung 	= $this->nav_model->nav_kampung();
 
-		if(count(array($berita)) < 1) {
-			redirect(base_url('oops'),'refresh');
-		}
+	// 	if(count(array($berita)) < 1) {
+	// 		redirect(base_url('oops'),'refresh');
+	// 	}
 
-		$listing 	= $this->berita_model->listing_kampung();
+	// 	$listing 	= $this->berita_model->listing_kampung();
 
-		// Update hit
-		if($berita) {
-			$newhits = $berita->hits + 1;
-			$hit = array(	'id_berita'	=> $berita->id_berita,
-							'hits'		=> $newhits);
-			$this->berita_model->update_hit($hit);
-		}
-		//  End update hit
+	// 	// Update hit
+	// 	if($berita) {
+	// 		$newhits = $berita->hits + 1;
+	// 		$hit = array(	'id_berita'	=> $berita->id_berita,
+	// 						'hits'		=> $newhits);
+	// 		$this->berita_model->update_hit($hit);
+	// 	}
+	// 	//  End update hit
 
-		$data = array(	'title'		=> $berita->judul_berita,
-						'deskripsi'	=> $berita->judul_berita,
-						'keywords'	=> $berita->judul_berita,
-						'berita'	=> $berita,
-						'site'		=> $site,
-						'listing'	=> $kampung,
-						'isi'		=> 'berita/kampung');
-		$this->load->view('layout/wrapper', $data, FALSE);
-	}
+	// 	$data = array(	'title'		=> $berita->judul_berita,
+	// 					'deskripsi'	=> $berita->judul_berita,
+	// 					'keywords'	=> $berita->judul_berita,
+	// 					'berita'	=> $berita,
+	// 					'site'		=> $site,
+	// 					'listing'	=> $kampung,
+	// 					'isi'		=> 'berita/kampung');
+	// 	$this->load->view('layout/wrapper', $data, FALSE);
+	// }
 
 }
 
