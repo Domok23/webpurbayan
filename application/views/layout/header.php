@@ -18,7 +18,7 @@ $site = $this->konfigurasi_model->listing();
 <div class="bg-header-top">
 <div class="container">
 <div class="row">
-<div class="header-top">
+<div class="header-top" data-aos="zoom-in" data-aos-duration="1500">
     <div class="donate-option">
             <a href="https://wa.me/<?php echo str_replace('+','',$site->hp)?>?text=Apakah%20bisa%20dibantu?"><i class="fab fa-whatsapp" aria-hidden="true"></i> <?php echo $site->hp ?></a>
             <a href="tel:<?php echo $site->telepon ?>"><i class="fa fa-phone" aria-hidden="true"></i> <?php echo $site->telepon ?></a>

@@ -59,7 +59,7 @@ $site           = $this->konfigurasi_model->listing();
     <div class="footer-top">
         <div class="row">
             <div class="col-md-6 col-sm-6">
-                <div class="footer-widgets">
+                <div class="footer-widgets" data-aos="fade-up" data-aos-duration="1500">
                     <div class="widgets-title">
                         <h4 style="color:white;"><?php echo $site->namaweb ?></h4>
                     </div>
@@ -158,6 +158,15 @@ $site           = $this->konfigurasi_model->listing();
 <script defer src="<?php echo base_url() ?>assets/admin/fontawesome/js/all.js"></script> <!--load all styles -->
 <!-- Select2 -->
 <script src="<?php echo base_url() ?>assets/admin/plugins/select2/select2.full.min.js"></script>
+
+<!-- animasi -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
+
 <!-- DataTables JS -->
 <script src="<?php echo base_url() ?>assets/admin/plugins/datatables/jquery.dataTables.js"></script>
 <script src="<?php echo base_url() ?>assets/admin/plugins/datatables/dataTables.bootstrap4.js"></script>

@@ -54,8 +54,8 @@
     iframe {
         width: 100%;
         height: auto;
-        min-height: 400px;
+        min-height: 500px;
     }
 </style>
-<div id="map"><?php echo $site->google_map; ?></div>
+<div id="map" data-aos="zoom-in" data-aos-duration="500"><?php echo $site->google_map; ?></div>
 <!-- End Maps Section -->
