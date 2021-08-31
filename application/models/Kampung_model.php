@@ -92,7 +92,7 @@ class Kampung_model extends CI_Model {
 		// Join dg 2 tabel
 		$this->db->join('users','users.id_user = kampung.id_user','LEFT');
 		// End join
-		$this->db->where(array(	'kampung.status_kampung'	=> $status_kampung));
+		$this->db->where(array(	'kampung.status_kampung' => $status_kampung));
 		$this->db->order_by('id_kampung','DESC');
 		$query = $this->db->get();
 		return $query->result();
@@ -134,8 +134,8 @@ class Kampung_model extends CI_Model {
 		// Join 
 		$this->db->join('users','users.id_user = kampung.id_user','LEFT');
 		// End join
-		$this->db->where(array(	'kampung.status_kampung'	=> 'Publish',
-								'kampung.jenis_kampung'	=> 'Kampung'));
+		$this->db->where(array(	'kampung.status_kampung' => 'Publish',
+								'kampung.jenis_kampung'	 => 'Kampung'));
 		$this->db->order_by('kampung.tanggal_publish','DESC');
 		$this->db->limit($limit,$start);
 		$query = $this->db->get();
@@ -201,8 +201,8 @@ class Kampung_model extends CI_Model {
 		// Join dg 2 tabel
 		$this->db->join('users','users.id_user = kampung.id_user','LEFT');
 		// End join
-		$this->db->where(array(	'kampung.status_kampung'	=> 'Publish',
-								'kampung.jenis_kampung'	=> 'Kampung'));
+		$this->db->where(array(	'kampung.status_kampung' => 'Publish',
+								'kampung.jenis_kampung'	 => 'Kampung'));
 		$this->db->order_by('id_kampung','DESC');
 		$this->db->limit(10);
 		$query = $this->db->get();
@@ -216,8 +216,8 @@ class Kampung_model extends CI_Model {
 		// Join dg 2 tabel
 		$this->db->join('users','users.id_user = kampung.id_user','LEFT');
 		// End join
-		$this->db->where(array(	'kampung.status_kampung'	=> 'Publish',
-								'kampung.jenis_kampung'	=> 'Kampung'));
+		$this->db->where(array(	'kampung.status_kampung' => 'Publish',
+								'kampung.jenis_kampung'	 => 'Kampung1'));
 		$this->db->order_by('id_kampung','DESC');
 		$this->db->limit(20);
 		$query = $this->db->get();
@@ -233,8 +233,8 @@ class Kampung_model extends CI_Model {
 		// Join dg 2 tabel
 		$this->db->join('users','users.id_user = kampung.id_user','LEFT');
 		// End join
-		$this->db->where(array(	'kampung.status_kampung'	=> 'Publish',
-								'kampung.jenis_kampung'	=> 'Headline Kampung'));
+		$this->db->where(array(	'kampung.status_kampung' => 'Publish',
+								'kampung.jenis_kampung'	 => 'Headline Kampung'));
 		$this->db->order_by('id_kampung','DESC');
 		$this->db->limit(9);
 		$query = $this->db->get();

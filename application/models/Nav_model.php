@@ -30,15 +30,15 @@ class Nav_model extends CI_Model {
 	
 
 	// Navigasi profil
-	// public function nav_profil() {
-	// 	$this->db->select('*');
-	// 	$this->db->from('berita');
-	// 	$this->db->where(array(	'jenis_berita'	=> 'Profil',
-	// 							'status_berita'	=> 'Publish'));
-	// 	$this->db->order_by('urutan','ASC');
-	// 	$query = $this->db->get();
-	// 	return $query->result();
-	// }
+	public function nav_profil() {
+		$this->db->select('*');
+		$this->db->from('berita');
+		$this->db->where(array(	'jenis_berita'	=> 'Profil',
+								'status_berita'	=> 'Publish'));
+		$this->db->order_by('urutan','ASC');
+		$query = $this->db->get();
+		return $query->result();
+	}
 	
 	// Navigasi berita
 	public function nav_berita() {
@@ -55,8 +55,8 @@ class Nav_model extends CI_Model {
 	public function nav_kampung() {
 		$this->db->select('*');
 		$this->db->from('kampung');
-		$this->db->where(array(	'jenis_kampung'	=> 'Kampung',
-								'status_kampung'	=> 'Publish'));
+		$this->db->where(array(	'jenis_kampung'	 => 'Kampung',
+								'status_kampung' => 'Publish'));
 		$this->db->order_by('urutan','ASC');
 		$query = $this->db->get();
 		return $query->result();
@@ -87,7 +87,6 @@ class Nav_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
-
 
 	// Listing data
 	public function nav_kategori_statistik() {

@@ -16,7 +16,6 @@ class Kampung extends CI_Controller {
 		$populer	= $this->kampung_model->populer();
 		
 		// kampung dan paginasi
-		// kampung dan paginasi
 		$this->load->library('pagination');
 		$config['base_url'] 		= base_url().'kampung/index/';
 		$config['total_rows'] 		= count(array($this->kampung_model->total()));
@@ -151,12 +150,12 @@ class Kampung extends CI_Controller {
 		}
 
 		// Update hit
-		if($kampung) {
-			$newhits 	= $kampung->hits + 1;
-			$hit 		= array(	'id_kampung'	=> $kampung->id_kampung,
-									'hits'		=> $newhits);
-			$this->kampung_model->update_hit($hit);
-		}
+		// if($kampung) {
+		// 	$newhits 	= $kampung->hits + 1;
+		// 	$hit 		= array(	'id_kampung'	=> $kampung->id_kampung,
+		// 							'hits'			=> $newhits);
+		// 	$this->kampung_model->update_hit($hit);
+		// }
 		//  End update hit
 
 		$data = array(	'title'		=> $kampung->judul_kampung,
@@ -170,35 +169,26 @@ class Kampung extends CI_Controller {
 	}
 
 	// about 'kampung' kampung detail
-	public function kampung($slug_kampung)	{
-		$site 		= $this->konfigurasi_model->listing();
-		$kampung 	= $this->kampung_model->read($slug_kampung);
-		$kampung 	= $this->nav_model->nav_kampung();
+	// public function kampung($slug_kampung)	{
+	// 	$site 		= $this->konfigurasi_model->listing();
+	// 	$kampung 	= $this->kampung_model->read($slug_kampung);
+	// 	$kampung 	= $this->nav_model->nav_kampung();
 
-		if(count(array($kampung)) < 1) {
-			redirect(base_url('oops'),'refresh');
-		}
+	// 	if(count(array($kampung)) < 1) {
+	// 		redirect(base_url('oops'),'refresh');
+	// 	}
 
-		$listing 	= $this->kampung_model->listing_kampung();
+	// 	$listing 	= $this->kampung_model->listing_kampung();
 
-		// Update hit
-		if($kampung) {
-			$newhits = $kampung->hits + 1;
-			$hit = array(	'id_kampung'	=> $kampung->id_kampung,
-							'hits'		=> $newhits);
-			$this->kampung_model->update_hit($hit);
-		}
-		//  End update hit
-
-		$data = array(	'title'		=> $kampung->judul_kampung,
-						'deskripsi'	=> $kampung->judul_kampung,
-						'keywords'	=> $kampung->judul_kampung,
-						'kampung'	=> $kampung,
-						'site'		=> $site,
-						'listing'	=> $kampung,
-						'isi'		=> 'kampung/kampung');
-		$this->load->view('layout/wrapper', $data, FALSE);
-	}
+	// 	$data = array(	'title'		=> $kampung->judul_kampung,
+	// 					'deskripsi'	=> $kampung->judul_kampung,
+	// 					'keywords'	=> $kampung->judul_kampung,
+	// 					'kampung'	=> $kampung,
+	// 					'site'		=> $site,
+	// 					'listing'	=> $kampung,
+	// 					'isi'		=> 'kampung/kampung');
+	// 	$this->load->view('layout/wrapper', $data, FALSE);
+	// }
 
 }
 
