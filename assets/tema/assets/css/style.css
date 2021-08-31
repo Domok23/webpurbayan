@@ -2344,10 +2344,8 @@ section {
   height: 40px;
   line-height: 41px;
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
   color: #cc8800;
-  border: 2px solid #cc8800;
-  border-radius: 100%;
   overflow: hidden;
 }
 
@@ -4023,29 +4021,21 @@ div#filters {
 }
 .contact-social-icon li:nth-child(1) a {
   background: #3b5998;
-  border: 2px solid #3b5998;
 }
 .contact-social-icon li:nth-child(2) a {
   background: #55acee;
-  border: 2px solid #55acee;
 }
 .contact-social-icon li:nth-child(3) a {
   background: #dc4e41;
-  border: 2px solid #dc4e41;
 }
 .contact-social-icon li:nth-child(4) a {
   background: #ff0084;
-  border: 2px solid #ff0084;
 }
 .contact-social-icon li:nth-child(5) a {
   background: #cb2027;
-  border: 2px solid #cb2027;
 }
 .contact-social-icon li:nth-child(6) a {
-  font-size: 28px;
-  line-height: 40px;
   background: #3b5998;
-  border: 2px solid #3b5998;
 }
 
 .contact-social-icon li:nth-child(1) a:hover,
