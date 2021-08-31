@@ -1263,7 +1263,7 @@ section {
 .header-style-2 .main-menu .sub-menu li,
 .header-style-3 .main-menu .sub-menu li,
 .sub-sub-menu li {
-  border-bottom: 1px solid rgba(221, 221, 221, 0.25);
+  border-bottom: 1px solid rgba(204, 136, 0, 0.897);
 }
 
 .header-style-1 .main-menu .sub-menu li:last-child,
