@@ -8,14 +8,14 @@
 <div class="container">
 <div class="row">
 <div class="upcoming-events">
-<div class="section-header" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="300">
+<div class="section-header" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="200">
     <h2>Berita terbaru</h2>
 </div>
 <!-- .section-header -->
 <div class="row">
     <?php foreach($berita as $berita) { ?>
     <div class="col-md-6">
-        <div class="event-items"  data-aos="zoom-in" data-aos-duration="700">
+        <div class="event-items"  data-aos="zoom-in" data-aos-duration="700" data-aos-offset="300">
             <div class="event-img">
                 <a href="<?php echo base_url('berita/read/' . $berita->slug_berita); ?>"><img style="width:570px;height:300px;" src="<?php echo base_url('assets/upload/image/thumbs/' . $berita->gambar); ?>" alt="upcoming-events-img-1" class="img-responsive" /></a>
                 <div class="date-box">
