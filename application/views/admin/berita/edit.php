@@ -22,14 +22,6 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="form-group form-group-lg">
-<label>Icon berita</label>
-<input type="text" name="icon" class="form-control" placeholder="Icon berita" value="<?php echo $berita->icon ?>">
-</div>
-</div>
-
-
   <div class="col-md-4">
   <div class="form-group form-group-lg">
     <label>Tanggal Publish</label>
@@ -54,13 +46,11 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 </div>
 </div>
 
-
 <div class="col-md-4">
 <div class="form-group">
 <label>Jenis Berita</label>
 <select name="jenis_berita" class="form-control">
-	<option value="Berita"  <?php if($berita->jenis_berita=="Berita") { echo "selected"; } ?>>Berita</option>
-  <option value="Kampung" <?php if($berita->jenis_berita=="Kampung") { echo "selected"; } ?>>Kampung</option>
+	<option value="Berita" <?php if($berita->jenis_berita=="Berita") { echo "selected"; } ?>>Berita terkini</option>
 </select>
 </div>
 </div>

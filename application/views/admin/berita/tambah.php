@@ -23,13 +23,6 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 </div>
 </div>
 
-<div class="col-md-4">
-<div class="form-group form-group-lg">
-<label>Icon berita</label>
-<input type="text" name="icon" class="form-control" placeholder="Icon berita" value="<?php echo set_value('icon') ?>">
-</div>
-</div>
-
   <div class="col-md-4">
   <div class="form-group form-group-lg">
     <label>Tanggal Publish</label>
@@ -59,8 +52,7 @@ echo form_open_multipart(base_url('admin/berita/tambah'));
 <div class="form-group">
 <label>Jenis Berita</label>
 <select name="jenis_berita" class="form-control">
-	<option value="Berita">Berita</option>
-  <option value="Kampung">Kampung</option>
+	<option value="Berita">Berita terkini</option>
 </select>
 </div>
 </div>

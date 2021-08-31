@@ -40,7 +40,6 @@ if($this->uri->segment(3) != "") {
     </th>
     <th width="10%">GAMBAR</th>
     <th width="30%">JUDUL</th>
-    <th width="10%">JENIS</th>
     <th width="10%">STATUS</th>
     <th width="15%">AUTHOR</th>
     <th width="15%">ACTION</th>
@@ -75,10 +74,6 @@ if($this->uri->segment(3) != "") {
         <br>Tgl posting: <?php echo date('d-m-Y',strtotime($berita->tanggal_publish)) ?>
       </small>
     </td>
-    <td>
-    <a href="<?php echo base_url('admin/berita/jenis_berita/'.$berita->jenis_berita) ?>">
-    <?php echo $berita->jenis_berita ?><sup></sup>
-    </a></td>
     <td><a href="<?php echo base_url('admin/berita/status_berita/'.$berita->status_berita) ?>"><?php echo $berita->status_berita ?><sup></sup>
     </a></td>
     <td>

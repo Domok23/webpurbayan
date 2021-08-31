@@ -66,7 +66,7 @@ class Galeri extends CI_Controller {
 		// Validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('judul_galeri','Judul','trim|required',
+		$valid->set_rules('judul_galeri','Judul','required',
 			array(	'required'	=> 'Judul harus diisi'));
 
 		$valid->set_rules('isi','Isi','required',

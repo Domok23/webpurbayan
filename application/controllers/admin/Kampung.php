@@ -137,7 +137,7 @@ class Kampung extends CI_Controller {
 		// Validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('judul_kampung','Judul','trim|required|is_unique[kampung.judul_kampung]',
+		$valid->set_rules('judul_kampung','Judul','required|is_unique[kampung.judul_kampung]',
 			array(	'required'	=> 'Nama harus diisi',
 					'is_unique'	=> 'Kampung sudah terdaftar.'));
 
