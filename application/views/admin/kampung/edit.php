@@ -17,8 +17,8 @@ echo form_open_multipart(base_url('admin/kampung/edit/'.$kampung->id_kampung));
 
 <div class="col-md-8">
 <div class="form-group form-group-lg">
-<label>Judul kampung</label>
-<input type="text" name="judul_kampung" class="form-control" placeholder="Judul kampung" required="required" value="<?php echo $kampung->judul_kampung ?>">
+<label>Nama kampung</label>
+<input type="text" name="judul_kampung" class="form-control" placeholder="Nama kampung" required="required" value="<?php echo $kampung->judul_kampung ?>">
 </div>
 </div>
 
@@ -68,14 +68,14 @@ echo form_open_multipart(base_url('admin/kampung/edit/'.$kampung->id_kampung));
 <div class="col-md-4">
 <div class="form-group">
 <label>Urutan</label>
-<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo $kampung->urutan ?>">
+<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo $kampung->urutan ?>" required>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="form-group">
 <label>Upload gambar</label>
-<input type="file" name="gambar" class="form-control" placeholder="Upload gambar">
+<input type="file" name="gambar" class="form-control" placeholder="Upload gambar" value="<?php echo $kampung->gambar ?>">
 </div>
 </div>
 
@@ -88,8 +88,8 @@ echo form_open_multipart(base_url('admin/kampung/edit/'.$kampung->id_kampung));
 </div>
 
 <div class="form-group">
-<label>Isi kampung</label>
-<textarea name="isi" class="form-control konten" id="isi" placeholder="Isi kampung" placeholder="Isi kampung"><?php echo $kampung->isi ?></textarea>
+<label>Tentang kampung</label>
+<textarea name="isi" class="form-control konten" id="isi" placeholder="Tentang kampung" placeholder="Isi kampung" required><?php echo $kampung->isi ?></textarea>
 </div>
 
 <div class="form-group text-right">

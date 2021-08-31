@@ -137,11 +137,16 @@ class Berita extends CI_Controller {
 		// Validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('judul_berita','Judul','required',
-			array(	'required'	=> 'Judul harus diisi'));
+		$valid->set_rules('judul_berita','Judul','required|is_unique[berita.judul_berita]',
+			array(	'required'	=> 'Judul harus diisi',
+					'is_unique'	=> 'Judul sudah ada. Tidak boleh menggunakan konten yang sama'));
 
 		$valid->set_rules('isi','Isi','required',
 			array(	'required'	=> 'Isi berita harus diisi'));
+
+		$valid->set_rules('urutan','Urutan','required|is_unique[berita.urutan]',
+			array(	'required'	=> 'Urutan harus diisi',
+					'is_unique'	=> 'Urutan sudah ada. Tidak boleh menggunakan ururtan yang sama'));
 
 		if($valid->run()) {
 			if(!empty($_FILES['gambar']['name'])) {
@@ -184,7 +189,6 @@ class Berita extends CI_Controller {
 	        				'jenis_berita'	=> $i->post('jenis_berita'),
 	        				'status_berita'	=> $i->post('status_berita'),
 	        				'gambar'		=> $upload_data['uploads']['file_name'],
-	        				'icon'			=> $i->post('icon'),
 	        				'keywords'		=> $i->post('keywords'),
 	        				'tanggal_publish'=> date('Y-m-d',strtotime($i->post('tanggal_publish'))).' '.$i->post('jam_publish'),
 	        				// 'tanggal_mulai'		=> $i->post('tanggal_mulai'),
@@ -205,7 +209,6 @@ class Berita extends CI_Controller {
 	        				'isi'			=> $i->post('isi'),
 	        				'jenis_berita'	=> $i->post('jenis_berita'),
 	        				'status_berita'	=> $i->post('status_berita'),
-	        				'icon'			=> $i->post('icon'),
 	        				'keywords'		=> $i->post('keywords'),
 	        				'tanggal_publish'=> date('Y-m-d',strtotime($i->post('tanggal_publish'))).' '.$i->post('jam_publish'),
 	        				// 'tanggal_mulai'		=> $i->post('tanggal_mulai'),
@@ -289,7 +292,6 @@ class Berita extends CI_Controller {
 	        				'isi'			=> $i->post('isi'),
 	        				'jenis_berita'	=> $i->post('jenis_berita'),
 	        				'status_berita'	=> $i->post('status_berita'),
-	        				'icon'			=> $i->post('icon'),
 	        				'gambar'		=> $upload_data['uploads']['file_name'],
 	        				'keywords'		=> $i->post('keywords'),
 	        				'tanggal_publish'=> date('Y-m-d',strtotime($i->post('tanggal_publish'))).' '.$i->post('jam_publish'),
@@ -311,7 +313,6 @@ class Berita extends CI_Controller {
 	        				'isi'			=> $i->post('isi'),
 	        				'jenis_berita'	=> $i->post('jenis_berita'),
 	        				'status_berita'	=> $i->post('status_berita'),
-	        				'icon'			=> $i->post('icon'),
 	        				'keywords'		=> $i->post('keywords'),
 	        				'tanggal_publish'=> date('Y-m-d',strtotime($i->post('tanggal_publish'))).' '.$i->post('jam_publish'),
 	        				// 'tanggal_mulai'		=> $i->post('tanggal_mulai'),

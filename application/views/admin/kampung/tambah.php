@@ -18,8 +18,8 @@ echo form_open_multipart(base_url('admin/kampung/tambah'));
 
 <div class="col-md-8">
 <div class="form-group form-group-lg">
-<label>Judul kampung</label>
-<input type="text" name="judul_kampung" class="form-control" placeholder="Judul kampung/" required="required" value="<?php echo set_value('judul_kampung') ?>">
+<label>Nama kampung</label>
+<input type="text" name="judul_kampung" class="form-control" placeholder="Nama kampung" value="<?php echo set_value('judul_kampung') ?>">
 </div>
 </div>
 
@@ -69,7 +69,7 @@ echo form_open_multipart(base_url('admin/kampung/tambah'));
 <div class="col-md-4">
 <div class="form-group">
 <label>Urutan</label>
-<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan') ?>" required>
+<input type="number" name="urutan" class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan') ?>">
 </div>
 </div>
 
@@ -88,8 +88,8 @@ echo form_open_multipart(base_url('admin/kampung/tambah'));
 </div>
 
 <div class="form-group">
-<label>Isi kampung </label>
-<textarea name="isi" class="form-control konten" id="isi" placeholder="Isi kampung"><?php echo set_value('isi') ?></textarea>
+<label>Profil kampung </label>
+<textarea name="isi" class="form-control konten" id="isi" placeholder="Profil kampung"><?php echo set_value('isi') ?></textarea>
 </div>
 
 <div class="form-group text-right">

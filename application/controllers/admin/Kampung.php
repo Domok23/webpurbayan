@@ -137,11 +137,15 @@ class Kampung extends CI_Controller {
 		// Validasi
 		$valid = $this->form_validation;
 
-		$valid->set_rules('judul_kampung','Judul','required',
-			array(	'required'	=> 'Judul harus diisi'));
+		$valid->set_rules('judul_kampung','Judul','trim|required|is_unique[kampung.judul_kampung]',
+			array(	'required'	=> 'Nama harus diisi',
+					'is_unique'	=> 'Kampung sudah terdaftar.'));
 
 		$valid->set_rules('isi','Isi','required',
-			array(	'required'	=> 'Isi kampung harus diisi'));
+			array(	'required'	=> 'Profil kampung harus diisi'));
+
+		$valid->set_rules('urutan','Urutan','required|trim',
+			array(	'required'	=> 'Urutan harus diisi'));
 
 		if($valid->run()) {
 			if(!empty($_FILES['gambar']['name'])) {
