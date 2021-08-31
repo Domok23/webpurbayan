@@ -6,7 +6,7 @@
           <div class="col-md-10 col-md-offset-1">
             <div class="single-event-item">
                 <div class="single-event-img">
-                  <img src="<?php  echo $this->website->logo(); ?>" alt="single-event-img-1" class="img-responsive img-fluid" style="max-width: 150px; height: auto; margin-left: auto; margin-right: auto;"/>
+                  <img src="<?php  echo $this->website->icon(); ?>" alt="single-event-img-1" class="img-responsive img-fluid" style="max-width: 150px; height: auto; margin-left: auto; margin-right: auto;"/>
                 </div>
               <!-- .single-event-img -->
               <div class="single-event-content buttom-rounded">
@@ -36,6 +36,7 @@
                         width: 100%;
                         height: auto;
                         min-height: 400px;
+                        border-radius: 10px;
                     }
                 </style>
                 <div id="map" data-aos="zoom-in" data-aos-duration="500"><?php echo $site->google_map; ?></div>

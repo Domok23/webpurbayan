@@ -1,12 +1,6 @@
 <section class="bg-slider-option">
 <div class="slider-option slider-three">
 <div id="slider" class="carousel slide wow fadeInDown" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-<li data-target="#slider" data-slide-to="0" class="active"></li>
-<li data-target="#slider" data-slide-to="1"></li>
-<li data-target="#slider" data-slide-to="2"></li>
-</ol>
 <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
 <?php $i=1; foreach($slider as $slider): ?>

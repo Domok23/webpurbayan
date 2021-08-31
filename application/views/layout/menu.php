@@ -38,6 +38,7 @@ $nav_kampung                = $this->nav_model->nav_kampung();
                         <li class="sub-active"><a href="<?php echo base_url('kampung/read/'.$nav_kampung->slug_kampung) ?>"><i class="fad fa-angle-double-right mr-2" aria-hidden="true"></i> <?php echo $nav_kampung->judul_kampung ?></a></li>
                         <?php } ?> 
                 </ul>
+            
             </li>
 
             <!-- berita -->

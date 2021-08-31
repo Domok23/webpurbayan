@@ -57,7 +57,7 @@
   <!-- TINYMCE -->
   <script src="<?php echo base_url() ?>assets/tinymce/js/tinymce/tinymce.min.js"></script>
   <!-- viewer -->
-<script src="<?php echo base_url() ?>assets/viewerjs/pdf.js"></script>
+  <script src="<?php echo base_url() ?>assets/viewerjs/pdf.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">
