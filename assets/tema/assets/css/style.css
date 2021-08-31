@@ -3277,7 +3277,7 @@ div#filters {
   background: rgba(0, 0, 0, 0.8);
 }
 .donation-section {
-  padding: 145px 150px;
+  padding: 100px 10px 10px;
 }
 .donaton-header {
   text-align: center;
@@ -3287,14 +3287,15 @@ div#filters {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  color: #070707;
 }
 .donaton-header h3:after {
   position: absolute;
   content: '';
   width: 50px;
   height: 4px;
-  background: #5faf1f;
+  background: #337AB7;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -3343,7 +3344,7 @@ div#filters {
 }
 .donate-btn .btn-default {
   padding: 15px 29px;
-  background: #5faf1f;
+  background: #337AB7;
   color: #fff;
   border: 0;
 }
@@ -3358,7 +3359,7 @@ div#filters {
 .donate-btn .btn-default:focus,
 .donate-btn .btn-default.focus,
 .donate-btn .btn-default:active {
-  color: #cc8800;
+  color: #337AB7;
 }
 
 /*========================

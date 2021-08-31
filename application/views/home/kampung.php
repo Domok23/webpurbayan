@@ -25,6 +25,16 @@
                 </div>
                 <?php } ?>
             </div>
+            <div class="donation-section">
+                <div class="donaton-header" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="300">
+                    <h3>UMKM Desa Wisata Purbayan</h3>
+                </div>
+                <!-- .count-number -->
+                <div class="donate-btn" data-aos="zoom-in" data-aos-duration="500">
+                <a href="donate.html" class="btn btn-default">Lihat UMKM <i class="fa fa-heart" aria-hidden="true"></i></a>
+                </div>
+                <!-- .donate-option -->
+            </div>
             <!-- .row -->
         </div>
         <!-- .our-services-option -->

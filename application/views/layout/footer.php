@@ -159,7 +159,7 @@ $site           = $this->konfigurasi_model->listing();
 <!-- Select2 -->
 <script src="<?php echo base_url() ?>assets/admin/plugins/select2/select2.full.min.js"></script>
 
-<!-- animasi -->
+<!-- animasi AOS-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
