@@ -2785,6 +2785,7 @@ div#filters {
 }
 .our-services-box {
   border: 1px solid #535353;
+  border-radius: 15px;
   padding: 8px;
   margin-bottom: 30px;
 }
@@ -2814,6 +2815,7 @@ div#filters {
 }
 .our-services-box:hover .our-services-items {
   border: 1px solid #337ab7;
+  border-radius: 10px;
 }
 .our-services-box:hover [class^='flaticon-']:before,
 .our-services-box:hover [class*=' flaticon-']:before,
