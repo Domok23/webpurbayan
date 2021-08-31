@@ -34,7 +34,7 @@
   <div class="card shadow-lg" style ="border-radius: 0.8rem; padding: 2rem;">
     <div class="card-body login-card-body">
       <div class="login-logo">
-        <h2 style="font-weight: bold; font-size: 24px; margin-top: 20px;">Lupa Password Anda?</h2>
+        <h2 style="font-weight: bold; font-size: 24px;">Lupa Password Anda?</h2>
       </div>
 
       <?php 

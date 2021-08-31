@@ -34,9 +34,10 @@
   <div class="card shadow-lg" style ="border-radius: 0.8rem; padding: 2rem;">
     <div class="card-body login-card-body">
       <div class="login-logo">
-        <img src="<?php echo $this->website->icon(); ?>" alt="<?php echo $this->website->namaweb(); ?>" class="img img-responsive img-thumbnail img-circle" style="max-width: 30%; height: auto;">
+        <img src="<?php echo base_url()?>assets/upload/image/logo-login3.png" alt="<?php echo $this->website->namaweb(); ?>" class="img img-responsive img-circle" style="max-width: 30%; height: auto;">
         <br>
-        <h2 style="font-weight: bold; font-size: 24px; margin-top: 20px;"><?php echo $this->website->namaweb() ?></h2>
+        <h1 style="font-weight: bold; font-size: 30px; margin-top: 10px; margin-bottom: 20px;">Admin Log in.</h1>
+        <!-- <h3 style="font-weight: bold; font-size: 20px; margin-bottom: 50px;">Kampung Wisata Purbayan</h3> -->
       </div>
 
       <?php 

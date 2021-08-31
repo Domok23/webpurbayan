@@ -34,7 +34,7 @@
   <div class="card shadow-lg" style ="border-radius: 0.8rem; padding: 2rem;">
     <div class="card-body login-card-body">
       <div class="login-logo">
-        <h2 style="font-weight: bold; font-size: 28px; margin-top: 20px;">Ganti Password Anda</h2>
+        <h2 style="font-weight: bold; font-size: 28px;">Ganti Password Anda</h2>
         <h5 class="mb-4"><?= $this->session->userdata('reset_email'); ?></h5>
       </div>
 
