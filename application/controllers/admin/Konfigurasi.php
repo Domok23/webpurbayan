@@ -42,7 +42,7 @@ class Konfigurasi extends CI_Controller {
 							'telepon'			=> $i->post('telepon'),
 							'hp'				=> $i->post('hp'),
 							'facebook'			=> $i->post('facebook'),
-							'twitter'			=> $i->post('twitter'),
+							'youtube'			=> $i->post('youtube'),
 							'instagram'			=> $i->post('instagram'),
 							'google_map'		=> $i->post('google_map'),
 							'id_user'			=> $this->session->userdata('id'));

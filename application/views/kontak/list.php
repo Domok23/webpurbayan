@@ -31,9 +31,9 @@
                         <!-- .contact-address -->
                         <ul class="social-icon-rounded contact-social-icon">
                             <li><a href="<?php echo $site->facebook; ?>"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="<?php echo $site->twitter; ?>"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="<?php echo $site->youtube; ?>"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                             <li><a href="<?php echo $site->instagram; ?>"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="<?php echo $site->google_plus; ?>"><i class="fab fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:<?php echo $site->email;?>"><i class="fab fa-google" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                     <!-- .col-md-4 -->

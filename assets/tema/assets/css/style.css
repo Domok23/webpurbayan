@@ -4006,7 +4006,7 @@ div#filters {
   color: #696969;
 }
 .contact-social-icon {
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 .contact-social-icon li {
@@ -4023,16 +4023,16 @@ div#filters {
   background: #3b5998;
 }
 .contact-social-icon li:nth-child(2) a {
-  background: #55acee;
+  background: #cb2027; 
 }
 .contact-social-icon li:nth-child(3) a {
-  background: #dc4e41;
+  background: #D72A79;
 }
 .contact-social-icon li:nth-child(4) a {
-  background: #ff0084;
+  background: #48901b;
 }
 .contact-social-icon li:nth-child(5) a {
-  background: #cb2027;
+  background: #55acee;
 }
 .contact-social-icon li:nth-child(6) a {
   background: #3b5998;

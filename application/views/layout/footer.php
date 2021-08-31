@@ -110,7 +110,7 @@ $site           = $this->konfigurasi_model->listing();
             <ul class="social-icon-rounded">
                 <li><a href="<?php echo $site->facebook ?>"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="<?php echo $site->instagram ?>"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="<?php echo $site->twitter ?>"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="<?php echo $site->youtube ?>"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <!-- .social-box -->

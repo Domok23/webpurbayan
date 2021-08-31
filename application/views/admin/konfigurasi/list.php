@@ -82,8 +82,8 @@ if($this->session->flashdata('sukses')) {
     </div>
     
     <div class="form-group">
-    <label><i class="fab fa-twitter"></i> Twitter</label>
-    <input type="url" name="twitter" placeholder="https://twitter.com/" value="<?php echo $site->twitter ?>" class="form-control" required>
+    <label><i class="fab fa-youtube"></i> Youtube</label>
+    <input type="url" name="youtube" placeholder="https://youtube.com/" value="<?php echo $site->youtube ?>" class="form-control" required>
     </div>
     
     <div class="form-group">
