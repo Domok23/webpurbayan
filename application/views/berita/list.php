@@ -1,5 +1,8 @@
 <section class="bg-blog-style-2">
             <div class="container">
+                <div class="section-header-umkm">
+                    <h2><?php //echo $title ?> KUMPULAN BERITA</h2>
+                </div>
                 <div class="row">
                     <div class="blog-style-2">
                         <div class="row">
