@@ -2789,6 +2789,13 @@ div#filters {
   background-color: #f7f7f7;
   /* background-color: #f0f0f0; */
 }
+
+.bg-servicesstyle3-section {
+  padding: 0 0 100px 0;
+  background-color: #f7f7f7;
+  /* background-color: #f0f0f0; */
+}
+
 .our-services-box {
   border: 1px solid #535353;
   border-radius: 15px;
@@ -3287,7 +3294,7 @@ div#filters {
   background: rgba(0, 0, 0, 0.8);
 }
 .donation-section {
-  padding: 100px 10px 10px;
+  padding: 10px 10px 10px;
 }
 .donaton-header {
   text-align: center;

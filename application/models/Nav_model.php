@@ -62,6 +62,17 @@ class Nav_model extends CI_Model {
 		return $query->result();
 	}
 
+	// Navigasi UMKM
+	public function nav_umkm() {
+		$this->db->select('*');
+		$this->db->from('umkm');
+		$this->db->where(array(	'jenis_umkm'	 => 'Umkm',
+								'status_umkm' => 'Publish'));
+		$this->db->order_by('urutan','ASC');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	// Navigasi topik
 	public function nav_topik() {
 		$this->db->select('*');

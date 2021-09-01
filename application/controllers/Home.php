@@ -10,6 +10,7 @@ class Home extends CI_Controller {
 		$this->load->model('berita_model');
 		$this->load->model('kampung_model');
 		$this->load->model('galeri_model');
+		$this->load->model('umkm_model');
 	}
 
 	public function index()
@@ -19,6 +20,7 @@ class Home extends CI_Controller {
 		$headline		= $this->berita_model->listing_headline();
 		$kategori_galeri= $this->galeri_model->kategori();
 		$kampung		= $this->nav_model->nav_kampung();
+		$umkm		= $this->nav_model->nav_umkm();
 
 		// Berita dan paginasi
 		$this->load->library('pagination');
@@ -64,6 +66,7 @@ class Home extends CI_Controller {
 						'berita'			=> $berita,
 						'kategori_galeri'	=> $kategori_galeri,
 						'kampung'			=> $kampung,
+						'umkm'				=> $umkm,
 						'isi'				=> 'home/list'
 			);
 		$this->load->view('layout/wrapper', $data);

@@ -27,6 +27,15 @@ class Dasbor_model extends CI_Model {
 		return $query->row();
 	}
 
+	// Total UMKM
+	public function umkm()
+	{
+		$this->db->select('COUNT(*) AS total');
+		$this->db->from('umkm');
+		$query = $this->db->get();
+		return $query->row();
+	}
+
 	// Total galeri
 	public function galeri()
 	{

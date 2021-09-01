@@ -3,6 +3,7 @@ $site                       = $this->konfigurasi_model->listing();
 $site_nav                   = $this->konfigurasi_model->listing();
 $nav_berita                 = $this->nav_model->nav_berita();
 $nav_kampung                = $this->nav_model->nav_kampung();
+$nav_umkm                   = $this->nav_model->nav_umkm();
 ?>
 <!-- Start Menu -->
 <div class="bg-main-menu menu-scroll">
@@ -40,6 +41,9 @@ $nav_kampung                = $this->nav_model->nav_kampung();
                 </ul>
             
             </li>
+
+            <!-- UMKM -->
+            <li><a href="<?php echo base_url('umkm') ?>">UMKM</a></li>
 
             <!-- berita -->
             <li><a href="<?php echo base_url('berita') ?>">BERITA</a></li>

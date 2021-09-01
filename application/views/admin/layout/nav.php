@@ -54,6 +54,20 @@
               
             </ul>
           </li> 
+
+          <!-- UMKM -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fad fa-industry-alt"></i>
+              <p>UMKM<i class="right fa fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview corner ml-2" style="background-color: #292834; font-size: 14px;">
+              <li class="nav-item"><a href="<?php echo base_url('admin/umkm') ?>" class="nav-link"><i class="fad fa-table nav-icon"></i><p style="font-size: 14px;">Data UMKM</p></a>
+              </li>
+              <li class="nav-item"><a href="<?php echo base_url('admin/umkm/tambah') ?>" class="nav-link"><i class="fad fa-plus nav-icon"></i><p style="font-size: 14px;">Tambah UMKM</p></a>
+              </li>
+            </ul>
+          </li> 
           
           <!-- BERITA -->
           <li class="nav-item has-treeview">
