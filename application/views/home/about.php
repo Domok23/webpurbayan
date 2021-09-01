@@ -6,7 +6,7 @@
         <div class="row">
             <div class="about-greenforest">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         <div class="about-greenforest-content">
                             <div class="section-header-about" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="200">
                                 <h2><?php echo $site->namaweb ?></h2>
@@ -16,7 +16,13 @@
                         </div>
                         <!-- .about-greenforest-content -->
                     </div>
-                    <!-- .col-md-8 -->
+                    <!-- .col-md-10 -->
+                    <div class="col-md-2">
+                        <div class="about-greenforest-img" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200">
+                            <img src="<?php  echo $this->website->icon(); ?>" alt="about-greenforet-img" class="img-responsive" />
+                        </div>
+                        <!-- .about-greenforest-img -->
+                    </div>
                     <!-- .col-md-4 -->
                 </div>
             </div>

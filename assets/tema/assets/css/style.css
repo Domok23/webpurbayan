@@ -755,7 +755,7 @@ blockquote:after,
   width: 100%;
   margin: 0 auto;
   text-align: left;
-  padding: 40px 0 10px 0;
+  padding: 0 0 10px 0;
 }
 .section-header h3 {
   font-size: 36px;
